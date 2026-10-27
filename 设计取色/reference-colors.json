@@ -1,0 +1,3069 @@
+{
+  "source": "ScreenRecording_10-25-2026 23-04-27_1.MP4",
+  "colorSpace": "sRGB",
+  "scale": 3,
+  "measurements": [
+    {
+      "token": "paperBase",
+      "label": "主背景纸张基色",
+      "frame": 44,
+      "rect": [
+        40,
+        470,
+        300,
+        160
+      ],
+      "kind": "texture",
+      "selection": "all",
+      "rgb": [
+        43,
+        42,
+        35
+      ],
+      "hex": "#2B2A23",
+      "median": [
+        43,
+        42,
+        35
+      ],
+      "p10": [
+        38,
+        36,
+        32
+      ],
+      "p90": [
+        48,
+        46,
+        39
+      ],
+      "dominant": [
+        42,
+        40,
+        35
+      ],
+      "dominantFraction": 0.1091,
+      "count": 432000,
+      "pixelRect": [
+        120,
+        1410,
+        900,
+        480
+      ]
+    },
+    {
+      "token": "paperHome",
+      "label": "首页纸张背景复核",
+      "frame": 1,
+      "rect": [
+        20,
+        625,
+        330,
+        30
+      ],
+      "kind": "texture",
+      "selection": "all",
+      "rgb": [
+        43,
+        42,
+        35
+      ],
+      "hex": "#2B2A23",
+      "median": [
+        43,
+        42,
+        35
+      ],
+      "p10": [
+        38,
+        36,
+        32
+      ],
+      "p90": [
+        46,
+        45,
+        39
+      ],
+      "dominant": [
+        42,
+        40,
+        35
+      ],
+      "dominantFraction": 0.1214,
+      "count": 89100,
+      "pixelRect": [
+        60,
+        1875,
+        990,
+        90
+      ]
+    },
+    {
+      "token": "textPrimary",
+      "label": "主标题/主文字",
+      "frame": 1,
+      "rect": [
+        165,
+        34,
+        62,
+        32
+      ],
+      "kind": "text",
+      "selection": "bright",
+      "rgb": [
+        211,
+        208,
+        203
+      ],
+      "hex": "#D3D0CB",
+      "median": [
+        211,
+        208,
+        203
+      ],
+      "p10": [
+        187,
+        187,
+        180
+      ],
+      "p90": [
+        211,
+        208,
+        203
+      ],
+      "dominant": [
+        211,
+        208,
+        203
+      ],
+      "dominantFraction": 0.4875,
+      "count": 3887,
+      "pixelRect": [
+        495,
+        102,
+        186,
+        96
+      ]
+    },
+    {
+      "token": "textSecondary",
+      "label": "日期与次级文字",
+      "frame": 1,
+      "rect": [
+        120,
+        74,
+        150,
+        15
+      ],
+      "kind": "text",
+      "selection": "bright",
+      "rgb": [
+        161,
+        155,
+        150
+      ],
+      "hex": "#A19B96",
+      "median": [
+        160,
+        154,
+        149
+      ],
+      "p10": [
+        156,
+        150,
+        145
+      ],
+      "p90": [
+        164,
+        156,
+        150
+      ],
+      "dominant": [
+        161,
+        155,
+        150
+      ],
+      "dominantFraction": 0.1498,
+      "count": 1996,
+      "pixelRect": [
+        360,
+        222,
+        450,
+        45
+      ]
+    },
+    {
+      "token": "calendarPanel",
+      "label": "日历面板",
+      "frame": 1,
+      "rect": [
+        35,
+        155,
+        125,
+        38
+      ],
+      "kind": "solid",
+      "selection": "all",
+      "rgb": [
+        70,
+        62,
+        54
+      ],
+      "hex": "#463E36",
+      "median": [
+        70,
+        62,
+        54
+      ],
+      "p10": [
+        70,
+        62,
+        54
+      ],
+      "p90": [
+        70,
+        62,
+        54
+      ],
+      "dominant": [
+        70,
+        62,
+        54
+      ],
+      "dominantFraction": 1.0,
+      "count": 42750,
+      "pixelRect": [
+        105,
+        465,
+        375,
+        114
+      ]
+    },
+    {
+      "token": "summaryPanel",
+      "label": "本月汇总面板",
+      "frame": 1,
+      "rect": [
+        34,
+        483,
+        100,
+        9
+      ],
+      "kind": "solid",
+      "selection": "all",
+      "rgb": [
+        70,
+        62,
+        54
+      ],
+      "hex": "#463E36",
+      "median": [
+        70,
+        62,
+        54
+      ],
+      "p10": [
+        70,
+        62,
+        54
+      ],
+      "p90": [
+        70,
+        62,
+        54
+      ],
+      "dominant": [
+        70,
+        62,
+        54
+      ],
+      "dominantFraction": 1.0,
+      "count": 8100,
+      "pixelRect": [
+        102,
+        1449,
+        300,
+        27
+      ]
+    },
+    {
+      "token": "calendarDay",
+      "label": "普通日期格",
+      "frame": 1,
+      "rect": [
+        86,
+        227,
+        14,
+        9
+      ],
+      "kind": "solid",
+      "selection": "all",
+      "rgb": [
+        101,
+        90,
+        84
+      ],
+      "hex": "#655A54",
+      "median": [
+        101,
+        90,
+        84
+      ],
+      "p10": [
+        101,
+        90,
+        84
+      ],
+      "p90": [
+        101,
+        90,
+        84
+      ],
+      "dominant": [
+        101,
+        90,
+        84
+      ],
+      "dominantFraction": 1.0,
+      "count": 1134,
+      "pixelRect": [
+        258,
+        681,
+        42,
+        27
+      ]
+    },
+    {
+      "token": "calendarSelected",
+      "label": "有记录的日期格",
+      "frame": 1,
+      "rect": [
+        32,
+        392,
+        40,
+        45
+      ],
+      "kind": "solid",
+      "selection": "gold",
+      "rgb": [
+        220,
+        171,
+        112
+      ],
+      "hex": "#DCAB70",
+      "median": [
+        220,
+        171,
+        112
+      ],
+      "p10": [
+        211,
+        171,
+        112
+      ],
+      "p90": [
+        220,
+        171,
+        117
+      ],
+      "dominant": [
+        220,
+        171,
+        112
+      ],
+      "dominantFraction": 0.7763,
+      "count": 10549,
+      "pixelRect": [
+        96,
+        1176,
+        120,
+        135
+      ]
+    },
+    {
+      "token": "calendarWeekday",
+      "label": "星期表头文字",
+      "frame": 1,
+      "rect": [
+        40,
+        133,
+        310,
+        15
+      ],
+      "kind": "text",
+      "selection": "muted",
+      "rgb": [
+        134,
+        127,
+        119
+      ],
+      "hex": "#867F77",
+      "median": [
+        134,
+        126,
+        119
+      ],
+      "p10": [
+        113,
+        105,
+        97
+      ],
+      "p90": [
+        136,
+        127,
+        120
+      ],
+      "dominant": [
+        134,
+        127,
+        119
+      ],
+      "dominantFraction": 0.2914,
+      "count": 6698,
+      "pixelRect": [
+        120,
+        399,
+        930,
+        45
+      ]
+    },
+    {
+      "token": "calendarNumber",
+      "label": "日期数字",
+      "frame": 1,
+      "rect": [
+        45,
+        238,
+        15,
+        15
+      ],
+      "kind": "text",
+      "selection": "bright",
+      "rgb": [
+        211,
+        208,
+        201
+      ],
+      "hex": "#D3D0C9",
+      "median": [
+        211,
+        207,
+        201
+      ],
+      "p10": [
+        187,
+        185,
+        177
+      ],
+      "p90": [
+        213,
+        208,
+        203
+      ],
+      "dominant": [
+        211,
+        208,
+        201
+      ],
+      "dominantFraction": 0.3492,
+      "count": 126,
+      "pixelRect": [
+        135,
+        714,
+        45,
+        45
+      ]
+    },
+    {
+      "token": "summaryCaption",
+      "label": "汇总次级文字",
+      "frame": 1,
+      "rect": [
+        40,
+        565,
+        100,
+        14
+      ],
+      "kind": "text",
+      "selection": "muted",
+      "rgb": [
+        161,
+        155,
+        147
+      ],
+      "hex": "#A19B93",
+      "median": [
+        161,
+        154,
+        147
+      ],
+      "p10": [
+        115,
+        108,
+        100
+      ],
+      "p90": [
+        164,
+        155,
+        148
+      ],
+      "dominant": [
+        161,
+        155,
+        147
+      ],
+      "dominantFraction": 0.1106,
+      "count": 2026,
+      "pixelRect": [
+        120,
+        1695,
+        300,
+        42
+      ]
+    },
+    {
+      "token": "controlFill",
+      "label": "圆形按钮底色",
+      "frame": 1,
+      "rect": [
+        400,
+        225,
+        38,
+        38
+      ],
+      "kind": "solid",
+      "selection": "dark",
+      "rgb": [
+        56,
+        55,
+        52
+      ],
+      "hex": "#383734",
+      "median": [
+        56,
+        55,
+        52
+      ],
+      "p10": [
+        46,
+        45,
+        39
+      ],
+      "p90": [
+        59,
+        57,
+        54
+      ],
+      "dominant": [
+        56,
+        55,
+        52
+      ],
+      "dominantFraction": 0.4135,
+      "count": 11668,
+      "pixelRect": [
+        1200,
+        675,
+        114,
+        114
+      ]
+    },
+    {
+      "token": "controlGlyph",
+      "label": "按钮/未选中图标",
+      "frame": 1,
+      "rect": [
+        405,
+        230,
+        28,
+        29
+      ],
+      "kind": "text",
+      "selection": "muted",
+      "rgb": [
+        163,
+        154,
+        150
+      ],
+      "hex": "#A39A96",
+      "median": [
+        161,
+        153,
+        149
+      ],
+      "p10": [
+        134,
+        128,
+        123
+      ],
+      "p90": [
+        164,
+        154,
+        150
+      ],
+      "dominant": [
+        163,
+        154,
+        150
+      ],
+      "dominantFraction": 0.1279,
+      "count": 1423,
+      "pixelRect": [
+        1215,
+        690,
+        84,
+        87
+      ]
+    },
+    {
+      "token": "modeButtonFill",
+      "label": "M/W 按钮底色复核",
+      "frame": 1,
+      "rect": [
+        400,
+        279,
+        38,
+        38
+      ],
+      "kind": "solid",
+      "selection": "dark",
+      "rgb": [
+        56,
+        55,
+        52
+      ],
+      "hex": "#383734",
+      "median": [
+        56,
+        55,
+        52
+      ],
+      "p10": [
+        49,
+        48,
+        40
+      ],
+      "p90": [
+        57,
+        57,
+        54
+      ],
+      "dominant": [
+        56,
+        55,
+        52
+      ],
+      "dominantFraction": 0.5371,
+      "count": 12036,
+      "pixelRect": [
+        1200,
+        837,
+        114,
+        114
+      ]
+    },
+    {
+      "token": "navigationFill",
+      "label": "竖向导航底色",
+      "frame": 1,
+      "rect": [
+        411,
+        447,
+        14,
+        14
+      ],
+      "kind": "solid",
+      "selection": "all",
+      "rgb": [
+        56,
+        55,
+        52
+      ],
+      "hex": "#383734",
+      "median": [
+        56,
+        55,
+        52
+      ],
+      "p10": [
+        56,
+        55,
+        52
+      ],
+      "p90": [
+        56,
+        55,
+        52
+      ],
+      "dominant": [
+        56,
+        55,
+        52
+      ],
+      "dominantFraction": 0.9031,
+      "count": 1764,
+      "pixelRect": [
+        1233,
+        1341,
+        42,
+        42
+      ]
+    },
+    {
+      "token": "navigationSelected",
+      "label": "导航选中底板",
+      "frame": 1,
+      "rect": [
+        409,
+        390,
+        19,
+        10
+      ],
+      "kind": "solid",
+      "selection": "all",
+      "rgb": [
+        102,
+        101,
+        97
+      ],
+      "hex": "#666561",
+      "median": [
+        102,
+        101,
+        97
+      ],
+      "p10": [
+        102,
+        101,
+        97
+      ],
+      "p90": [
+        102,
+        101,
+        97
+      ],
+      "dominant": [
+        102,
+        101,
+        97
+      ],
+      "dominantFraction": 0.9333,
+      "count": 1710,
+      "pixelRect": [
+        1227,
+        1170,
+        57,
+        30
+      ]
+    },
+    {
+      "token": "accentGlyph",
+      "label": "选中杯子图标",
+      "frame": 1,
+      "rect": [
+        405,
+        400,
+        28,
+        30
+      ],
+      "kind": "text",
+      "selection": "gold",
+      "rgb": [
+        220,
+        171,
+        112
+      ],
+      "hex": "#DCAB70",
+      "median": [
+        213,
+        171,
+        116
+      ],
+      "p10": [
+        187,
+        155,
+        106
+      ],
+      "p90": [
+        220,
+        173,
+        134
+      ],
+      "dominant": [
+        220,
+        171,
+        112
+      ],
+      "dominantFraction": 0.2072,
+      "count": 1163,
+      "pixelRect": [
+        1215,
+        1200,
+        84,
+        90
+      ]
+    },
+    {
+      "token": "plusFill",
+      "label": "新增按钮底色",
+      "frame": 1,
+      "rect": [
+        400,
+        590,
+        38,
+        38
+      ],
+      "kind": "solid",
+      "selection": "dark",
+      "rgb": [
+        56,
+        55,
+        52
+      ],
+      "hex": "#383734",
+      "median": [
+        56,
+        55,
+        52
+      ],
+      "p10": [
+        56,
+        55,
+        50
+      ],
+      "p90": [
+        57,
+        56,
+        54
+      ],
+      "dominant": [
+        56,
+        55,
+        52
+      ],
+      "dominantFraction": 0.5892,
+      "count": 12391,
+      "pixelRect": [
+        1200,
+        1770,
+        114,
+        114
+      ]
+    },
+    {
+      "token": "plusGlyph",
+      "label": "新增加号",
+      "frame": 1,
+      "rect": [
+        407,
+        600,
+        24,
+        26
+      ],
+      "kind": "text",
+      "selection": "gold",
+      "rgb": [
+        220,
+        171,
+        112
+      ],
+      "hex": "#DCAB70",
+      "median": [
+        216,
+        171,
+        112
+      ],
+      "p10": [
+        201,
+        171,
+        112
+      ],
+      "p90": [
+        220,
+        173,
+        129
+      ],
+      "dominant": [
+        220,
+        171,
+        112
+      ],
+      "dominantFraction": 0.2931,
+      "count": 522,
+      "pixelRect": [
+        1221,
+        1800,
+        72,
+        78
+      ]
+    },
+    {
+      "token": "folderBack",
+      "label": "照片夹后袋",
+      "frame": 1,
+      "rect": [
+        255,
+        533,
+        9,
+        27
+      ],
+      "kind": "gradient",
+      "selection": "all",
+      "rgb": [
+        68,
+        61,
+        54
+      ],
+      "hex": "#443D36",
+      "median": [
+        68,
+        61,
+        54
+      ],
+      "p10": [
+        66,
+        58,
+        51
+      ],
+      "p90": [
+        111,
+        99,
+        81
+      ],
+      "dominant": [
+        67,
+        59,
+        51
+      ],
+      "dominantFraction": 0.1331,
+      "count": 2187,
+      "pixelRect": [
+        765,
+        1599,
+        27,
+        81
+      ]
+    },
+    {
+      "token": "folderFrontLeft",
+      "label": "照片夹前袋左侧",
+      "frame": 1,
+      "rect": [
+        267,
+        550,
+        12,
+        14
+      ],
+      "kind": "gradient",
+      "selection": "all",
+      "rgb": [
+        114,
+        101,
+        80
+      ],
+      "hex": "#726550",
+      "median": [
+        114,
+        101,
+        80
+      ],
+      "p10": [
+        111,
+        98,
+        79
+      ],
+      "p90": [
+        116,
+        102,
+        81
+      ],
+      "dominant": [
+        115,
+        101,
+        81
+      ],
+      "dominantFraction": 0.2791,
+      "count": 1512,
+      "pixelRect": [
+        801,
+        1650,
+        36,
+        42
+      ]
+    },
+    {
+      "token": "folderFrontCenter",
+      "label": "照片夹前袋中部",
+      "frame": 1,
+      "rect": [
+        309,
+        552,
+        12,
+        14
+      ],
+      "kind": "gradient",
+      "selection": "all",
+      "rgb": [
+        122,
+        108,
+        84
+      ],
+      "hex": "#7A6C54",
+      "median": [
+        122,
+        108,
+        84
+      ],
+      "p10": [
+        120,
+        106,
+        83
+      ],
+      "p90": [
+        124,
+        109,
+        87
+      ],
+      "dominant": [
+        123,
+        107,
+        84
+      ],
+      "dominantFraction": 0.1647,
+      "count": 1512,
+      "pixelRect": [
+        927,
+        1656,
+        36,
+        42
+      ]
+    },
+    {
+      "token": "folderFrontRight",
+      "label": "照片夹前袋右侧",
+      "frame": 1,
+      "rect": [
+        356,
+        552,
+        9,
+        14
+      ],
+      "kind": "gradient",
+      "selection": "all",
+      "rgb": [
+        112,
+        104,
+        93
+      ],
+      "hex": "#70685D",
+      "median": [
+        112,
+        104,
+        93
+      ],
+      "p10": [
+        110,
+        103,
+        92
+      ],
+      "p90": [
+        117,
+        108,
+        97
+      ],
+      "dominant": [
+        110,
+        103,
+        92
+      ],
+      "dominantFraction": 0.224,
+      "count": 1134,
+      "pixelRect": [
+        1068,
+        1656,
+        27,
+        42
+      ]
+    },
+    {
+      "token": "folderFrontBottom",
+      "label": "照片夹前袋底部",
+      "frame": 1,
+      "rect": [
+        302,
+        585,
+        30,
+        5
+      ],
+      "kind": "gradient",
+      "selection": "all",
+      "rgb": [
+        110,
+        99,
+        83
+      ],
+      "hex": "#6E6353",
+      "median": [
+        110,
+        99,
+        83
+      ],
+      "p10": [
+        109,
+        96,
+        80
+      ],
+      "p90": [
+        111,
+        100,
+        85
+      ],
+      "dominant": [
+        110,
+        100,
+        85
+      ],
+      "dominantFraction": 0.1726,
+      "count": 1350,
+      "pixelRect": [
+        906,
+        1755,
+        90,
+        15
+      ]
+    },
+    {
+      "token": "folderTab",
+      "label": "照片夹上方凸片",
+      "frame": 1,
+      "rect": [
+        338,
+        525,
+        14,
+        5
+      ],
+      "kind": "gradient",
+      "selection": "all",
+      "rgb": [
+        116,
+        106,
+        90
+      ],
+      "hex": "#746A5A",
+      "median": [
+        116,
+        106,
+        90
+      ],
+      "p10": [
+        115,
+        105,
+        90
+      ],
+      "p90": [
+        120,
+        107,
+        91
+      ],
+      "dominant": [
+        116,
+        106,
+        91
+      ],
+      "dominantFraction": 0.3238,
+      "count": 630,
+      "pixelRect": [
+        1014,
+        1575,
+        42,
+        15
+      ]
+    },
+    {
+      "token": "folderPhotoGold",
+      "label": "照片夹前照片边框",
+      "frame": 1,
+      "rect": [
+        263,
+        490,
+        5,
+        18
+      ],
+      "kind": "solid",
+      "selection": "gold",
+      "rgb": [
+        223,
+        177,
+        111
+      ],
+      "hex": "#DFB16F",
+      "median": [
+        223,
+        177,
+        112
+      ],
+      "p10": [
+        223,
+        177,
+        111
+      ],
+      "p90": [
+        224,
+        178,
+        114
+      ],
+      "dominant": [
+        223,
+        177,
+        111
+      ],
+      "dominantFraction": 0.4651,
+      "count": 731,
+      "pixelRect": [
+        789,
+        1470,
+        15,
+        54
+      ]
+    },
+    {
+      "token": "folderPhotoWhite",
+      "label": "照片夹后照片白边",
+      "frame": 1,
+      "rect": [
+        350,
+        486,
+        11,
+        4
+      ],
+      "kind": "solid",
+      "selection": "white",
+      "rgb": [
+        254,
+        254,
+        254
+      ],
+      "hex": "#FEFEFE",
+      "median": [
+        254,
+        253,
+        252
+      ],
+      "p10": [
+        252,
+        252,
+        248
+      ],
+      "p90": [
+        254,
+        254,
+        254
+      ],
+      "dominant": [
+        254,
+        254,
+        254
+      ],
+      "dominantFraction": 0.2773,
+      "count": 321,
+      "pixelRect": [
+        1050,
+        1458,
+        33,
+        12
+      ]
+    },
+    {
+      "token": "albumTop",
+      "label": "照片页背景上方",
+      "frame": 24,
+      "rect": [
+        20,
+        30,
+        85,
+        35
+      ],
+      "kind": "gradient",
+      "selection": "all",
+      "rgb": [
+        63,
+        58,
+        57
+      ],
+      "hex": "#3F3A39",
+      "median": [
+        63,
+        58,
+        57
+      ],
+      "p10": [
+        61,
+        58,
+        57
+      ],
+      "p90": [
+        63,
+        59,
+        57
+      ],
+      "dominant": [
+        63,
+        58,
+        57
+      ],
+      "dominantFraction": 0.8181,
+      "count": 26775,
+      "pixelRect": [
+        60,
+        90,
+        255,
+        105
+      ]
+    },
+    {
+      "token": "albumMiddle",
+      "label": "照片页背景左侧中部",
+      "frame": 24,
+      "rect": [
+        15,
+        270,
+        35,
+        80
+      ],
+      "kind": "gradient",
+      "selection": "all",
+      "rgb": [
+        71,
+        67,
+        63
+      ],
+      "hex": "#47433F",
+      "median": [
+        71,
+        67,
+        63
+      ],
+      "p10": [
+        68,
+        65,
+        61
+      ],
+      "p90": [
+        73,
+        70,
+        65
+      ],
+      "dominant": [
+        72,
+        68,
+        64
+      ],
+      "dominantFraction": 0.2542,
+      "count": 25200,
+      "pixelRect": [
+        45,
+        810,
+        105,
+        240
+      ]
+    },
+    {
+      "token": "albumBottom",
+      "label": "照片页背景下方",
+      "frame": 24,
+      "rect": [
+        70,
+        590,
+        280,
+        50
+      ],
+      "kind": "gradient",
+      "selection": "all",
+      "rgb": [
+        63,
+        59,
+        58
+      ],
+      "hex": "#3F3B3A",
+      "median": [
+        63,
+        59,
+        58
+      ],
+      "p10": [
+        63,
+        58,
+        57
+      ],
+      "p90": [
+        66,
+        62,
+        61
+      ],
+      "dominant": [
+        63,
+        58,
+        57
+      ],
+      "dominantFraction": 0.4647,
+      "count": 126000,
+      "pixelRect": [
+        210,
+        1770,
+        840,
+        150
+      ]
+    },
+    {
+      "token": "albumControlFill",
+      "label": "照片页圆形按钮",
+      "frame": 24,
+      "rect": [
+        400,
+        225,
+        38,
+        38
+      ],
+      "kind": "solid",
+      "selection": "dark",
+      "rgb": [
+        64,
+        63,
+        61
+      ],
+      "hex": "#403F3D",
+      "median": [
+        64,
+        63,
+        61
+      ],
+      "p10": [
+        59,
+        58,
+        56
+      ],
+      "p90": [
+        74,
+        73,
+        71
+      ],
+      "dominant": [
+        64,
+        63,
+        61
+      ],
+      "dominantFraction": 0.2358,
+      "count": 11666,
+      "pixelRect": [
+        1200,
+        675,
+        114,
+        114
+      ]
+    },
+    {
+      "token": "photoFrameTop",
+      "label": "拍立得边框上部",
+      "frame": 24,
+      "rect": [
+        82,
+        188,
+        210,
+        12
+      ],
+      "kind": "solid",
+      "selection": "all",
+      "rgb": [
+        223,
+        177,
+        111
+      ],
+      "hex": "#DFB16F",
+      "median": [
+        223,
+        177,
+        111
+      ],
+      "p10": [
+        223,
+        177,
+        111
+      ],
+      "p90": [
+        223,
+        177,
+        113
+      ],
+      "dominant": [
+        223,
+        177,
+        111
+      ],
+      "dominantFraction": 0.762,
+      "count": 22680,
+      "pixelRect": [
+        246,
+        564,
+        630,
+        36
+      ]
+    },
+    {
+      "token": "photoFrameBottom",
+      "label": "拍立得边框底部",
+      "frame": 24,
+      "rect": [
+        90,
+        487,
+        190,
+        8
+      ],
+      "kind": "solid",
+      "selection": "all",
+      "rgb": [
+        223,
+        177,
+        111
+      ],
+      "hex": "#DFB16F",
+      "median": [
+        223,
+        177,
+        111
+      ],
+      "p10": [
+        223,
+        177,
+        111
+      ],
+      "p90": [
+        223,
+        177,
+        113
+      ],
+      "dominant": [
+        223,
+        177,
+        111
+      ],
+      "dominantFraction": 0.7061,
+      "count": 13680,
+      "pixelRect": [
+        270,
+        1461,
+        570,
+        24
+      ]
+    },
+    {
+      "token": "photoFrameText",
+      "label": "拍立得店铺文字",
+      "frame": 24,
+      "rect": [
+        88,
+        452,
+        155,
+        16
+      ],
+      "kind": "text",
+      "selection": "ink",
+      "rgb": [
+        50,
+        21,
+        0
+      ],
+      "hex": "#321500",
+      "median": [
+        40,
+        23,
+        6
+      ],
+      "p10": [
+        34,
+        20,
+        0
+      ],
+      "p90": [
+        57,
+        25,
+        15
+      ],
+      "dominant": [
+        35,
+        23,
+        14
+      ],
+      "dominantFraction": 0.0324,
+      "count": 2066,
+      "pixelRect": [
+        264,
+        1356,
+        465,
+        48
+      ]
+    },
+    {
+      "token": "photoFrameCaption",
+      "label": "拍立得日期文字",
+      "frame": 24,
+      "rect": [
+        88,
+        470,
+        120,
+        13
+      ],
+      "kind": "text",
+      "selection": "captionInk",
+      "rgb": [
+        121,
+        85,
+        33
+      ],
+      "hex": "#795521",
+      "median": [
+        123,
+        86,
+        33
+      ],
+      "p10": [
+        114,
+        83,
+        21
+      ],
+      "p90": [
+        130,
+        92,
+        55
+      ],
+      "dominant": [
+        123,
+        85,
+        24
+      ],
+      "dominantFraction": 0.0167,
+      "count": 720,
+      "pixelRect": [
+        264,
+        1410,
+        360,
+        39
+      ]
+    },
+    {
+      "token": "formPanel",
+      "label": "记录表单面板",
+      "frame": 5,
+      "rect": [
+        60,
+        376,
+        180,
+        10
+      ],
+      "kind": "solid",
+      "selection": "all",
+      "rgb": [
+        70,
+        62,
+        54
+      ],
+      "hex": "#463E36",
+      "median": [
+        70,
+        62,
+        54
+      ],
+      "p10": [
+        70,
+        62,
+        54
+      ],
+      "p90": [
+        70,
+        62,
+        54
+      ],
+      "dominant": [
+        70,
+        62,
+        54
+      ],
+      "dominantFraction": 1.0,
+      "count": 16200,
+      "pixelRect": [
+        180,
+        1128,
+        540,
+        30
+      ]
+    },
+    {
+      "token": "formText",
+      "label": "记录表单文字",
+      "frame": 5,
+      "rect": [
+        80,
+        355,
+        170,
+        21
+      ],
+      "kind": "text",
+      "selection": "bright",
+      "rgb": [
+        211,
+        208,
+        201
+      ],
+      "hex": "#D3D0C9",
+      "median": [
+        211,
+        208,
+        201
+      ],
+      "p10": [
+        192,
+        188,
+        181
+      ],
+      "p90": [
+        211,
+        208,
+        203
+      ],
+      "dominant": [
+        211,
+        208,
+        201
+      ],
+      "dominantFraction": 0.3498,
+      "count": 6883,
+      "pixelRect": [
+        240,
+        1065,
+        510,
+        63
+      ]
+    },
+    {
+      "token": "formPlaceholder",
+      "label": "表单箭头与星标",
+      "frame": 5,
+      "rect": [
+        329,
+        620,
+        20,
+        24
+      ],
+      "kind": "text",
+      "selection": "muted",
+      "rgb": [
+        119,
+        109,
+        103
+      ],
+      "hex": "#776D67",
+      "median": [
+        118,
+        109,
+        102
+      ],
+      "p10": [
+        114,
+        106,
+        98
+      ],
+      "p90": [
+        120,
+        110,
+        103
+      ],
+      "dominant": [
+        119,
+        109,
+        103
+      ],
+      "dominantFraction": 0.1937,
+      "count": 1229,
+      "pixelRect": [
+        987,
+        1860,
+        60,
+        72
+      ]
+    },
+    {
+      "token": "confirmFill",
+      "label": "保存确认按钮",
+      "frame": 5,
+      "rect": [
+        400,
+        280,
+        38,
+        38
+      ],
+      "kind": "solid",
+      "selection": "gold",
+      "rgb": [
+        220,
+        171,
+        112
+      ],
+      "hex": "#DCAB70",
+      "median": [
+        220,
+        171,
+        112
+      ],
+      "p10": [
+        218,
+        170,
+        111
+      ],
+      "p90": [
+        220,
+        174,
+        122
+      ],
+      "dominant": [
+        220,
+        171,
+        112
+      ],
+      "dominantFraction": 0.6693,
+      "count": 10661,
+      "pixelRect": [
+        1200,
+        840,
+        114,
+        114
+      ]
+    },
+    {
+      "token": "confirmGlyph",
+      "label": "保存确认勾号",
+      "frame": 5,
+      "rect": [
+        405,
+        284,
+        28,
+        28
+      ],
+      "kind": "text",
+      "selection": "white",
+      "rgb": [
+        250,
+        249,
+        244
+      ],
+      "hex": "#FAF9F4",
+      "median": [
+        251,
+        249,
+        242
+      ],
+      "p10": [
+        250,
+        249,
+        231
+      ],
+      "p90": [
+        255,
+        250,
+        245
+      ],
+      "dominant": [
+        250,
+        249,
+        244
+      ],
+      "dominantFraction": 0.3197,
+      "count": 466,
+      "pixelRect": [
+        1215,
+        852,
+        84,
+        84
+      ]
+    },
+    {
+      "token": "settingsPanel",
+      "label": "设置行面板",
+      "frame": 44,
+      "rect": [
+        55,
+        105,
+        200,
+        10
+      ],
+      "kind": "solid",
+      "selection": "all",
+      "rgb": [
+        70,
+        62,
+        54
+      ],
+      "hex": "#463E36",
+      "median": [
+        70,
+        62,
+        54
+      ],
+      "p10": [
+        70,
+        62,
+        54
+      ],
+      "p90": [
+        70,
+        62,
+        54
+      ],
+      "dominant": [
+        70,
+        62,
+        54
+      ],
+      "dominantFraction": 1.0,
+      "count": 18000,
+      "pixelRect": [
+        165,
+        315,
+        600,
+        30
+      ]
+    },
+    {
+      "token": "settingsText",
+      "label": "开启项文字",
+      "frame": 44,
+      "rect": [
+        40,
+        211,
+        100,
+        20
+      ],
+      "kind": "text",
+      "selection": "bright",
+      "rgb": [
+        211,
+        208,
+        200
+      ],
+      "hex": "#D3D0C8",
+      "median": [
+        210,
+        207,
+        200
+      ],
+      "p10": [
+        168,
+        164,
+        157
+      ],
+      "p90": [
+        212,
+        208,
+        201
+      ],
+      "dominant": [
+        211,
+        208,
+        200
+      ],
+      "dominantFraction": 0.1657,
+      "count": 2715,
+      "pixelRect": [
+        120,
+        633,
+        300,
+        60
+      ]
+    },
+    {
+      "token": "settingsMuted",
+      "label": "关闭项文字",
+      "frame": 44,
+      "rect": [
+        40,
+        123,
+        180,
+        20
+      ],
+      "kind": "text",
+      "selection": "muted",
+      "rgb": [
+        163,
+        154,
+        148
+      ],
+      "hex": "#A39A94",
+      "median": [
+        161,
+        153,
+        146
+      ],
+      "p10": [
+        114,
+        106,
+        99
+      ],
+      "p90": [
+        164,
+        155,
+        148
+      ],
+      "dominant": [
+        163,
+        154,
+        148
+      ],
+      "dominantFraction": 0.1025,
+      "count": 4497,
+      "pixelRect": [
+        120,
+        369,
+        540,
+        60
+      ]
+    },
+    {
+      "token": "toggleOn",
+      "label": "开关开启轨道",
+      "frame": 44,
+      "rect": [
+        308,
+        216,
+        11,
+        10
+      ],
+      "kind": "solid",
+      "selection": "gold",
+      "rgb": [
+        220,
+        171,
+        112
+      ],
+      "hex": "#DCAB70",
+      "median": [
+        220,
+        171,
+        112
+      ],
+      "p10": [
+        220,
+        171,
+        112
+      ],
+      "p90": [
+        220,
+        171,
+        112
+      ],
+      "dominant": [
+        220,
+        171,
+        112
+      ],
+      "dominantFraction": 0.9879,
+      "count": 990,
+      "pixelRect": [
+        924,
+        648,
+        33,
+        30
+      ]
+    },
+    {
+      "token": "toggleOff",
+      "label": "开关关闭轨道",
+      "frame": 44,
+      "rect": [
+        326,
+        128,
+        10,
+        9
+      ],
+      "kind": "solid",
+      "selection": "bright",
+      "rgb": [
+        231,
+        229,
+        222
+      ],
+      "hex": "#E7E5DE",
+      "median": [
+        231,
+        229,
+        222
+      ],
+      "p10": [
+        231,
+        229,
+        222
+      ],
+      "p90": [
+        231,
+        229,
+        222
+      ],
+      "dominant": [
+        231,
+        229,
+        222
+      ],
+      "dominantFraction": 1.0,
+      "count": 810,
+      "pixelRect": [
+        978,
+        384,
+        30,
+        27
+      ]
+    },
+    {
+      "token": "toggleThumb",
+      "label": "开关滑块",
+      "frame": 44,
+      "rect": [
+        331,
+        220,
+        4,
+        4
+      ],
+      "kind": "solid",
+      "selection": "white",
+      "rgb": [
+        254,
+        254,
+        254
+      ],
+      "hex": "#FEFEFE",
+      "median": [
+        254,
+        254,
+        254
+      ],
+      "p10": [
+        254,
+        254,
+        254
+      ],
+      "p90": [
+        254,
+        254,
+        254
+      ],
+      "dominant": [
+        254,
+        254,
+        254
+      ],
+      "dominantFraction": 1.0,
+      "count": 144,
+      "pixelRect": [
+        993,
+        660,
+        12,
+        12
+      ]
+    },
+    {
+      "token": "settingsPanelBorder",
+      "label": "设置行细描边",
+      "frame": 44,
+      "rect": [
+        100,
+        98,
+        190,
+        1.3
+      ],
+      "kind": "solid",
+      "selection": "all",
+      "rgb": [
+        99,
+        91,
+        83
+      ],
+      "hex": "#635B53",
+      "median": [
+        98,
+        91,
+        83
+      ],
+      "p10": [
+        70,
+        62,
+        52
+      ],
+      "p90": [
+        99,
+        92,
+        84
+      ],
+      "dominant": [
+        99,
+        91,
+        83
+      ],
+      "dominantFraction": 0.2535,
+      "count": 2280,
+      "pixelRect": [
+        300,
+        294,
+        570,
+        4
+      ]
+    },
+    {
+      "token": "appearanceSelected",
+      "label": "外观选中卡背景",
+      "frame": 65,
+      "rect": [
+        222,
+        133,
+        130,
+        10
+      ],
+      "kind": "solid",
+      "selection": "gold",
+      "rgb": [
+        220,
+        171,
+        112
+      ],
+      "hex": "#DCAB70",
+      "median": [
+        220,
+        171,
+        112
+      ],
+      "p10": [
+        220,
+        171,
+        112
+      ],
+      "p90": [
+        220,
+        171,
+        112
+      ],
+      "dominant": [
+        220,
+        171,
+        112
+      ],
+      "dominantFraction": 0.9999,
+      "count": 11700,
+      "pixelRect": [
+        666,
+        399,
+        390,
+        30
+      ]
+    },
+    {
+      "token": "appearanceUnselected",
+      "label": "外观未选卡背景",
+      "frame": 65,
+      "rect": [
+        27,
+        137,
+        120,
+        10
+      ],
+      "kind": "solid",
+      "selection": "all",
+      "rgb": [
+        70,
+        62,
+        54
+      ],
+      "hex": "#463E36",
+      "median": [
+        70,
+        62,
+        54
+      ],
+      "p10": [
+        70,
+        62,
+        54
+      ],
+      "p90": [
+        70,
+        62,
+        54
+      ],
+      "dominant": [
+        70,
+        62,
+        54
+      ],
+      "dominantFraction": 1.0,
+      "count": 10800,
+      "pixelRect": [
+        81,
+        411,
+        360,
+        30
+      ]
+    },
+    {
+      "token": "appearancePagination",
+      "label": "分页未选圆点",
+      "frame": 65,
+      "rect": [
+        161,
+        337,
+        4,
+        4
+      ],
+      "kind": "solid",
+      "selection": "all",
+      "rgb": [
+        77,
+        74,
+        67
+      ],
+      "hex": "#4D4A43",
+      "median": [
+        75,
+        73,
+        66
+      ],
+      "p10": [
+        40,
+        39,
+        32
+      ],
+      "p90": [
+        80,
+        75,
+        70
+      ],
+      "dominant": [
+        77,
+        74,
+        67
+      ],
+      "dominantFraction": 0.1319,
+      "count": 144,
+      "pixelRect": [
+        483,
+        1011,
+        12,
+        12
+      ]
+    },
+    {
+      "token": "paperPreviewOne",
+      "label": "第一种纸张预览",
+      "frame": 65,
+      "rect": [
+        55,
+        480,
+        50,
+        80
+      ],
+      "kind": "texture",
+      "selection": "all",
+      "rgb": [
+        40,
+        39,
+        34
+      ],
+      "hex": "#282722",
+      "median": [
+        40,
+        39,
+        34
+      ],
+      "p10": [
+        38,
+        36,
+        32
+      ],
+      "p90": [
+        43,
+        42,
+        36
+      ],
+      "dominant": [
+        40,
+        39,
+        34
+      ],
+      "dominantFraction": 0.2309,
+      "count": 36000,
+      "pixelRect": [
+        165,
+        1440,
+        150,
+        240
+      ]
+    },
+    {
+      "token": "paperPreviewTwo",
+      "label": "第二种纸张预览",
+      "frame": 65,
+      "rect": [
+        195,
+        480,
+        50,
+        80
+      ],
+      "kind": "texture",
+      "selection": "all",
+      "rgb": [
+        44,
+        43,
+        39
+      ],
+      "hex": "#2C2B27",
+      "median": [
+        44,
+        43,
+        39
+      ],
+      "p10": [
+        42,
+        40,
+        35
+      ],
+      "p90": [
+        46,
+        45,
+        42
+      ],
+      "dominant": [
+        44,
+        43,
+        38
+      ],
+      "dominantFraction": 0.1632,
+      "count": 36000,
+      "pixelRect": [
+        585,
+        1440,
+        150,
+        240
+      ]
+    },
+    {
+      "token": "paperPreviewThree",
+      "label": "第三种纸张预览",
+      "frame": 65,
+      "rect": [
+        347,
+        480,
+        50,
+        80
+      ],
+      "kind": "texture",
+      "selection": "all",
+      "rgb": [
+        48,
+        45,
+        40
+      ],
+      "hex": "#302D28",
+      "median": [
+        48,
+        45,
+        40
+      ],
+      "p10": [
+        44,
+        43,
+        38
+      ],
+      "p90": [
+        50,
+        48,
+        43
+      ],
+      "dominant": [
+        46,
+        45,
+        40
+      ],
+      "dominantFraction": 0.1229,
+      "count": 36000,
+      "pixelRect": [
+        1041,
+        1440,
+        150,
+        240
+      ]
+    },
+    {
+      "token": "stampOrange",
+      "label": "店铺印章橙色",
+      "frame": 81,
+      "rect": [
+        210,
+        140,
+        135,
+        145
+      ],
+      "kind": "text",
+      "selection": "orange",
+      "rgb": [
+        184,
+        77,
+        7
+      ],
+      "hex": "#B84D07",
+      "median": [
+        172,
+        79,
+        9
+      ],
+      "p10": [
+        135,
+        66,
+        6
+      ],
+      "p90": [
+        185,
+        84,
+        34
+      ],
+      "dominant": [
+        184,
+        79,
+        7
+      ],
+      "dominantFraction": 0.0383,
+      "count": 15252,
+      "pixelRect": [
+        630,
+        420,
+        405,
+        435
+      ]
+    },
+    {
+      "token": "stampPink",
+      "label": "纪念印章粉色",
+      "frame": 81,
+      "rect": [
+        45,
+        330,
+        135,
+        83
+      ],
+      "kind": "text",
+      "selection": "pink",
+      "rgb": [
+        217,
+        127,
+        105
+      ],
+      "hex": "#D97F69",
+      "median": [
+        189,
+        123,
+        104
+      ],
+      "p10": [
+        153,
+        103,
+        86
+      ],
+      "p90": [
+        218,
+        131,
+        113
+      ],
+      "dominant": [
+        218,
+        127,
+        105
+      ],
+      "dominantFraction": 0.0057,
+      "count": 9744,
+      "pixelRect": [
+        135,
+        990,
+        405,
+        249
+      ]
+    },
+    {
+      "token": "stampGold",
+      "label": "印章金色文字",
+      "frame": 81,
+      "rect": [
+        50,
+        176,
+        130,
+        85
+      ],
+      "kind": "text",
+      "selection": "gold",
+      "rgb": [
+        197,
+        154,
+        101
+      ],
+      "hex": "#C59A65",
+      "median": [
+        188,
+        154,
+        102
+      ],
+      "p10": [
+        164,
+        135,
+        88
+      ],
+      "p90": [
+        197,
+        158,
+        110
+      ],
+      "dominant": [
+        196,
+        154,
+        101
+      ],
+      "dominantFraction": 0.0167,
+      "count": 5378,
+      "pixelRect": [
+        150,
+        528,
+        390,
+        255
+      ]
+    },
+    {
+      "token": "mapPanel",
+      "label": "地图店铺信息卡",
+      "frame": 99,
+      "rect": [
+        170,
+        550,
+        150,
+        50
+      ],
+      "kind": "texture",
+      "selection": "all",
+      "rgb": [
+        50,
+        54,
+        61
+      ],
+      "hex": "#32363D",
+      "median": [
+        50,
+        54,
+        61
+      ],
+      "p10": [
+        49,
+        52,
+        58
+      ],
+      "p90": [
+        52,
+        56,
+        63
+      ],
+      "dominant": [
+        51,
+        55,
+        61
+      ],
+      "dominantFraction": 0.1659,
+      "count": 67500,
+      "pixelRect": [
+        510,
+        1650,
+        450,
+        150
+      ]
+    },
+    {
+      "token": "mapPin",
+      "label": "地图打卡标记橙色",
+      "frame": 99,
+      "rect": [
+        185,
+        275,
+        75,
+        82
+      ],
+      "kind": "solid",
+      "selection": "orange",
+      "rgb": [
+        210,
+        84,
+        0
+      ],
+      "hex": "#D25400",
+      "median": [
+        210,
+        84,
+        0
+      ],
+      "p10": [
+        207,
+        84,
+        0
+      ],
+      "p90": [
+        210,
+        85,
+        2
+      ],
+      "dominant": [
+        210,
+        84,
+        0
+      ],
+      "dominantFraction": 0.8671,
+      "count": 19631,
+      "pixelRect": [
+        555,
+        825,
+        225,
+        246
+      ]
+    },
+    {
+      "token": "mapLand",
+      "label": "地图陆地区域",
+      "frame": 99,
+      "rect": [
+        60,
+        130,
+        15,
+        20
+      ],
+      "kind": "map",
+      "selection": "all",
+      "rgb": [
+        34,
+        48,
+        70
+      ],
+      "hex": "#223046",
+      "median": [
+        34,
+        48,
+        70
+      ],
+      "p10": [
+        34,
+        48,
+        70
+      ],
+      "p90": [
+        38,
+        52,
+        74
+      ],
+      "dominant": [
+        34,
+        48,
+        70
+      ],
+      "dominantFraction": 0.7981,
+      "count": 2700,
+      "pixelRect": [
+        180,
+        390,
+        45,
+        60
+      ]
+    },
+    {
+      "token": "mapControlFill",
+      "label": "地图圆形按钮",
+      "frame": 99,
+      "rect": [
+        400,
+        225,
+        38,
+        38
+      ],
+      "kind": "solid",
+      "selection": "dark",
+      "rgb": [
+        50,
+        57,
+        74
+      ],
+      "hex": "#32394A",
+      "median": [
+        50,
+        58,
+        75
+      ],
+      "p10": [
+        48,
+        56,
+        68
+      ],
+      "p90": [
+        54,
+        62,
+        80
+      ],
+      "dominant": [
+        50,
+        57,
+        74
+      ],
+      "dominantFraction": 0.2537,
+      "count": 11706,
+      "pixelRect": [
+        1200,
+        675,
+        114,
+        114
+      ]
+    },
+    {
+      "token": "mapNavigationFill",
+      "label": "地图导航底色",
+      "frame": 99,
+      "rect": [
+        409,
+        437,
+        14,
+        16
+      ],
+      "kind": "solid",
+      "selection": "all",
+      "rgb": [
+        54,
+        61,
+        70
+      ],
+      "hex": "#363D46",
+      "median": [
+        54,
+        61,
+        70
+      ],
+      "p10": [
+        54,
+        61,
+        70
+      ],
+      "p90": [
+        54,
+        61,
+        70
+      ],
+      "dominant": [
+        54,
+        61,
+        70
+      ],
+      "dominantFraction": 0.9311,
+      "count": 2016,
+      "pixelRect": [
+        1227,
+        1311,
+        42,
+        48
+      ]
+    },
+    {
+      "token": "mapNavigationSelected",
+      "label": "地图导航选中底色",
+      "frame": 99,
+      "rect": [
+        409,
+        557,
+        17,
+        8
+      ],
+      "kind": "solid",
+      "selection": "all",
+      "rgb": [
+        101,
+        104,
+        109
+      ],
+      "hex": "#65686D",
+      "median": [
+        101,
+        104,
+        109
+      ],
+      "p10": [
+        101,
+        104,
+        109
+      ],
+      "p90": [
+        102,
+        105,
+        110
+      ],
+      "dominant": [
+        101,
+        104,
+        109
+      ],
+      "dominantFraction": 0.5425,
+      "count": 1224,
+      "pixelRect": [
+        1227,
+        1671,
+        51,
+        24
+      ]
+    },
+    {
+      "token": "systemPickerBackground",
+      "label": "系统照片选择器底色",
+      "frame": 110,
+      "rect": [
+        25,
+        14,
+        290,
+        20
+      ],
+      "kind": "system",
+      "selection": "all",
+      "rgb": [
+        28,
+        28,
+        30
+      ],
+      "hex": "#1C1C1E",
+      "median": [
+        28,
+        28,
+        30
+      ],
+      "p10": [
+        28,
+        28,
+        30
+      ],
+      "p90": [
+        58,
+        58,
+        61
+      ],
+      "dominant": [
+        28,
+        28,
+        30
+      ],
+      "dominantFraction": 0.8051,
+      "count": 52200,
+      "pixelRect": [
+        75,
+        42,
+        870,
+        60
+      ]
+    },
+    {
+      "token": "systemAlertBackground",
+      "label": "系统弹窗底色",
+      "frame": 50,
+      "rect": [
+        85,
+        110,
+        150,
+        10
+      ],
+      "kind": "system",
+      "selection": "all",
+      "rgb": [
+        49,
+        48,
+        45
+      ],
+      "hex": "#31302D",
+      "median": [
+        49,
+        48,
+        45
+      ],
+      "p10": [
+        49,
+        48,
+        45
+      ],
+      "p90": [
+        50,
+        49,
+        46
+      ],
+      "dominant": [
+        49,
+        48,
+        45
+      ],
+      "dominantFraction": 0.8721,
+      "count": 13500,
+      "pixelRect": [
+        255,
+        330,
+        450,
+        30
+      ]
+    },
+    {
+      "token": "systemKeyboardKey",
+      "label": "系统键盘按键",
+      "frame": 50,
+      "rect": [
+        46,
+        505,
+        12,
+        7
+      ],
+      "kind": "system",
+      "selection": "all",
+      "rgb": [
+        70,
+        68,
+        68
+      ],
+      "hex": "#464444",
+      "median": [
+        70,
+        68,
+        68
+      ],
+      "p10": [
+        68,
+        68,
+        68
+      ],
+      "p90": [
+        254,
+        254,
+        254
+      ],
+      "dominant": [
+        70,
+        68,
+        68
+      ],
+      "dominantFraction": 0.3757,
+      "count": 756,
+      "pixelRect": [
+        138,
+        1515,
+        36,
+        21
+      ]
+    }
+  ],
+  "limitations": [
+    "HEVC 解码后的 sRGB 显示色，不等同原始设计文件色值。",
+    "渐变/纹理仅给代表色与分位范围；实际纹理已另行提取。",
+    "照片内容与抗锯齿文字的取色受压缩与背景混合影响。",
+    "地图服务底图与系统界面只记录参考，不由应用硬编码。",
+    "录屏没有完整展示的三种纸张及其他状态无法确认。"
+  ]
+}

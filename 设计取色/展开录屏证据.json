@@ -1,0 +1,16 @@
+[
+  {
+    "evidenceID": "REC-A",
+    "file": "ScreenRecording_10-27-2026 00-35-40_1.MP4",
+    "sha256": "bf23f8a33e4784ed99f10a1153705a29dd5ae35ae0599bd7ed0ceee9305e4468",
+    "duration": 46.265,
+    "orientation": "展开横屏"
+  },
+  {
+    "evidenceID": "REC-B",
+    "file": "ScreenRecording_10-27-2026 00-36-58_1.MP4",
+    "sha256": "37a01effb59a5d4b50e75d2ae32e7719a9731113b28c2d5e1550fb87d8706917",
+    "duration": 30.657,
+    "orientation": "展开竖屏"
+  }
+]

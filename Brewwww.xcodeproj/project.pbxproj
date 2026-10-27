@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		126177462368348CC4D4BD85 /* BrewwwwApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB707E447C07794A352EDAD /* BrewwwwApp.swift */; };
+		2BAAFA3F17ECA777AF18FB0B /* RecordEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A2582FEE5D16D80E6C415 /* RecordEditor.swift */; };
+		34882EB9938F9D1A01A56B4F /* SubjectCutoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC40E8F520CA64010AB66C4 /* SubjectCutoutService.swift */; };
+		53E76511D2E2F37CA9271586 /* AdaptiveLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B851F6E538BF94ABF819F7A /* AdaptiveLayout.swift */; };
+		7554CC281AE226C03A9343A0 /* DuoLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63837086B8EF9339D1C1D70F /* DuoLayoutTests.swift */; };
+		7803FCAB7A01B1E0D05A3D0E /* SubjectCutoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3670C9DF76C3EA55E15D4D /* SubjectCutoutTests.swift */; };
+		7E39ACF00F26EE2590B3C4F0 /* coffee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 70A8C2FC756C2F610488443C /* coffee.jpg */; };
+		8514DE9AB24280A08F53D545 /* JournalPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A737750D37EEE0A2F21EC3 /* JournalPages.swift */; };
+		B0DC56A3EA10B8685F79471C /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06978E310A9C7DCFCD3BA7B1 /* Design.swift */; };
+		B5EDCFFCA9B33688619D437B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A6E4C45A6864381808C42B /* ContentView.swift */; };
+		BE4AF1E58C954C819DA9044A /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3870CF74DAD92BF06F8A4D9 /* SettingsPage.swift */; };
+		DE519D35FD6B815F61DBC0C8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6158FE42D76BD1471978ACDB /* Model.swift */; };
+		F9E875D13FC6154C638B33CB /* ExplorePages.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6866CF7020FDFDF9651F2EF /* ExplorePages.swift */; };
+		FE872DEB404BE09429674175 /* CutoutFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA49BE22789716B82E9E6D3 /* CutoutFlowTests.swift */; };
+		CA10C010CA10C010CA10C010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA10C020CA10C020CA10C020; };
+		CB200000CB200000CB200000 /* ShopSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB100000CB100000CB100000; };
+		CB200001CB200001CB200001 /* ShopPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB100001CB100001CB100001; };
+		CB400000CB400000CB400000 /* ShopSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB300000CB300000CB300000; };
+		CB400001CB400001CB400001 /* ShopPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB300001CB300001CB300001; };
+		CC200000CC200000CC200000 /* CalendarPager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC100000CC100000CC100000; };
+		CC200001CC200001CC200001 /* PhotoAlbumOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC100001CC100001CC100001; };
+		CC400000CC400000CC400000 /* CalendarPagingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC300000CC300000CC300000; };
+		CC400001CC400001CC400001 /* HomeMotionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC300001CC300001CC300001; };
+		CD200000CD200000CD200000 /* ShopStampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD100000CD100000CD100000; };
+		CE200000CE200000CE200000 /* CaffeTogether.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE100000CE100000CE100000; };
+		CE200001CE200001CE200001 /* StampCatalogue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE100001CE100001CE100001; };
+		CE400000CE400000CE400000 /* CaffeTogetherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE300000CE300000CE300000; };
+		CE400001CE400001CE400001 /* StampCatalogueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE300001CE300001CE300001; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04D5C3EF371E09D1BD451D23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 794D7510A0993FD10A6A15DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA27EBC12268CA36A0A9C8E5;
+			remoteInfo = Brewwww;
+		};
+		0C043E31A7A42D41CF26FDD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 794D7510A0993FD10A6A15DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA27EBC12268CA36A0A9C8E5;
+			remoteInfo = Brewwww;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05A6E4C45A6864381808C42B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		06978E310A9C7DCFCD3BA7B1 /* Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
+		08B97FD99F81D792A500C8CB /* Brewwww.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brewwww.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FC40E8F520CA64010AB66C4 /* SubjectCutoutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectCutoutService.swift; sourceTree = "<group>"; };
+		6158FE42D76BD1471978ACDB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		63837086B8EF9339D1C1D70F /* DuoLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuoLayoutTests.swift; sourceTree = "<group>"; };
+		70A8C2FC756C2F610488443C /* coffee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coffee.jpg; sourceTree = "<group>"; };
+		753A2582FEE5D16D80E6C415 /* RecordEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordEditor.swift; sourceTree = "<group>"; };
+		772C20DB40D2A9C7D41B316C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7B851F6E538BF94ABF819F7A /* AdaptiveLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveLayout.swift; sourceTree = "<group>"; };
+		96A737750D37EEE0A2F21EC3 /* JournalPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalPages.swift; sourceTree = "<group>"; };
+		A3870CF74DAD92BF06F8A4D9 /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
+		B94FFE7AF76F4EB33074AA8C /* BrewwwwUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = BrewwwwUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6866CF7020FDFDF9651F2EF /* ExplorePages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePages.swift; sourceTree = "<group>"; };
+		CCB707E447C07794A352EDAD /* BrewwwwApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewwwwApp.swift; sourceTree = "<group>"; };
+		E76D869B08EFFA091D5B90BF /* BrewwwwTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = BrewwwwTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB3670C9DF76C3EA55E15D4D /* SubjectCutoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectCutoutTests.swift; sourceTree = "<group>"; };
+		FCA49BE22789716B82E9E6D3 /* CutoutFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutoutFlowTests.swift; sourceTree = "<group>"; };
+		CA10C020CA10C020CA10C020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB100000CB100000CB100000 /* ShopSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopSearch.swift; sourceTree = "<group>"; };
+		CB100001CB100001CB100001 /* ShopPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopPicker.swift; sourceTree = "<group>"; };
+		CB300000CB300000CB300000 /* ShopSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopSearchTests.swift; sourceTree = "<group>"; };
+		CB300001CB300001CB300001 /* ShopPickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopPickerTests.swift; sourceTree = "<group>"; };
+		CC100000CC100000CC100000 /* CalendarPager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPager.swift; sourceTree = "<group>"; };
+		CC100001CC100001CC100001 /* PhotoAlbumOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAlbumOverlay.swift; sourceTree = "<group>"; };
+		CC300000CC300000CC300000 /* CalendarPagingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPagingTests.swift; sourceTree = "<group>"; };
+		CC300001CC300001CC300001 /* HomeMotionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMotionTests.swift; sourceTree = "<group>"; };
+		CD100000CD100000CD100000 /* ShopStampTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopStampTests.swift; sourceTree = "<group>"; };
+		CE100000CE100000CE100000 /* CaffeTogether.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeTogether.swift; sourceTree = "<group>"; };
+		CE100001CE100001CE100001 /* StampCatalogue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampCatalogue.swift; sourceTree = "<group>"; };
+		CE300000CE300000CE300000 /* CaffeTogetherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeTogetherTests.swift; sourceTree = "<group>"; };
+		CE300001CE300001CE300001 /* StampCatalogueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampCatalogueTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1B3F015142BE8D46D346012D /* BrewwwwUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE300001CE300001CE300001 /* StampCatalogueTests.swift */,
+				CC300001CC300001CC300001 /* HomeMotionTests.swift */,
+				CB300001CB300001CB300001 /* ShopPickerTests.swift */,
+				FCA49BE22789716B82E9E6D3 /* CutoutFlowTests.swift */,
+				63837086B8EF9339D1C1D70F /* DuoLayoutTests.swift */,
+			);
+			path = BrewwwwUITests;
+			sourceTree = "<group>";
+		};
+		3A9BA205D681DF0C79AF9EE1 /* Brewwww */ = {
+			isa = PBXGroup;
+			children = (
+				CE100001CE100001CE100001 /* StampCatalogue.swift */,
+				CE100000CE100000CE100000 /* CaffeTogether.swift */,
+				CC100001CC100001CC100001 /* PhotoAlbumOverlay.swift */,
+				CC100000CC100000CC100000 /* CalendarPager.swift */,
+				CB100001CB100001CB100001 /* ShopPicker.swift */,
+				CB100000CB100000CB100000 /* ShopSearch.swift */,
+				CA10C020CA10C020CA10C020 /* Assets.xcassets */,
+				7B851F6E538BF94ABF819F7A /* AdaptiveLayout.swift */,
+				CCB707E447C07794A352EDAD /* BrewwwwApp.swift */,
+				05A6E4C45A6864381808C42B /* ContentView.swift */,
+				06978E310A9C7DCFCD3BA7B1 /* Design.swift */,
+				C6866CF7020FDFDF9651F2EF /* ExplorePages.swift */,
+				772C20DB40D2A9C7D41B316C /* Info.plist */,
+				96A737750D37EEE0A2F21EC3 /* JournalPages.swift */,
+				6158FE42D76BD1471978ACDB /* Model.swift */,
+				753A2582FEE5D16D80E6C415 /* RecordEditor.swift */,
+				A3870CF74DAD92BF06F8A4D9 /* SettingsPage.swift */,
+				4FC40E8F520CA64010AB66C4 /* SubjectCutoutService.swift */,
+			);
+			path = Brewwww;
+			sourceTree = "<group>";
+		};
+		63D9775FE895E2173FEF5163 /* BrewwwwTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE300000CE300000CE300000 /* CaffeTogetherTests.swift */,
+				CD100000CD100000CD100000 /* ShopStampTests.swift */,
+				CC300000CC300000CC300000 /* CalendarPagingTests.swift */,
+				CB300000CB300000CB300000 /* ShopSearchTests.swift */,
+				EB3670C9DF76C3EA55E15D4D /* SubjectCutoutTests.swift */,
+				BFA8ECFE879BD1CD517B4396 /* Fixtures */,
+			);
+			path = BrewwwwTests;
+			sourceTree = "<group>";
+		};
+		86CA02457A22C2A3D25B9D94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08B97FD99F81D792A500C8CB /* Brewwww.app */,
+				E76D869B08EFFA091D5B90BF /* BrewwwwTests.xctest */,
+				B94FFE7AF76F4EB33074AA8C /* BrewwwwUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFA8ECFE879BD1CD517B4396 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				70A8C2FC756C2F610488443C /* coffee.jpg */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		FBE587B2ECA9BAE1A9EDAB7C = {
+			isa = PBXGroup;
+			children = (
+				3A9BA205D681DF0C79AF9EE1 /* Brewwww */,
+				63D9775FE895E2173FEF5163 /* BrewwwwTests */,
+				1B3F015142BE8D46D346012D /* BrewwwwUITests */,
+				86CA02457A22C2A3D25B9D94 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA27EBC12268CA36A0A9C8E5 /* Brewwww */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2AEDAED4DCD7269F6B09F50 /* Build configuration list for PBXNativeTarget "Brewwww" */;
+			buildPhases = (
+				257237947CA9BAEF9CE462BA /* Sources */,
+				CA10C030CA10C030CA10C030 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Brewwww;
+			packageProductDependencies = (
+			);
+			productName = Brewwww;
+			productReference = 08B97FD99F81D792A500C8CB /* Brewwww.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC55E29AEF93252281063E94 /* BrewwwwTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E59040F6598E037919FDF0D /* Build configuration list for PBXNativeTarget "BrewwwwTests" */;
+			buildPhases = (
+				5D88FEE9701C1CB8CCA6C69D /* Sources */,
+				6A33C4AAB26F3C3A2454151C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2E3681006D339057CBC6F45 /* PBXTargetDependency */,
+			);
+			name = BrewwwwTests;
+			packageProductDependencies = (
+			);
+			productName = BrewwwwTests;
+			productReference = E76D869B08EFFA091D5B90BF /* BrewwwwTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F3CD9CA866ECA08E678E3191 /* BrewwwwUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDA05726918A5B163FC6A7DB /* Build configuration list for PBXNativeTarget "BrewwwwUITests" */;
+			buildPhases = (
+				2AAAA7B854A69335E42B29E3 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0033E24EB63BFDA4553A4EC /* PBXTargetDependency */,
+			);
+			name = BrewwwwUITests;
+			packageProductDependencies = (
+			);
+			productName = BrewwwwUITests;
+			productReference = B94FFE7AF76F4EB33074AA8C /* BrewwwwUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		794D7510A0993FD10A6A15DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					EA27EBC12268CA36A0A9C8E5 = {
+						ProvisioningStyle = Automatic;
+					};
+					EC55E29AEF93252281063E94 = {
+						ProvisioningStyle = Automatic;
+						TestTargetID = EA27EBC12268CA36A0A9C8E5;
+					};
+					F3CD9CA866ECA08E678E3191 = {
+						ProvisioningStyle = Automatic;
+						TestTargetID = EA27EBC12268CA36A0A9C8E5;
+					};
+				};
+			};
+			buildConfigurationList = F67473A0C4C9C8B67B7C6CFD /* Build configuration list for PBXProject "Brewwww" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = FBE587B2ECA9BAE1A9EDAB7C;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 86CA02457A22C2A3D25B9D94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC55E29AEF93252281063E94 /* BrewwwwTests */,
+				F3CD9CA866ECA08E678E3191 /* BrewwwwUITests */,
+				EA27EBC12268CA36A0A9C8E5 /* Brewwww */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A33C4AAB26F3C3A2454151C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E39ACF00F26EE2590B3C4F0 /* coffee.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA10C030CA10C030CA10C030 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (CA10C010CA10C010CA10C010 /* Assets.xcassets in Resources */,); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		257237947CA9BAEF9CE462BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE200001CE200001CE200001 /* StampCatalogue.swift in Sources */,
+				CE200000CE200000CE200000 /* CaffeTogether.swift in Sources */,
+				CC200001CC200001CC200001 /* PhotoAlbumOverlay.swift in Sources */,
+				CC200000CC200000CC200000 /* CalendarPager.swift in Sources */,
+				CB200001CB200001CB200001 /* ShopPicker.swift in Sources */,
+				CB200000CB200000CB200000 /* ShopSearch.swift in Sources */,
+				53E76511D2E2F37CA9271586 /* AdaptiveLayout.swift in Sources */,
+				126177462368348CC4D4BD85 /* BrewwwwApp.swift in Sources */,
+				B5EDCFFCA9B33688619D437B /* ContentView.swift in Sources */,
+				B0DC56A3EA10B8685F79471C /* Design.swift in Sources */,
+				F9E875D13FC6154C638B33CB /* ExplorePages.swift in Sources */,
+				8514DE9AB24280A08F53D545 /* JournalPages.swift in Sources */,
+				DE519D35FD6B815F61DBC0C8 /* Model.swift in Sources */,
+				2BAAFA3F17ECA777AF18FB0B /* RecordEditor.swift in Sources */,
+				BE4AF1E58C954C819DA9044A /* SettingsPage.swift in Sources */,
+				34882EB9938F9D1A01A56B4F /* SubjectCutoutService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AAAA7B854A69335E42B29E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE400001CE400001CE400001 /* StampCatalogueTests.swift in Sources */,
+				CC400001CC400001CC400001 /* HomeMotionTests.swift in Sources */,
+				CB400001CB400001CB400001 /* ShopPickerTests.swift in Sources */,
+				FE872DEB404BE09429674175 /* CutoutFlowTests.swift in Sources */,
+				7554CC281AE226C03A9343A0 /* DuoLayoutTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D88FEE9701C1CB8CCA6C69D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE400000CE400000CE400000 /* CaffeTogetherTests.swift in Sources */,
+				CD200000CD200000CD200000 /* ShopStampTests.swift in Sources */,
+				CC400000CC400000CC400000 /* CalendarPagingTests.swift in Sources */,
+				CB400000CB400000CB400000 /* ShopSearchTests.swift in Sources */,
+				7803FCAB7A01B1E0D05A3D0E /* SubjectCutoutTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F0033E24EB63BFDA4553A4EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA27EBC12268CA36A0A9C8E5 /* Brewwww */;
+			targetProxy = 0C043E31A7A42D41CF26FDD5 /* PBXContainerItemProxy */;
+		};
+		F2E3681006D339057CBC6F45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA27EBC12268CA36A0A9C8E5 /* Brewwww */;
+			targetProxy = 04D5C3EF371E09D1BD451D23 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B98BDFEA0C134DA8B18F864 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "用于拍摄饮品照片并添加记录。";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "用于查找附近店铺，并为饮品记录保存所选店铺的位置与城市。";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "用于选择饮品照片并添加记录。";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20B23272A9093CD404A9A016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiuyuancai.brewwww.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brewwww.app/Brewwww";
+				TEST_TARGET_NAME = Brewwww;
+			};
+			name = Debug;
+		};
+		2CF386A9428F2C7C10DEE1E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = Z6DL58DPTG;
+				INFOPLIST_FILE = Brewwww/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Brewwww!";
+				INFOPLIST_KEY_NSCameraUsageDescription = "用于拍摄饮品照片并添加记录。";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "用于查找附近店铺，并为饮品记录保存所选店铺的位置与城市。";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "用于选择饮品照片并添加记录。";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiuyuancai.brewwww;
+				PRODUCT_NAME = Brewwww;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A1FB2A8C7989070CE201CAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "用于拍摄饮品照片并添加记录。";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "用于查找附近店铺，并为饮品记录保存所选店铺的位置与城市。";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "用于选择饮品照片并添加记录。";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7EBC9F4E44112C5A42679D73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiuyuancai.brewwww.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brewwww.app/Brewwww";
+				TEST_TARGET_NAME = Brewwww;
+			};
+			name = Release;
+		};
+		B292F4523E2C68E2E0A6AB91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiuyuancai.brewwww.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Brewwww;
+			};
+			name = Debug;
+		};
+		C41BC80EEE37E75E3378D6E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = Z6DL58DPTG;
+				INFOPLIST_FILE = Brewwww/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Brewwww!";
+				INFOPLIST_KEY_NSCameraUsageDescription = "用于拍摄饮品照片并添加记录。";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "用于查找附近店铺，并为饮品记录保存所选店铺的位置与城市。";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "用于选择饮品照片并添加记录。";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiuyuancai.brewwww;
+				PRODUCT_NAME = Brewwww;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D04E65A73F89C524BDA08DF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiuyuancai.brewwww.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Brewwww;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E59040F6598E037919FDF0D /* Build configuration list for PBXNativeTarget "BrewwwwTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20B23272A9093CD404A9A016 /* Debug */,
+				7EBC9F4E44112C5A42679D73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CDA05726918A5B163FC6A7DB /* Build configuration list for PBXNativeTarget "BrewwwwUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B292F4523E2C68E2E0A6AB91 /* Debug */,
+				D04E65A73F89C524BDA08DF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D2AEDAED4DCD7269F6B09F50 /* Build configuration list for PBXNativeTarget "Brewwww" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF386A9428F2C7C10DEE1E5 /* Debug */,
+				C41BC80EEE37E75E3378D6E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F67473A0C4C9C8B67B7C6CFD /* Build configuration list for PBXProject "Brewwww" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B98BDFEA0C134DA8B18F864 /* Debug */,
+				3A1FB2A8C7989070CE201CAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 794D7510A0993FD10A6A15DD /* Project object */;
+}
