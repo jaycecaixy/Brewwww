@@ -6,6 +6,8 @@ options:
 settings:
   base:
     SWIFT_VERSION: '5.0'
+    MARKETING_VERSION: '0.1'
+    CURRENT_PROJECT_VERSION: '1'
     TARGETED_DEVICE_FAMILY: '1,2'
     CODE_SIGN_STYLE: Automatic
     GENERATE_INFOPLIST_FILE: YES
@@ -14,7 +16,7 @@ settings:
     INFOPLIST_KEY_UILaunchScreen_Generation: YES
     INFOPLIST_KEY_NSCameraUsageDescription: 用于拍摄饮品照片并添加记录。
     INFOPLIST_KEY_NSPhotoLibraryUsageDescription: 用于选择饮品照片并添加记录。
-    INFOPLIST_KEY_NSLocationWhenInUseUsageDescription: 用于查找附近店铺，并为饮品记录保存所选店铺的位置与城市。
+    INFOPLIST_KEY_NSLocationWhenInUseUsageDescription: 用于查找附近咖啡店、在地图查看当前位置，并为所选店铺保存位置与城市。
     ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
 targets:
   BrewwwwTests:
@@ -45,6 +47,8 @@ targets:
     info:
       path: Brewwww/Info.plist
       properties:
+        CFBundleShortVersionString: '$(MARKETING_VERSION)'
+        CFBundleVersion: '$(CURRENT_PROJECT_VERSION)'
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
           - UIInterfaceOrientationLandscapeLeft
@@ -61,7 +65,7 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.xiuyuancai.brewwww
         PRODUCT_NAME: Brewwww
-        INFOPLIST_KEY_CFBundleDisplayName: Brewwww!
+        INFOPLIST_KEY_CFBundleDisplayName: 'Un Caffèee!'
 schemes:
   Brewwww:
     build:

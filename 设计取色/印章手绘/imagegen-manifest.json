@@ -1,0 +1,437 @@
+[
+  {
+    "id": "ribbed",
+    "group": "Together",
+    "path": "/Users/xiuyuancai/.codex/generated_images/01a180d6-c2f6-7413-89a0-a23ebfb148b7/exec-ab621d5c-48e5-4a66-aa46-d03c2819896b.png",
+    "prompt": "Use case: illustration-story. Asset type: one transparent coffee stamp for a mobile coffee journal. Image 1 is STYLE REFERENCE ONLY: emulate the coloured mug on the LEFT, not the grey locked mug, and do not copy the screenshot UI. Subject: one handmade ceramic mug with irregular vertical ivory pinstripes, a softly rounded body, big curved handle on the LEFT, filled with brown coffee seen as a narrow ellipse. Terracotta/cinnamon glaze, creamy stripes, warm brown rim. Match the reference's naive Scandinavian/Japanese stationery illustration, wax crayon and chalk pastel on fibrous paper, pronounced fine uneven flecks and worn pigment, subtly broken edges. Mostly textured coloured silhouette, delicate broken coloured-pencil rim, no uniform dark outline. Flattish charming hand-drawn perspective; large simple identifiable silhouette. No realism, gradients, shine, 3D, steam, cast shadow, sticker border, lettering, numerals, scene, paper rectangle or UI. Exactly ONE mug centered with generous 15% transparent padding on all sides. Genuine transparent background, including handle hole; retain grain within coloured areas. Draw the entire object unclipped. Crisp high-resolution 1024 square artwork.",
+    "workspaceOriginal": "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png",
+    "generationMode": "builtin-image_gen",
+    "referenceImages": [
+      "设计取色/印章手绘/用户风格参考.jpg"
+    ]
+  },
+  {
+    "group": "Together",
+    "id": "checker",
+    "path": "/Users/xiuyuancai/.codex/generated_images/01a180d6-c2f6-7413-89a0-a23ebfb148b7/exec-1a3b246f-a8a7-4019-b562-df99aa400418.png",
+    "prompt": "Use case: illustration-story. Asset type: ONE transparent stamp for a coffee journal, in a cohesive collection of 40. Input image 1 is the user's STYLE reference: emulate the coloured mug on LEFT, ignore grey mug, numbers and screenshot UI. Image 2 is the first approved-direction illustration in this new set: match its dry wax-crayon/chalk-pastel grain, irregular broken edges and flat naive stationery illustration. Create a DIFFERENT subject as specified below. Strongly visible fine speckled pigment with worn tiny gaps, organic wonky hand-shaped silhouette, restrained coloured-pencil details, muted earthy colour. No thick continuous dark outlines, no vector cleanliness, no glossy realism, no 3D, no gradients, no shadows, no steam, no text, no numerals, no brand, no watermark, no sticker border, no background rectangle. Exactly one subject or compact coherent brewing set, ENTIRELY visible in the central 70% of square canvas, with 15% genuine transparent padding on all sides. Transparent background and handle holes. Preserve textured pigment. High-resolution square illustration.\nSubject: Sage green chunky ceramic mug, large ivory and sage checkerboard glaze, left ear handle, brown coffee.",
+    "workspaceOriginal": "Brewwww/Assets.xcassets/CaffeTogether_checker.imageset/CaffeTogether_checker@3x.png",
+    "generationMode": "builtin-image_gen",
+    "referenceImages": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ]
+  },
+  {
+    "group": "Together",
+    "id": "espresso",
+    "path": "/Users/xiuyuancai/.codex/generated_images/01a180d6-c2f6-7413-89a0-a23ebfb148b7/exec-396cce86-443a-4ee4-841c-856de4350d58.png",
+    "prompt": "Use case: illustration-story. Asset type: ONE transparent stamp for a coffee journal, in a cohesive collection of 40. Input image 1 is the user's STYLE reference: emulate the coloured mug on LEFT, ignore grey mug, numbers and screenshot UI. Image 2 is the first approved-direction illustration in this new set: match its dry wax-crayon/chalk-pastel grain, irregular broken edges and flat naive stationery illustration. Create a DIFFERENT subject as specified below. Strongly visible fine speckled pigment with worn tiny gaps, organic wonky hand-shaped silhouette, restrained coloured-pencil details, muted earthy colour. No thick continuous dark outlines, no vector cleanliness, no glossy realism, no 3D, no gradients, no shadows, no steam, no text, no numerals, no brand, no watermark, no sticker border, no background rectangle. Exactly one subject or compact coherent brewing set, ENTIRELY visible in the central 70% of square canvas, with 15% genuine transparent padding on all sides. Transparent background and handle holes. Preserve textured pigment. High-resolution square illustration.\nSubject: Tiny dusty blue espresso demitasse with rounded handle and matching wide oval ivory saucer, brown coffee.",
+    "workspaceOriginal": "Brewwww/Assets.xcassets/CaffeTogether_espresso.imageset/CaffeTogether_espresso@3x.png",
+    "generationMode": "builtin-image_gen",
+    "referenceImages": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ]
+  },
+  {
+    "group": "Together",
+    "id": "floralSaucer",
+    "path": "/Users/xiuyuancai/.codex/generated_images/01a180d6-c2f6-7413-89a0-a23ebfb148b7/exec-8e441c4f-a2c9-42ba-b57f-0036486d3f09.png",
+    "prompt": "Use case: illustration-story. Asset type: ONE transparent stamp for a coffee journal, in a cohesive collection of 40. Input image 1 is the user's STYLE reference: emulate the coloured mug on LEFT, ignore grey mug, numbers and screenshot UI. Image 2 is the first approved-direction illustration in this new set: match its dry wax-crayon/chalk-pastel grain, irregular broken edges and flat naive stationery illustration. Create a DIFFERENT subject as specified below. Strongly visible fine speckled pigment with worn tiny gaps, organic wonky hand-shaped silhouette, restrained coloured-pencil details, muted earthy colour. No thick continuous dark outlines, no vector cleanliness, no glossy realism, no 3D, no gradients, no shadows, no steam, no text, no numerals, no brand, no watermark, no sticker border, no background rectangle. Exactly one subject or compact coherent brewing set, ENTIRELY visible in the central 70% of square canvas, with 15% genuine transparent padding on all sides. Transparent background and handle holes. Preserve textured pigment. High-resolution square illustration.\nSubject: Ochre mustard low ceramic coffee cup with ivory small daisies, left handle, matching saucer, brown coffee.",
+    "workspaceOriginal": "Brewwww/Assets.xcassets/CaffeTogether_floralSaucer.imageset/CaffeTogether_floralSaucer@3x.png",
+    "generationMode": "builtin-image_gen",
+    "referenceImages": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ]
+  },
+  {
+    "group": "Together",
+    "id": "takeaway",
+    "path": "/Users/xiuyuancai/.codex/generated_images/01a180d6-c2f6-7413-89a0-a23ebfb148b7/exec-6872774b-71f8-4e03-a3c2-1901cabb7533.png",
+    "prompt": "Use case: illustration-story. Asset type: ONE transparent stamp for a coffee journal, in a cohesive collection of 40. Input image 1 is the user's STYLE reference: emulate the coloured mug on LEFT, ignore grey mug, numbers and screenshot UI. Image 2 is the first approved-direction illustration in this new set: match its dry wax-crayon/chalk-pastel grain, irregular broken edges and flat naive stationery illustration. Create a DIFFERENT subject as specified below. Strongly visible fine speckled pigment with worn tiny gaps, organic wonky hand-shaped silhouette, restrained coloured-pencil details, muted earthy colour. No thick continuous dark outlines, no vector cleanliness, no glossy realism, no 3D, no gradients, no shadows, no steam, no text, no numerals, no brand, no watermark, no sticker border, no background rectangle. Exactly one subject or compact coherent brewing set, ENTIRELY visible in the central 70% of square canvas, with 15% genuine transparent padding on all sides. Transparent background and handle holes. Preserve textured pigment. High-resolution square illustration.\nSubject: Muted plum takeaway paper coffee cup, warm cream fitted lid and a plain kraft paper sleeve with a tiny hand-drawn coffee bean, no lettering.",
+    "workspaceOriginal": "Brewwww/Assets.xcassets/CaffeTogether_takeaway.imageset/CaffeTogether_takeaway@3x.png",
+    "generationMode": "builtin-image_gen",
+    "referenceImages": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ]
+  },
+  {
+    "group": "Together",
+    "id": "tumbler",
+    "path": "/Users/xiuyuancai/.codex/generated_images/01a180d6-c2f6-7413-89a0-a23ebfb148b7/exec-ce4eabbb-4548-42c6-9509-d11b1fde8a97.png",
+    "prompt": "Use case: illustration-story. Asset type: ONE transparent stamp for a coffee journal, in a cohesive collection of 40. Input image 1 is the user's STYLE reference: emulate the coloured mug on LEFT, ignore grey mug, numbers and screenshot UI. Image 2 is the first approved-direction illustration in this new set: match its dry wax-crayon/chalk-pastel grain, irregular broken edges and flat naive stationery illustration. Create a DIFFERENT subject as specified below. Strongly visible fine speckled pigment with worn tiny gaps, organic wonky hand-shaped silhouette, restrained coloured-pencil details, muted earthy colour. No thick continuous dark outlines, no vector cleanliness, no glossy realism, no 3D, no gradients, no shadows, no steam, no text, no numerals, no brand, no watermark, no sticker border, no background rectangle. Exactly one subject or compact coherent brewing set, ENTIRELY visible in the central 70% of square canvas, with 15% genuine transparent padding on all sides. Transparent background and handle holes. Preserve textured pigment. High-resolution square illustration.\nSubject: Handleless tall straight ceramic tumbler in terracotta with delicate irregular ivory vertical stripes and visible coffee, asymmetric rim.",
+    "workspaceOriginal": "Brewwww/Assets.xcassets/CaffeTogether_tumbler.imageset/CaffeTogether_tumbler@3x.png",
+    "generationMode": "builtin-image_gen",
+    "referenceImages": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ]
+  },
+  {
+    "group": "Together",
+    "id": "daisy",
+    "path": "/Users/xiuyuancai/.codex/generated_images/01a180d6-c2f6-7413-89a0-a23ebfb148b7/exec-7c86af2b-8c9c-4713-af78-64748e2df2b6.png",
+    "prompt": "Use case: illustration-story. Asset type: ONE transparent stamp for a coffee journal, in a cohesive collection of 40. Input image 1 is the user's STYLE reference: emulate the coloured mug on LEFT, ignore grey mug, numbers and screenshot UI. Image 2 is the first approved-direction illustration in this new set: match its dry wax-crayon/chalk-pastel grain, irregular broken edges and flat naive stationery illustration. Create a DIFFERENT subject as specified below. Strongly visible fine speckled pigment with worn tiny gaps, organic wonky hand-shaped silhouette, restrained coloured-pencil details, muted earthy colour. No thick continuous dark outlines, no vector cleanliness, no glossy realism, no 3D, no gradients, no shadows, no steam, no text, no numerals, no brand, no watermark, no sticker border, no background rectangle. Exactly one subject or compact coherent brewing set, ENTIRELY visible in the central 70% of square canvas, with 15% genuine transparent padding on all sides. Transparent background and handle holes. Preserve textured pigment. High-resolution square illustration.\nSubject: Olive mustard ceramic mug covered in little ivory daisy flowers, generous handle on left and coffee visible, strongly echo the reference mug.",
+    "workspaceOriginal": "Brewwww/Assets.xcassets/CaffeTogether_daisy.imageset/CaffeTogether_daisy@3x.png",
+    "generationMode": "builtin-image_gen",
+    "referenceImages": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ]
+  },
+  {
+    "group": "Together",
+    "id": "grid",
+    "path": "/Users/xiuyuancai/.codex/generated_images/01a180d6-c2f6-7413-89a0-a23ebfb148b7/exec-1165b881-803a-4e66-9ff8-5b9aa776f8f8.png",
+    "prompt": "Dusty denim blue generous coffee mug with fine wonky ivory windowpane grid, left handle and coffee visible.",
+    "style": "Use both attached style-reference images; textured pastel and crayon, transparent background.",
+    "references": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ],
+    "workspaceOriginal": "Brewwww/Assets.xcassets/CaffeTogether_grid.imageset/CaffeTogether_grid@3x.png",
+    "generationMode": "builtin-image_gen",
+    "referenceImages": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ]
+  },
+  {
+    "group": "Together",
+    "id": "doubleGlass",
+    "path": "/Users/xiuyuancai/.codex/generated_images/01a180d6-c2f6-7413-89a0-a23ebfb148b7/exec-798f0cc2-b46a-47f1-bc6d-11d6f183b33d.png",
+    "prompt": "Double-walled glass coffee tumbler, handleless rounded cylinder, visible warm brown coffee, pale translucent sage glass edges drawn in coloured pencil. Simplified opaque pastel illustration, never photorealistic.",
+    "style": "Use both attached style-reference images; textured pastel and crayon, transparent background.",
+    "references": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ],
+    "workspaceOriginal": "Brewwww/Assets.xcassets/CaffeTogether_doubleGlass.imageset/CaffeTogether_doubleGlass@3x.png",
+    "generationMode": "builtin-image_gen",
+    "referenceImages": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ]
+  },
+  {
+    "group": "Together",
+    "id": "enamel",
+    "path": "/Users/xiuyuancai/.codex/generated_images/01a180d6-c2f6-7413-89a0-a23ebfb148b7/exec-65a4480a-fd8d-4b43-b30f-b3a598d27d18.png",
+    "prompt": "Powder mauve vintage enamel camping mug, cream rim with dark plum broken edge, tiny ivory dots, large left handle, brown coffee.",
+    "style": "Use both attached style-reference images; textured pastel and crayon, transparent background.",
+    "references": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ],
+    "workspaceOriginal": "Brewwww/Assets.xcassets/CaffeTogether_enamel.imageset/CaffeTogether_enamel@3x.png",
+    "generationMode": "builtin-image_gen",
+    "referenceImages": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ]
+  },
+  {
+    "group": "Together",
+    "id": "travel",
+    "path": "/Users/xiuyuancai/.codex/generated_images/01a180d6-c2f6-7413-89a0-a23ebfb148b7/exec-0847b7b3-2921-408f-a922-46922f6a33a7.png",
+    "prompt": "Short terracotta reusable travel coffee cup, large ivory silicone lid, sage green wraparound band with a tiny white botanical sprig.",
+    "style": "Use both attached style-reference images; textured pastel and crayon, transparent background.",
+    "references": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ],
+    "workspaceOriginal": "Brewwww/Assets.xcassets/CaffeTogether_travel.imageset/CaffeTogether_travel@3x.png",
+    "generationMode": "builtin-image_gen",
+    "referenceImages": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ]
+  },
+  {
+    "group": "Together",
+    "id": "cappuccino",
+    "path": "/Users/xiuyuancai/.codex/generated_images/01a180d6-c2f6-7413-89a0-a23ebfb148b7/exec-a74baf13-faad-4125-8d6b-61bf090d9de4.png",
+    "prompt": "Wide shallow sage green cappuccino cup with one irregular cream horizontal band and matching oval saucer, generous handle, brown coffee with simple cream heart.",
+    "style": "Use both attached style-reference images; textured pastel and crayon, transparent background.",
+    "references": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ],
+    "workspaceOriginal": "Brewwww/Assets.xcassets/CaffeTogether_cappuccino.imageset/CaffeTogether_cappuccino@3x.png",
+    "generationMode": "builtin-image_gen",
+    "referenceImages": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ]
+  },
+  {
+    "group": "Together",
+    "id": "thermos",
+    "path": "/Users/xiuyuancai/.codex/generated_images/01a180d6-c2f6-7413-89a0-a23ebfb148b7/exec-543059d8-b6e1-483e-a6d2-e469ab77ac20.png",
+    "prompt": "Slim slate-blue pocket coffee thermos, cream screw cap, a single little hand-drawn ivory curving botanical stem on body. No handle.",
+    "style": "Use both attached style-reference images; textured pastel and crayon, transparent background.",
+    "references": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ],
+    "workspaceOriginal": "Brewwww/Assets.xcassets/CaffeTogether_thermos.imageset/CaffeTogether_thermos@3x.png",
+    "generationMode": "builtin-image_gen",
+    "referenceImages": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ]
+  },
+  {
+    "group": "Together",
+    "id": "botanical",
+    "path": "/Users/xiuyuancai/.codex/generated_images/01a180d6-c2f6-7413-89a0-a23ebfb148b7/exec-56df2f57-d181-45c7-aecb-6353925e66b5.png",
+    "prompt": "Muted ochre tall handmade mug with slender ivory leafy stems as painted pattern, large left handle and brown coffee.",
+    "style": "Use both attached style-reference images; textured pastel and crayon, transparent background.",
+    "references": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ],
+    "workspaceOriginal": "Brewwww/Assets.xcassets/CaffeTogether_botanical.imageset/CaffeTogether_botanical@3x.png",
+    "generationMode": "builtin-image_gen",
+    "referenceImages": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ]
+  },
+  {
+    "group": "Together",
+    "id": "wavy",
+    "path": "/Users/xiuyuancai/.codex/generated_images/01a180d6-c2f6-7413-89a0-a23ebfb148b7/exec-aa12a4b8-b6d4-4b2b-b4d4-b69fec91c252.png",
+    "prompt": "Soft lilac handmade ceramic coffee mug with visibly irregular organic wavy body and ivory vertical squiggles, left handle, coffee.",
+    "style": "Use both attached style-reference images; textured pastel and crayon, transparent background.",
+    "references": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ],
+    "workspaceOriginal": "Brewwww/Assets.xcassets/CaffeTogether_wavy.imageset/CaffeTogether_wavy@3x.png",
+    "generationMode": "builtin-image_gen",
+    "referenceImages": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ]
+  },
+  {
+    "group": "Together",
+    "id": "straw",
+    "path": "/Users/xiuyuancai/.codex/generated_images/01a180d6-c2f6-7413-89a0-a23ebfb148b7/exec-3b997b15-131d-49d8-89ff-f3945dc719d7.png",
+    "prompt": "Dusty coral tall iced-coffee tumbler with warm cream lid and bent straw, tiny scattered ivory flowers, no handle.",
+    "style": "Use both attached style-reference images; textured pastel and crayon, transparent background.",
+    "references": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ],
+    "workspaceOriginal": "Brewwww/Assets.xcassets/CaffeTogether_straw.imageset/CaffeTogether_straw@3x.png",
+    "generationMode": "builtin-image_gen",
+    "referenceImages": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ]
+  },
+  {
+    "group": "Together",
+    "id": "beaker",
+    "path": "/Users/xiuyuancai/.codex/generated_images/01a180d6-c2f6-7413-89a0-a23ebfb148b7/exec-7be3c37f-ffbb-4f18-a15a-7906326a674e.png",
+    "prompt": "Handleless squat sage-green laboratory beaker used as a coffee cup, small pouring lip, three simple unnumbered graduation strokes and visible coffee. No numbers or text.",
+    "style": "Use both attached style-reference images; textured pastel and crayon, transparent background.",
+    "references": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ],
+    "workspaceOriginal": "Brewwww/Assets.xcassets/CaffeTogether_beaker.imageset/CaffeTogether_beaker@3x.png",
+    "generationMode": "builtin-image_gen",
+    "referenceImages": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ]
+  },
+  {
+    "group": "Together",
+    "id": "teaBowl",
+    "path": "/Users/xiuyuancai/.codex/generated_images/01a180d6-c2f6-7413-89a0-a23ebfb148b7/exec-c0f77457-ad09-475f-b638-523e874cadcf.png",
+    "prompt": "Wide very low dusty-blue ceramic coffee bowl cup on a thin ivory saucer, tiny ear handle and flowing ivory wavy vertical lines.",
+    "style": "Use both attached style-reference images; textured pastel and crayon, transparent background.",
+    "references": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ],
+    "workspaceOriginal": "Brewwww/Assets.xcassets/CaffeTogether_teaBowl.imageset/CaffeTogether_teaBowl@3x.png",
+    "generationMode": "builtin-image_gen",
+    "referenceImages": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ]
+  },
+  {
+    "group": "Together",
+    "id": "sports",
+    "path": "/Users/xiuyuancai/.codex/generated_images/01a180d6-c2f6-7413-89a0-a23ebfb148b7/exec-1bf1a88e-cca1-4721-a55c-2f74687bbf6a.png",
+    "prompt": "Ochre outdoor coffee flask, rounded bottle silhouette and loop carry lid, a tiny cream daisy painted on the belly.",
+    "style": "Use both attached style-reference images; textured pastel and crayon, transparent background.",
+    "references": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ],
+    "workspaceOriginal": "Brewwww/Assets.xcassets/CaffeTogether_sports.imageset/CaffeTogether_sports@3x.png",
+    "generationMode": "builtin-image_gen",
+    "referenceImages": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ]
+  },
+  {
+    "group": "Together",
+    "id": "garden",
+    "path": "/Users/xiuyuancai/.codex/generated_images/01a180d6-c2f6-7413-89a0-a23ebfb148b7/exec-0f70bc50-00e9-4f3e-a46f-6c9589e9f7c5.png",
+    "prompt": "Lavender wide large-eared ceramic coffee mug with three oversized ivory daisy blossoms and small leaves, left ear handle, visible coffee.",
+    "style": "Use both attached style-reference images; textured pastel and crayon, transparent background.",
+    "references": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ],
+    "workspaceOriginal": "Brewwww/Assets.xcassets/CaffeTogether_garden.imageset/CaffeTogether_garden@3x.png",
+    "generationMode": "builtin-image_gen",
+    "referenceImages": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ]
+  },
+  {
+    "group": "Explore",
+    "id": "pourOver",
+    "path": "/Users/xiuyuancai/.codex/generated_images/01a180d6-c2f6-7413-89a0-a23ebfb148b7/exec-ef198e54-d684-4a56-9b6c-b00eca3e83c0.png",
+    "prompt": "A complete pour-over coffee set: sage-green conical ribbed ceramic dripper on top of a clear glass server containing brown coffee, short curved handle. Only this compact stacked set.",
+    "style": "Use both attached style-reference images; textured pastel and crayon, transparent background.",
+    "references": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ],
+    "workspaceOriginal": "Brewwww/Assets.xcassets/CaffeExplore_pourOver.imageset/CaffeExplore_pourOver@3x.png",
+    "generationMode": "builtin-image_gen",
+    "referenceImages": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ]
+  },
+  {
+    "group": "Explore",
+    "id": "moka",
+    "path": "/Users/xiuyuancai/.codex/generated_images/01a180d6-c2f6-7413-89a0-a23ebfb148b7/exec-35eabbbe-e733-49ad-bd63-1fccd3cc0782.png",
+    "prompt": "A classic octagonal moka pot with sage-green aluminium chambers, muted ochre central band and warm brown handle, tiny black knob, clearly recognizable eight-sided coffee pot.",
+    "style": "Use both attached style-reference images; textured pastel and crayon, transparent background.",
+    "references": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ],
+    "workspaceOriginal": "Brewwww/Assets.xcassets/CaffeExplore_moka.imageset/CaffeExplore_moka@3x.png",
+    "generationMode": "builtin-image_gen",
+    "referenceImages": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ]
+  },
+  {
+    "group": "Explore",
+    "id": "espressoMachine",
+    "path": "/Users/xiuyuancai/.codex/generated_images/01a180d6-c2f6-7413-89a0-a23ebfb148b7/exec-19cbbc79-5bae-4f2b-a292-e0a2dc5b9f3a.png",
+    "prompt": "A compact vintage dusty-teal home espresso machine, cream top, one round pressure gauge without numbers, tiny warm brown buttons, portafilter and a tiny terracotta espresso cup below, visible steam wand. One coherent machine.",
+    "style": "Use both attached style-reference images; textured pastel and crayon, transparent background.",
+    "references": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ],
+    "workspaceOriginal": "Brewwww/Assets.xcassets/CaffeExplore_espressoMachine.imageset/CaffeExplore_espressoMachine@3x.png",
+    "generationMode": "builtin-image_gen",
+    "referenceImages": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ]
+  },
+  {
+    "group": "Explore",
+    "id": "handGrinder",
+    "path": "/Users/xiuyuancai/.codex/generated_images/01a180d6-c2f6-7413-89a0-a23ebfb148b7/exec-d90864a4-d4b7-4cc0-a182-8ca7bca786f2.png",
+    "prompt": "A vintage manual coffee grinder with a square honey-brown wooden drawer base, sage-green metal hopper bowl and horizontal crank with a brown wooden knob.",
+    "style": "Use both attached style-reference images; textured pastel and crayon, transparent background.",
+    "references": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ],
+    "workspaceOriginal": "Brewwww/Assets.xcassets/CaffeExplore_handGrinder.imageset/CaffeExplore_handGrinder@3x.png",
+    "generationMode": "builtin-image_gen",
+    "referenceImages": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ]
+  },
+  {
+    "group": "Explore",
+    "id": "electricGrinder",
+    "path": "/Users/xiuyuancai/.codex/generated_images/01a180d6-c2f6-7413-89a0-a23ebfb148b7/exec-fa5ea439-df9f-470a-bd1d-5b2ec0f55218.png",
+    "prompt": "A compact dusty-blue electric coffee grinder with a translucent sage bean hopper at top, single small circular button, small cream coffee grounds catch cup underneath and wide plinth.",
+    "style": "Use both attached style-reference images; textured pastel and crayon, transparent background.",
+    "references": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ],
+    "workspaceOriginal": "Brewwww/Assets.xcassets/CaffeExplore_electricGrinder.imageset/CaffeExplore_electricGrinder@3x.png",
+    "generationMode": "builtin-image_gen",
+    "referenceImages": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ]
+  },
+  {
+    "group": "Explore",
+    "id": "frenchPress",
+    "path": "/Users/xiuyuancai/.codex/generated_images/01a180d6-c2f6-7413-89a0-a23ebfb148b7/exec-21764b76-c288-4c78-b2ee-9cde6554172d.png",
+    "prompt": "A French press coffee maker with transparent pale sage glass beaker, visible brown coffee, sage lid and plunger with brown knob and generous side handle.",
+    "style": "Use both attached style-reference images; textured pastel and crayon, transparent background.",
+    "references": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ],
+    "workspaceOriginal": "Brewwww/Assets.xcassets/CaffeExplore_frenchPress.imageset/CaffeExplore_frenchPress@3x.png",
+    "generationMode": "builtin-image_gen",
+    "referenceImages": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ]
+  },
+  {
+    "group": "Explore",
+    "id": "siphon",
+    "path": "/Users/xiuyuancai/.codex/generated_images/01a180d6-c2f6-7413-89a0-a23ebfb148b7/exec-969de9bc-ef3a-43e0-a390-658804e97d87.png",
+    "prompt": "A siphon coffee brewer: upper round clear glass chamber connected by thin glass tube to lower round glass globe containing coffee, muted brass side stand and tiny cream spirit burner underneath. One complete compact set.",
+    "style": "Use both attached style-reference images; textured pastel and crayon, transparent background.",
+    "references": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ],
+    "workspaceOriginal": "Brewwww/Assets.xcassets/CaffeExplore_siphon.imageset/CaffeExplore_siphon@3x.png",
+    "generationMode": "builtin-image_gen",
+    "referenceImages": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ]
+  },
+  {
+    "group": "Explore",
+    "id": "aeroPress",
+    "path": "/Users/xiuyuancai/.codex/generated_images/01a180d6-c2f6-7413-89a0-a23ebfb148b7/exec-c10afad8-d166-4b70-b3b7-ebc7206ceb00.png",
+    "prompt": "Use case: illustration-story. Asset type: ONE transparent stamp for a coffee journal, in a cohesive collection of 28. Input image 1 is the user's STYLE reference: emulate the coloured mug on LEFT, ignore grey mug, numbers and screenshot UI. Image 2 is the first approved-direction illustration in this new set: match its dry wax-crayon/chalk-pastel grain, irregular broken edges and flat naive stationery illustration. Create a DIFFERENT subject as specified below. Strongly visible fine speckled pigment with worn tiny gaps, organic wonky hand-shaped silhouette, restrained coloured-pencil details, muted earthy colour. No thick continuous dark outlines, no vector cleanliness, no glossy realism, no 3D, no gradients, no shadows, no steam, no text, no numerals, no brand, no watermark, no sticker border, no background rectangle. Exactly one subject or compact coherent brewing set, ENTIRELY visible in the central 70% of square canvas, with 15% genuine transparent padding on all sides. Transparent background and handle holes. Preserve textured pigment. High-resolution square illustration.\nSubject: An AeroPress-style manual coffee press: pale sage translucent vertical brewing cylinder with dusty-blue central plunger, wide top plunger cap, cream base flange. No branding or labels.",
+    "workspaceOriginal": "Brewwww/Assets.xcassets/CaffeExplore_aeroPress.imageset/CaffeExplore_aeroPress@3x.png",
+    "generationMode": "builtin-image_gen",
+    "referenceImages": [
+      "设计取色/印章手绘/用户风格参考.jpg",
+      "Brewwww/Assets.xcassets/CaffeTogether_ribbed.imageset/CaffeTogether_ribbed@3x.png"
+    ]
+  }
+]

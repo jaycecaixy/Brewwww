@@ -1,0 +1,73 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>Brewwww 深浅色主题</title><style>
+:root{color-scheme:light dark}body{font:16px system-ui;background:light-dark(#f8f7f0,#2b2a23);color:light-dark(#3c2723,#d3d0cb);max-width:1000px;margin:auto;padding:30px;line-height:1.7}
+h1{font-size:28px}a{color:light-dark(#9d632b,#dcab70)}table{width:100%;border-collapse:collapse;margin:24px 0}th,td{text-align:left;padding:12px;border-bottom:1px solid #8884}small{display:block;opacity:.6;font-weight:400}i{display:inline-block;width:55px;height:35px;border-radius:8px;vertical-align:middle;margin-right:12px;outline:1px solid #8885}code{font-size:15px}nav{display:flex;gap:12px;flex-wrap:wrap}button{font:inherit;padding:8px 16px;border:1px solid #8886;border-radius:20px;cursor:pointer}header p{max-width:830px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0}.pair figure{margin:0}.pair img{width:100%;border-radius:18px}.pair figcaption{text-align:center} @media(max-width:600px){body{padding:16px}i{width:25px;margin-right:6px}th,td{padding:8px;font-size:13px}code{font-size:12px}}
+</style><header><h1>Brewwww · 两套主题</h1>
+<p>默认跟随系统，可在「设置 → 外观 → 主题」选择浅色或深色。下表直接从工程的颜色定义生成；按钮改变此色板页面的外观。</p>
+<nav><button onclick="document.documentElement.style.colorScheme='light dark'">跟随系统</button><button onclick="document.documentElement.style.colorScheme='light'">浅色</button><button onclick="document.documentElement.style.colorScheme='dark'">深色</button></nav>
+<p>深色依据三段录屏；浅色依据三张印章截图。浅色日历、照片夹、相册及地图卡片没有直接参考，采用同一组奶油色与暖棕色适配。文字和印章的截图取色含压缩与抗锯齿，属于代表色。浅色纸张为截图中无控件区域的原像素。</p>
+<p><a href="palette.html">深色原始取样证据</a> · <a href="light-reference-colors.json">浅色原始取样坐标</a> · <a href="深浅色主题.md">实现与验收说明</a></p></header>
+<div class="pair"><figure><a href="../预览/主题-浅色-首页.png"><img src="../预览/主题-浅色-首页.png" alt="浅色首页实机模拟器截图"></a><figcaption>浅色</figcaption></figure><figure><a href="../预览/主题-深色-首页.png"><img src="../预览/主题-深色-首页.png" alt="深色首页实机模拟器截图"></a><figcaption>深色</figcaption></figure></div>
+<table><thead><tr><th>组件</th><th>浅色</th><th>深色</th></tr></thead><tbody><tr><th>纸张基色<small>ink</small></th>
+<td><i style="background:#F8F7F0"></i><code>#F8F7F0</code></td>
+<td><i style="background:#2B2A23"></i><code>#2B2A23</code></td></tr><tr><th>主文字<small>text</small></th>
+<td><i style="background:#3C2723"></i><code>#3C2723</code></td>
+<td><i style="background:#D3D0CB"></i><code>#D3D0CB</code></td></tr><tr><th>日历 / 表单面板<small>panel</small></th>
+<td><i style="background:#F0EDE7"></i><code>#F0EDE7</code></td>
+<td><i style="background:#463E36"></i><code>#463E36</code></td></tr><tr><th>普通日期格<small>panelLight</small></th>
+<td><i style="background:#E4DFD7"></i><code>#E4DFD7</code></td>
+<td><i style="background:#655A54"></i><code>#655A54</code></td></tr><tr><th>次级文字<small>muted</small></th>
+<td><i style="background:#968E89"></i><code>#968E89</code></td>
+<td><i style="background:#A19B96"></i><code>#A19B96</code></td></tr><tr><th>强调色<small>gold</small></th>
+<td><i style="background:#C5925E"></i><code>#C5925E</code></td>
+<td><i style="background:#DCAB70"></i><code>#DCAB70</code></td></tr><tr><th>店铺印章<small>orange</small></th>
+<td><i style="background:#DC7F45"></i><code>#DC7F45</code></td>
+<td><i style="background:#B84D07"></i><code>#B84D07</code></td></tr><tr><th>星期<small>weekday</small></th>
+<td><i style="background:#958D83"></i><code>#958D83</code></td>
+<td><i style="background:#867F77"></i><code>#867F77</code></td></tr><tr><th>日期数字<small>calendarNumber</small></th>
+<td><i style="background:#63564C"></i><code>#63564C</code></td>
+<td><i style="background:#D3D0C9"></i><code>#D3D0C9</code></td></tr><tr><th>今天的日期数字<small>todayNumber</small></th>
+<td><i style="background:#FAF9F4"></i><code>#FAF9F4</code></td>
+<td><i style="background:#D3D0C9"></i><code>#D3D0C9</code></td></tr><tr><th>圆形按钮<small>control</small></th>
+<td><i style="background:#F1F0EC"></i><code>#F1F0EC</code></td>
+<td><i style="background:#383734"></i><code>#383734</code></td></tr><tr><th>未选中图标<small>icon</small></th>
+<td><i style="background:#897B79"></i><code>#897B79</code></td>
+<td><i style="background:#A39A96"></i><code>#A39A96</code></td></tr><tr><th>导航选中底板<small>selection</small></th>
+<td><i style="background:#E4E1DE"></i><code>#E4E1DE</code></td>
+<td><i style="background:#666561"></i><code>#666561</code></td></tr><tr><th>细描边<small>border</small></th>
+<td><i style="background:#FFFFFF"></i><code>#FFFFFF</code></td>
+<td><i style="background:#635B53"></i><code>#635B53</code></td></tr><tr><th>占位文字<small>placeholder</small></th>
+<td><i style="background:#A49B91"></i><code>#A49B91</code></td>
+<td><i style="background:#776D67"></i><code>#776D67</code></td></tr><tr><th>关闭的开关<small>toggleOff</small></th>
+<td><i style="background:#D8D4CE"></i><code>#D8D4CE</code></td>
+<td><i style="background:#E7E5DE"></i><code>#E7E5DE</code></td></tr><tr><th>纪念杯底板<small>souvenirPanel</small></th>
+<td><i style="background:#EAE5DC"></i><code>#EAE5DC</code></td>
+<td><i style="background:#5B5249"></i><code>#5B5249</code></td></tr><tr><th>照片夹后袋<small>folderBack</small></th>
+<td><i style="background:#D5CBB9"></i><code>#D5CBB9</code></td>
+<td><i style="background:#443D36"></i><code>#443D36</code></td></tr><tr><th>前袋左侧<small>folderLeft</small></th>
+<td><i style="background:#DBCAA9"></i><code>#DBCAA9</code></td>
+<td><i style="background:#726550"></i><code>#726550</code></td></tr><tr><th>前袋中央<small>folderCenter</small></th>
+<td><i style="background:#E2D1B1"></i><code>#E2D1B1</code></td>
+<td><i style="background:#7A6C54"></i><code>#7A6C54</code></td></tr><tr><th>前袋右侧<small>folderRight</small></th>
+<td><i style="background:#D6CBB9"></i><code>#D6CBB9</code></td>
+<td><i style="background:#70685D"></i><code>#70685D</code></td></tr><tr><th>前袋底部<small>folderBottom</small></th>
+<td><i style="background:#CDBB9C"></i><code>#CDBB9C</code></td>
+<td><i style="background:#6E6353"></i><code>#6E6353</code></td></tr><tr><th>前袋凸片<small>folderTab</small></th>
+<td><i style="background:#DDD0B8"></i><code>#DDD0B8</code></td>
+<td><i style="background:#746A5A"></i><code>#746A5A</code></td></tr><tr><th>相册上方<small>albumTop</small></th>
+<td><i style="background:#F0EEEA"></i><code>#F0EEEA</code></td>
+<td><i style="background:#3F3A39"></i><code>#3F3A39</code></td></tr><tr><th>相册中部<small>albumMiddle</small></th>
+<td><i style="background:#E9E5DE"></i><code>#E9E5DE</code></td>
+<td><i style="background:#47433F"></i><code>#47433F</code></td></tr><tr><th>相册下方<small>albumBottom</small></th>
+<td><i style="background:#EFEBE5"></i><code>#EFEBE5</code></td>
+<td><i style="background:#3F3B3A"></i><code>#3F3B3A</code></td></tr><tr><th>相册按钮<small>albumControl</small></th>
+<td><i style="background:#F1EFEB"></i><code>#F1EFEB</code></td>
+<td><i style="background:#403F3D"></i><code>#403F3D</code></td></tr><tr><th>地图卡片<small>mapPanel</small></th>
+<td><i style="background:#F5F3EE"></i><code>#F5F3EE</code></td>
+<td><i style="background:#32363D"></i><code>#32363D</code></td></tr><tr><th>地图按钮<small>mapControl</small></th>
+<td><i style="background:#F1F0ED"></i><code>#F1F0ED</code></td>
+<td><i style="background:#32394A"></i><code>#32394A</code></td></tr><tr><th>地图导航<small>mapNavigation</small></th>
+<td><i style="background:#F1F0ED"></i><code>#F1F0ED</code></td>
+<td><i style="background:#363D46"></i><code>#363D46</code></td></tr><tr><th>地图选中底板<small>mapSelection</small></th>
+<td><i style="background:#E4E1DD"></i><code>#E4E1DD</code></td>
+<td><i style="background:#65686D"></i><code>#65686D</code></td></tr></tbody></table></html>

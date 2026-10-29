@@ -4,10 +4,13 @@ struct CaffeStampArt: View {
     var stamp: CaffeTogetherStamp
     var unlocked = true
     var body: some View {
-        Image(stamp.assetName).resizable().scaledToFit()
-            .saturation(unlocked ? 1 : 0)
-            .opacity(unlocked ? 1 : 0.23)
-            .accessibilityHidden(true)
+        GeometryReader { geometry in
+            Image(stamp.assetName).resizable().interpolation(.high).scaledToFit()
+                .frame(width: geometry.size.width, height: geometry.size.height)
+                .saturation(unlocked ? 1 : 0)
+                .opacity(unlocked ? 1 : 0.23)
+        }
+        .accessibilityHidden(true)
     }
 }
 
@@ -15,153 +18,151 @@ struct StampCatalogue: View {
     @EnvironmentObject private var store: BrewStore
     @Environment(\.brewLayout) private var layout
     @Binding var route: StampRoute
+    var showsTheme: Bool = false
+    var series: CaffeStampSeries = .together
     @State private var selected: CaffeTogetherStamp?
-    private var count: Int { store.records.count }
+
+    private func count(_ series: CaffeStampSeries) -> Int { store.stampProgress(for: series) }
+    private func collected(_ series: CaffeStampSeries) -> Int {
+        CaffeTogetherStamp.unlocked(drinkCount: count(series), series: series).count
+    }
+    private var columns: [GridItem] {
+        Array(repeating: GridItem(.flexible(), spacing: layout.expanded ? 16 : 6), count: 4)
+    }
 
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 25) {
-                Text(route == .catalogue ? "印章图鉴" : "caffe together")
+            VStack(alignment: .leading, spacing: 26) {
+                Text(showsTheme ? series.title : "印章图鉴")
                     .font(BrewFont.title).frame(maxWidth: .infinity)
                     .padding(.top, layout.bottomNavigation ? 76 : layout.titleTop)
-                if route == .catalogue { catalogue }
-                else { theme }
-            }
-            .frame(maxWidth: 720)
-            .frame(maxWidth: .infinity)
-            .padding(.bottom, layout.bottomNavigation ? 120 : 28)
-        }
-        .scrollIndicators(.hidden)
-        .brewPagePadding()
-        .sheet(item: $selected) { stamp in detail(stamp) }
-        .accessibilityElement(children: .contain)
-        .accessibilityIdentifier(route == .catalogue ? "stamps.cataloguePage" : "stamps.themePage")
-    }
-
-    private var catalogue: some View {
-        VStack(alignment: .leading, spacing: 15) {
-            Text("系统印章").font(BrewFont.caption).foregroundStyle(BrewStyle.muted)
-            Button { withAnimation(layout.animation) { route = .caffeTogether } } label: {
-                BrewPanel {
-                    VStack(alignment: .leading, spacing: 20) {
-                        HStack(alignment: .top) {
-                            VStack(alignment: .leading, spacing: 6) {
-                                Text("caffe together").font(.system(size: 23, weight: .semibold, design: .serif))
-                                Text("让每一杯，成为相聚的理由。")
-                                    .font(BrewFont.caption).foregroundStyle(BrewStyle.muted)
-                            }
-                            Spacer(minLength: 5)
-                            Image(systemName: "chevron.right").foregroundStyle(BrewStyle.icon).padding(.top, 5)
-                        }
-                        HStack(spacing: 8) {
-                            ForEach(CaffeTogetherStamp.allCases) { stamp in
-                                CaffeStampArt(stamp: stamp, unlocked: stamp.isUnlocked(drinkCount: count))
-                                    .frame(maxWidth: .infinity).frame(height: layout.expanded ? 110 : 78)
-                            }
-                        }
-                        HStack {
-                            permanent
-                            Spacer()
-                            Text("\(store.unlockedCaffeStamps.count) / 4 枚已收集")
-                                .font(BrewFont.caption).foregroundStyle(BrewStyle.muted)
-                        }
-                    }.padding(20)
+                if showsTheme { theme(series) }
+                else {
+                    ForEach(CaffeStampSeries.allCases) { collection in catalogueCard(collection) }
+                    Text("慢慢记录，收藏属于你的咖啡日常。")
+                        .font(BrewFont.caption).foregroundStyle(BrewStyle.muted).padding(.horizontal, 6)
                 }
             }
-            .accessibilityLabel("caffe together，永久，\(store.unlockedCaffeStamps.count)枚已收集，共4枚")
-            .accessibilityIdentifier("stamps.openTheme")
-            Text("记录饮品，慢慢收集属于你的咖啡日常。")
+            .frame(maxWidth: 720).frame(maxWidth: .infinity)
+            .padding(.bottom, layout.bottomNavigation && !layout.nativeNavigation ? 120 : 28)
+        }
+        .scrollIndicators(.hidden).brewPagePadding()
+        .sheet(item: $selected) { stamp in detail(stamp) }
+        .accessibilityElement(children: .contain)
+        .accessibilityIdentifier(showsTheme ? "stamps.themePage" : "stamps.cataloguePage")
+    }
+
+    private func catalogueCard(_ collection: CaffeStampSeries) -> some View {
+        BrewPanel {
+            VStack(alignment: .leading, spacing: 21) {
+                Button { withAnimation(layout.animation) { route = collection.route } } label: {
+                    HStack(alignment: .firstTextBaseline) {
+                        VStack(alignment: .leading, spacing: 6) {
+                            Text(collection.title).font(.system(size: 23, weight: .semibold, design: .serif))
+                                .foregroundStyle(BrewStyle.text)
+                            Text(collection.subtitle).font(BrewFont.caption).foregroundStyle(BrewStyle.muted)
+                        }
+                        Spacer(minLength: 4)
+                        permanent
+                        Image(systemName: "chevron.right").font(.system(size: 12)).foregroundStyle(BrewStyle.muted)
+                    }
+                    .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("\(collection.title)，永久，\(collected(collection))枚已收集，共\(collection.stamps.count)枚")
+                .accessibilityIdentifier(collection == .together ? "stamps.openTheme" : "stamps.openExplore")
+                stampGrid(collection, compact: true)
+                VStack(alignment: .leading, spacing: 8) {
+                    Text(collection.rule).font(BrewFont.caption).foregroundStyle(BrewStyle.muted)
+                    HStack {
+                        Text("\(collected(collection)) / \(collection.stamps.count) 枚已收集")
+                        Spacer(minLength: 4)
+                        Text("累计 \(count(collection)) 杯")
+                    }.font(.system(size: 11, weight: .medium)).foregroundStyle(BrewStyle.gold)
+                }
+            }.padding(layout.expanded ? 26 : 18)
+        }
+    }
+
+    private func theme(_ collection: CaffeStampSeries) -> some View {
+        VStack(alignment: .leading, spacing: 24) {
+            BrewPanel {
+                VStack(alignment: .leading, spacing: 14) {
+                    HStack { Text(collection.subtitle).font(BrewFont.caption); Spacer(); permanent }
+                    HStack(alignment: .firstTextBaseline, spacing: 5) {
+                        Text("\(collected(collection))").font(.system(size: 32, weight: .medium, design: .serif))
+                        Text("/ \(collection.stamps.count) 枚已收集").font(BrewFont.caption).foregroundStyle(BrewStyle.muted)
+                        Spacer()
+                        Text("累计 \(count(collection)) 杯").font(BrewFont.caption).foregroundStyle(BrewStyle.gold)
+                    }
+                    ProgressView(value: Double(collected(collection)), total: Double(collection.stamps.count)).tint(BrewStyle.gold)
+                        .accessibilityLabel("系列收集进度")
+                    Text(collection.rule).font(BrewFont.caption).foregroundStyle(BrewStyle.muted)
+                }.padding(20)
+            }
+            BrewPanel { stampGrid(collection, compact: false).padding(layout.expanded ? 24 : 14) }
+            Text("系列永久开放，已有记录也会计入。")
                 .font(BrewFont.caption).foregroundStyle(BrewStyle.muted).padding(.horizontal, 4)
         }
     }
 
-    private var theme: some View {
-        VStack(alignment: .leading, spacing: 20) {
-            BrewPanel {
-                VStack(alignment: .leading, spacing: 17) {
-                    HStack { Text("咖啡相聚系列").font(.system(size: 16, weight: .semibold)); Spacer(); permanent }
-                    Text("把日常的一杯，变成可以珍藏的相聚。")
-                        .font(BrewFont.caption).foregroundStyle(BrewStyle.muted)
-                    HStack(alignment: .firstTextBaseline, spacing: 5) {
-                        Text("\(store.unlockedCaffeStamps.count)").font(.system(size: 32, weight: .medium, design: .serif))
-                        Text("/ 4 枚已收集").font(BrewFont.caption).foregroundStyle(BrewStyle.muted)
-                        Spacer()
-                        Text("累计 \(count) 杯").font(BrewFont.caption).foregroundStyle(BrewStyle.gold)
-                    }
-                    ProgressView(value: Double(store.unlockedCaffeStamps.count), total: 4).tint(BrewStyle.gold)
-                        .accessibilityLabel("系列收集进度")
-                }.padding(20)
-            }
-            LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 14), count: layout.size.width > 850 ? 4 : 2), spacing: 18) {
-                ForEach(CaffeTogetherStamp.allCases) { stamp in
-                    Button { selected = stamp } label: { stampTile(stamp) }
-                        .accessibilityLabel("\(stamp.title)，累计\(stamp.requiredCount)杯，\(stamp.isUnlocked(drinkCount: count) ? "已收集" : "尚未解锁")")
-                        .accessibilityIdentifier("stamps.milestone.\(stamp.rawValue)")
+    private func stampGrid(_ collection: CaffeStampSeries, compact: Bool) -> some View {
+        LazyVGrid(columns: columns, spacing: compact ? 16 : 22) {
+            ForEach(collection.stamps) { stamp in
+                let unlocked = stamp.isUnlocked(drinkCount: count(collection))
+                Button { selected = stamp } label: {
+                    VStack(spacing: compact ? 3 : 6) {
+                        CaffeStampArt(stamp: stamp, unlocked: unlocked)
+                            .frame(height: layout.expanded ? (compact ? 100 : 120) : (compact ? 76 : 86))
+                        if !compact {
+                            Text(stamp.title).font(.system(size: 10, weight: .medium))
+                                .foregroundStyle(unlocked ? BrewStyle.text : BrewStyle.muted)
+                                .lineLimit(1).minimumScaleFactor(0.7)
+                        }
+                        Text("\(stamp.requiredCount)")
+                            .font(.system(size: compact ? 15 : 16, weight: .medium, design: .rounded))
+                            .foregroundStyle(BrewStyle.gold)
+                    }.frame(maxWidth: .infinity).contentShape(Rectangle())
                 }
+                .buttonStyle(.plain)
+                .accessibilityLabel("\(stamp.title)，累计\(stamp.requiredCount)杯\(collection == .explore ? "非连锁咖啡" : "")，\(unlocked ? "已收集" : "尚未解锁")")
+                .accessibilityIdentifier("stamps.\(compact ? "preview" : "milestone").\(stamp.rawValue)")
             }
-            Text("累计记录 1 / 10 / 20 / 40 杯饮品，依次解锁四枚印章。系列永久开放，已有记录也会计入。")
-                .font(BrewFont.caption).foregroundStyle(BrewStyle.muted).lineSpacing(5).padding(.horizontal, 4)
         }
-    }
-
-    private func stampTile(_ stamp: CaffeTogetherStamp) -> some View {
-        let unlocked = stamp.isUnlocked(drinkCount: count)
-        return VStack(spacing: 9) {
-            ZStack(alignment: .bottomTrailing) {
-                CaffeStampArt(stamp: stamp, unlocked: unlocked).frame(height: layout.expanded ? 142 : 118)
-                Image(systemName: unlocked ? "checkmark.circle.fill" : "lock.circle.fill")
-                    .font(.system(size: 20)).foregroundStyle(unlocked ? BrewStyle.gold : BrewStyle.icon)
-                    .background(BrewStyle.ink, in: Circle())
-            }
-            Text(stamp.title).font(.system(size: 15, weight: .semibold))
-                .foregroundStyle(unlocked ? BrewStyle.text : BrewStyle.muted)
-            Text(stamp.caption).font(.system(size: 8, weight: .medium, design: .monospaced))
-                .tracking(1).foregroundStyle(BrewStyle.muted).lineLimit(1).minimumScaleFactor(0.7)
-            Text("\(stamp.requiredCount) 杯")
-                .font(.system(size: 12, weight: .semibold)).foregroundStyle(unlocked ? BrewStyle.gold : BrewStyle.icon)
-                .padding(.horizontal, 12).padding(.vertical, 5)
-                .background((unlocked ? BrewStyle.gold : BrewStyle.icon).opacity(0.10), in: Capsule())
-        }
-        .frame(maxWidth: .infinity).padding(.vertical, 16).padding(.horizontal, 10)
-        .background(BrewStyle.panel.opacity(0.72), in: RoundedRectangle(cornerRadius: 22))
-        .overlay(RoundedRectangle(cornerRadius: 22).stroke(BrewStyle.border.opacity(unlocked ? 0.8 : 0.35), lineWidth: 0.8))
     }
 
     private var permanent: some View {
-        Label("永久", systemImage: "infinity")
-            .font(.system(size: 12, weight: .semibold)).foregroundStyle(BrewStyle.gold)
-            .padding(.horizontal, 10).padding(.vertical, 5)
-            .background(BrewStyle.gold.opacity(0.10), in: Capsule())
+        Text("永久").font(.system(size: 13, weight: .semibold)).foregroundStyle(BrewStyle.gold)
     }
 
     private func detail(_ stamp: CaffeTogetherStamp) -> some View {
-        VStack(spacing: 18) {
+        let progress = count(stamp.series)
+        let unlocked = stamp.isUnlocked(drinkCount: progress)
+        return VStack(spacing: 18) {
             Capsule().fill(BrewStyle.muted.opacity(0.5)).frame(width: 34, height: 4).padding(.top, 12)
             HStack {
-                Text("caffe together").font(.system(size: 16, weight: .medium, design: .serif))
+                Text(stamp.series.title).font(.system(size: 16, weight: .medium, design: .serif))
                 Spacer(); permanent
                 Button { selected = nil } label: { Image(systemName: "xmark").padding(10) }
                     .accessibilityLabel("关闭印章详情").accessibilityIdentifier("stamps.closeDetail")
             }
-            CaffeStampArt(stamp: stamp).frame(height: 210)
+            CaffeStampArt(stamp: stamp, unlocked: unlocked).frame(height: 200)
             Text(stamp.title).font(.system(size: 24, weight: .semibold))
             Text(stamp.story).font(.subheadline).foregroundStyle(BrewStyle.muted).multilineTextAlignment(.center)
-            if stamp.isUnlocked(drinkCount: count) {
-                Label("已收集 · 累计 \(stamp.requiredCount) 杯", systemImage: "checkmark.seal.fill").foregroundStyle(BrewStyle.gold)
-            } else {
-                Text("再记录 \(stamp.remaining(drinkCount: count)) 杯，即可收集这枚印章。")
+            if unlocked {
+                Label("已收集 · 累计 \(stamp.requiredCount) 杯\(stamp.series == .explore ? "非连锁咖啡" : "")", systemImage: "checkmark.seal.fill")
                     .font(.subheadline).foregroundStyle(BrewStyle.gold)
-                ProgressView(value: stamp.progress(drinkCount: count)).tint(BrewStyle.gold)
+            } else {
+                Text("再记录 \(stamp.remaining(drinkCount: progress)) 杯\(stamp.series == .explore ? "非连锁咖啡" : "")，即可收集这枚印章。")
+                    .font(.subheadline).foregroundStyle(BrewStyle.gold)
+                ProgressView(value: stamp.progress(drinkCount: progress)).tint(BrewStyle.gold)
             }
+            Text(stamp.series.rule).font(BrewFont.caption).foregroundStyle(BrewStyle.muted)
             Spacer(minLength: 10)
         }
-        .padding(.horizontal, 24)
-        .frame(maxWidth: .infinity)
-        .foregroundStyle(BrewStyle.text)
-        .background { BrewBackground() }
-        .presentationDetents([.height(530), .large])
-        .presentationDragIndicator(.hidden)
-        .accessibilityElement(children: .contain)
-        .accessibilityIdentifier("stamps.detail")
+        .padding(.horizontal, 24).frame(maxWidth: .infinity)
+        .foregroundStyle(BrewStyle.text).background { BrewBackground() }
+        .presentationDetents([.height(560), .large]).presentationDragIndicator(.hidden)
+        .accessibilityElement(children: .contain).accessibilityIdentifier("stamps.detail")
     }
 }

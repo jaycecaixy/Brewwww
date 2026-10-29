@@ -7,34 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A22C392E3FB5588CBB08B1E /* PhotoAlbumOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84210C5EF29F47B66E8EBDC /* PhotoAlbumOverlay.swift */; };
 		126177462368348CC4D4BD85 /* BrewwwwApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB707E447C07794A352EDAD /* BrewwwwApp.swift */; };
+		12A7690BF3FA2A0073EB84A5 /* ShopStampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A7E6C7A5134142527F8424 /* ShopStampTests.swift */; };
 		2BAAFA3F17ECA777AF18FB0B /* RecordEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A2582FEE5D16D80E6C415 /* RecordEditor.swift */; };
 		34882EB9938F9D1A01A56B4F /* SubjectCutoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC40E8F520CA64010AB66C4 /* SubjectCutoutService.swift */; };
 		53E76511D2E2F37CA9271586 /* AdaptiveLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B851F6E538BF94ABF819F7A /* AdaptiveLayout.swift */; };
+		548D3E2D4B880F34F8640442 /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA69CA5C65EE43830B2958C /* Haptics.swift */; };
+		59453A578A1B64D30ED46224 /* CaffeTogether.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC254AFA77DE562B6891A34 /* CaffeTogether.swift */; };
+		6A0A9016E1C626E18E1B1F10 /* LiquidNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32AB2E0606C68C314F1F570 /* LiquidNavigation.swift */; };
+		7423EE9698DE12C00618B3DE /* HomeMotionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B67E27C08450AC5495AC8CD /* HomeMotionTests.swift */; };
 		7554CC281AE226C03A9343A0 /* DuoLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63837086B8EF9339D1C1D70F /* DuoLayoutTests.swift */; };
 		7803FCAB7A01B1E0D05A3D0E /* SubjectCutoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3670C9DF76C3EA55E15D4D /* SubjectCutoutTests.swift */; };
 		7E39ACF00F26EE2590B3C4F0 /* coffee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 70A8C2FC756C2F610488443C /* coffee.jpg */; };
+		7E9DFB647ADF9F76A587E38D /* CafeMapPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF0D40C9B24F7E7B8CE9A0A /* CafeMapPage.swift */; };
+		83D7F64C496DADA9B4AEB86E /* MapJourneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F85C3472C7076A72ED5B51 /* MapJourneyTests.swift */; };
 		8514DE9AB24280A08F53D545 /* JournalPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A737750D37EEE0A2F21EC3 /* JournalPages.swift */; };
+		85FACE48178BDF33BBEB9CFB /* AppearanceFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C4DC5BD3AFBC57CB5D9D8 /* AppearanceFlowTests.swift */; };
+		86D71BBA4EF2489B421ADAFC /* MapJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B982F5B3C0A7F69D8B2274 /* MapJourney.swift */; };
+		9252D8540B4103ED3D276190 /* CalendarPagingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FE9379752A8156845A4ECD /* CalendarPagingTests.swift */; };
+		94B895A3E8ADD50232B27B69 /* StampCatalogue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBCCFB923F2B3B887782B4F /* StampCatalogue.swift */; };
+		964D8BA1A7F6A24E436BB288 /* coastline.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 395462E85FDD08229D0DB03D /* coastline.geojson */; };
+		985ABA68E03D111BA9E6041E /* CalendarPager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3166A5AE5EDB766A18CA3627 /* CalendarPager.swift */; };
+		99D717658AB992656DB865F8 /* ShopSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B291E649CBA13F2219ABA /* ShopSearch.swift */; };
+		9CFF9CC6E908B6A5F1737A3D /* StampCatalogueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D8236276FDC843DE7D6A31 /* StampCatalogueTests.swift */; };
+		A38E6EAE579D1139F9155126 /* CoffeeGlobe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5BD8C12ADAE628B559D08A /* CoffeeGlobe.swift */; };
+		AC51BC304B5C63FF669F3733 /* AppearanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A884DCDB5CE83A7BDA3A2D /* AppearanceTests.swift */; };
 		B0DC56A3EA10B8685F79471C /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06978E310A9C7DCFCD3BA7B1 /* Design.swift */; };
+		B55B8965F2DE78D9DF579D4A /* WishShopSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71DBF36922B394AC2759702 /* WishShopSearch.swift */; };
 		B5EDCFFCA9B33688619D437B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A6E4C45A6864381808C42B /* ContentView.swift */; };
+		B9467C002AD3251E59D8659E /* MapJourneyFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1FE82116255498E87419CE /* MapJourneyFlowTests.swift */; };
+		BC7731DEA239A7408A2988E8 /* NativeNavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D309B4AE20DCD574BAA35 /* NativeNavigationTests.swift */; };
 		BE4AF1E58C954C819DA9044A /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3870CF74DAD92BF06F8A4D9 /* SettingsPage.swift */; };
+		BFD5050D9D236D07F6F8061E /* ShopPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030551582209CFB612D5049D /* ShopPickerTests.swift */; };
+		C922B157B6E12C7E818F3B50 /* CaffeTogetherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1E7FF7053C5B26E00FEF78 /* CaffeTogetherTests.swift */; };
 		DE519D35FD6B815F61DBC0C8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6158FE42D76BD1471978ACDB /* Model.swift */; };
+		E600E265704EB1F8458134F0 /* ShopPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305248E7A9DFED7D3E1A3F7D /* ShopPicker.swift */; };
+		F2CA388A233EA1C32EC80863 /* ShopSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B7B4C7F588F9E7C2EEB690 /* ShopSearchTests.swift */; };
+		F822C608AEFEC39BAA36A6F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B153A727485C482E1B6C2D36 /* Assets.xcassets */; };
 		F9E875D13FC6154C638B33CB /* ExplorePages.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6866CF7020FDFDF9651F2EF /* ExplorePages.swift */; };
 		FE872DEB404BE09429674175 /* CutoutFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA49BE22789716B82E9E6D3 /* CutoutFlowTests.swift */; };
-		CA10C010CA10C010CA10C010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA10C020CA10C020CA10C020; };
-		CB200000CB200000CB200000 /* ShopSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB100000CB100000CB100000; };
-		CB200001CB200001CB200001 /* ShopPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB100001CB100001CB100001; };
-		CB400000CB400000CB400000 /* ShopSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB300000CB300000CB300000; };
-		CB400001CB400001CB400001 /* ShopPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB300001CB300001CB300001; };
-		CC200000CC200000CC200000 /* CalendarPager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC100000CC100000CC100000; };
-		CC200001CC200001CC200001 /* PhotoAlbumOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC100001CC100001CC100001; };
-		CC400000CC400000CC400000 /* CalendarPagingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC300000CC300000CC300000; };
-		CC400001CC400001CC400001 /* HomeMotionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC300001CC300001CC300001; };
-		CD200000CD200000CD200000 /* ShopStampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD100000CD100000CD100000; };
-		CE200000CE200000CE200000 /* CaffeTogether.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE100000CE100000CE100000; };
-		CE200001CE200001CE200001 /* StampCatalogue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE100001CE100001CE100001; };
-		CE400000CE400000CE400000 /* CaffeTogetherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE300000CE300000CE300000; };
-		CE400001CE400001CE400001 /* StampCatalogueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE300001CE300001CE300001; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,49 +67,64 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		030551582209CFB612D5049D /* ShopPickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopPickerTests.swift; sourceTree = "<group>"; };
 		05A6E4C45A6864381808C42B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		06978E310A9C7DCFCD3BA7B1 /* Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
-		08B97FD99F81D792A500C8CB /* Brewwww.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brewwww.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08B97FD99F81D792A500C8CB /* Brewwww.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Brewwww.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D5BD8C12ADAE628B559D08A /* CoffeeGlobe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeGlobe.swift; sourceTree = "<group>"; };
+		2AF0D40C9B24F7E7B8CE9A0A /* CafeMapPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeMapPage.swift; sourceTree = "<group>"; };
+		2EBCCFB923F2B3B887782B4F /* StampCatalogue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampCatalogue.swift; sourceTree = "<group>"; };
+		305248E7A9DFED7D3E1A3F7D /* ShopPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopPicker.swift; sourceTree = "<group>"; };
+		3166A5AE5EDB766A18CA3627 /* CalendarPager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPager.swift; sourceTree = "<group>"; };
+		32B7B4C7F588F9E7C2EEB690 /* ShopSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopSearchTests.swift; sourceTree = "<group>"; };
+		395462E85FDD08229D0DB03D /* coastline.geojson */ = {isa = PBXFileReference; path = coastline.geojson; sourceTree = "<group>"; };
+		39F85C3472C7076A72ED5B51 /* MapJourneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapJourneyTests.swift; sourceTree = "<group>"; };
+		3A1FE82116255498E87419CE /* MapJourneyFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapJourneyFlowTests.swift; sourceTree = "<group>"; };
 		4FC40E8F520CA64010AB66C4 /* SubjectCutoutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectCutoutService.swift; sourceTree = "<group>"; };
 		6158FE42D76BD1471978ACDB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		63837086B8EF9339D1C1D70F /* DuoLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuoLayoutTests.swift; sourceTree = "<group>"; };
 		70A8C2FC756C2F610488443C /* coffee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coffee.jpg; sourceTree = "<group>"; };
+		72D8236276FDC843DE7D6A31 /* StampCatalogueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampCatalogueTests.swift; sourceTree = "<group>"; };
 		753A2582FEE5D16D80E6C415 /* RecordEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordEditor.swift; sourceTree = "<group>"; };
 		772C20DB40D2A9C7D41B316C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7B851F6E538BF94ABF819F7A /* AdaptiveLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveLayout.swift; sourceTree = "<group>"; };
+		842C4DC5BD3AFBC57CB5D9D8 /* AppearanceFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceFlowTests.swift; sourceTree = "<group>"; };
+		8B67E27C08450AC5495AC8CD /* HomeMotionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMotionTests.swift; sourceTree = "<group>"; };
 		96A737750D37EEE0A2F21EC3 /* JournalPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalPages.swift; sourceTree = "<group>"; };
+		9AC254AFA77DE562B6891A34 /* CaffeTogether.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeTogether.swift; sourceTree = "<group>"; };
 		A3870CF74DAD92BF06F8A4D9 /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
+		A79B291E649CBA13F2219ABA /* ShopSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopSearch.swift; sourceTree = "<group>"; };
+		A84210C5EF29F47B66E8EBDC /* PhotoAlbumOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAlbumOverlay.swift; sourceTree = "<group>"; };
+		B0A884DCDB5CE83A7BDA3A2D /* AppearanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceTests.swift; sourceTree = "<group>"; };
+		B153A727485C482E1B6C2D36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B32AB2E0606C68C314F1F570 /* LiquidNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidNavigation.swift; sourceTree = "<group>"; };
+		B3B982F5B3C0A7F69D8B2274 /* MapJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapJourney.swift; sourceTree = "<group>"; };
 		B94FFE7AF76F4EB33074AA8C /* BrewwwwUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = BrewwwwUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC4D309B4AE20DCD574BAA35 /* NativeNavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeNavigationTests.swift; sourceTree = "<group>"; };
 		C6866CF7020FDFDF9651F2EF /* ExplorePages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePages.swift; sourceTree = "<group>"; };
 		CCB707E447C07794A352EDAD /* BrewwwwApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewwwwApp.swift; sourceTree = "<group>"; };
+		E0A7E6C7A5134142527F8424 /* ShopStampTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopStampTests.swift; sourceTree = "<group>"; };
+		E3FE9379752A8156845A4ECD /* CalendarPagingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPagingTests.swift; sourceTree = "<group>"; };
 		E76D869B08EFFA091D5B90BF /* BrewwwwTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = BrewwwwTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA1E7FF7053C5B26E00FEF78 /* CaffeTogetherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeTogetherTests.swift; sourceTree = "<group>"; };
 		EB3670C9DF76C3EA55E15D4D /* SubjectCutoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectCutoutTests.swift; sourceTree = "<group>"; };
+		EDA69CA5C65EE43830B2958C /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
+		F71DBF36922B394AC2759702 /* WishShopSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishShopSearch.swift; sourceTree = "<group>"; };
 		FCA49BE22789716B82E9E6D3 /* CutoutFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutoutFlowTests.swift; sourceTree = "<group>"; };
-		CA10C020CA10C020CA10C020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CB100000CB100000CB100000 /* ShopSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopSearch.swift; sourceTree = "<group>"; };
-		CB100001CB100001CB100001 /* ShopPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopPicker.swift; sourceTree = "<group>"; };
-		CB300000CB300000CB300000 /* ShopSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopSearchTests.swift; sourceTree = "<group>"; };
-		CB300001CB300001CB300001 /* ShopPickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopPickerTests.swift; sourceTree = "<group>"; };
-		CC100000CC100000CC100000 /* CalendarPager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPager.swift; sourceTree = "<group>"; };
-		CC100001CC100001CC100001 /* PhotoAlbumOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAlbumOverlay.swift; sourceTree = "<group>"; };
-		CC300000CC300000CC300000 /* CalendarPagingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPagingTests.swift; sourceTree = "<group>"; };
-		CC300001CC300001CC300001 /* HomeMotionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMotionTests.swift; sourceTree = "<group>"; };
-		CD100000CD100000CD100000 /* ShopStampTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopStampTests.swift; sourceTree = "<group>"; };
-		CE100000CE100000CE100000 /* CaffeTogether.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeTogether.swift; sourceTree = "<group>"; };
-		CE100001CE100001CE100001 /* StampCatalogue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampCatalogue.swift; sourceTree = "<group>"; };
-		CE300000CE300000CE300000 /* CaffeTogetherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeTogetherTests.swift; sourceTree = "<group>"; };
-		CE300001CE300001CE300001 /* StampCatalogueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampCatalogueTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		1B3F015142BE8D46D346012D /* BrewwwwUITests */ = {
 			isa = PBXGroup;
 			children = (
-				CE300001CE300001CE300001 /* StampCatalogueTests.swift */,
-				CC300001CC300001CC300001 /* HomeMotionTests.swift */,
-				CB300001CB300001CB300001 /* ShopPickerTests.swift */,
+				842C4DC5BD3AFBC57CB5D9D8 /* AppearanceFlowTests.swift */,
 				FCA49BE22789716B82E9E6D3 /* CutoutFlowTests.swift */,
 				63837086B8EF9339D1C1D70F /* DuoLayoutTests.swift */,
+				8B67E27C08450AC5495AC8CD /* HomeMotionTests.swift */,
+				3A1FE82116255498E87419CE /* MapJourneyFlowTests.swift */,
+				BC4D309B4AE20DCD574BAA35 /* NativeNavigationTests.swift */,
+				030551582209CFB612D5049D /* ShopPickerTests.swift */,
+				72D8236276FDC843DE7D6A31 /* StampCatalogueTests.swift */,
 			);
 			path = BrewwwwUITests;
 			sourceTree = "<group>";
@@ -105,24 +132,31 @@
 		3A9BA205D681DF0C79AF9EE1 /* Brewwww */ = {
 			isa = PBXGroup;
 			children = (
-				CE100001CE100001CE100001 /* StampCatalogue.swift */,
-				CE100000CE100000CE100000 /* CaffeTogether.swift */,
-				CC100001CC100001CC100001 /* PhotoAlbumOverlay.swift */,
-				CC100000CC100000CC100000 /* CalendarPager.swift */,
-				CB100001CB100001CB100001 /* ShopPicker.swift */,
-				CB100000CB100000CB100000 /* ShopSearch.swift */,
-				CA10C020CA10C020CA10C020 /* Assets.xcassets */,
 				7B851F6E538BF94ABF819F7A /* AdaptiveLayout.swift */,
+				B153A727485C482E1B6C2D36 /* Assets.xcassets */,
 				CCB707E447C07794A352EDAD /* BrewwwwApp.swift */,
+				2AF0D40C9B24F7E7B8CE9A0A /* CafeMapPage.swift */,
+				9AC254AFA77DE562B6891A34 /* CaffeTogether.swift */,
+				3166A5AE5EDB766A18CA3627 /* CalendarPager.swift */,
+				1D5BD8C12ADAE628B559D08A /* CoffeeGlobe.swift */,
 				05A6E4C45A6864381808C42B /* ContentView.swift */,
 				06978E310A9C7DCFCD3BA7B1 /* Design.swift */,
 				C6866CF7020FDFDF9651F2EF /* ExplorePages.swift */,
+				EDA69CA5C65EE43830B2958C /* Haptics.swift */,
 				772C20DB40D2A9C7D41B316C /* Info.plist */,
 				96A737750D37EEE0A2F21EC3 /* JournalPages.swift */,
+				B32AB2E0606C68C314F1F570 /* LiquidNavigation.swift */,
+				B3B982F5B3C0A7F69D8B2274 /* MapJourney.swift */,
 				6158FE42D76BD1471978ACDB /* Model.swift */,
+				A84210C5EF29F47B66E8EBDC /* PhotoAlbumOverlay.swift */,
 				753A2582FEE5D16D80E6C415 /* RecordEditor.swift */,
 				A3870CF74DAD92BF06F8A4D9 /* SettingsPage.swift */,
+				305248E7A9DFED7D3E1A3F7D /* ShopPicker.swift */,
+				A79B291E649CBA13F2219ABA /* ShopSearch.swift */,
+				2EBCCFB923F2B3B887782B4F /* StampCatalogue.swift */,
 				4FC40E8F520CA64010AB66C4 /* SubjectCutoutService.swift */,
+				F71DBF36922B394AC2759702 /* WishShopSearch.swift */,
+				88C4137BBBDE26F4FB766353 /* Resources */,
 			);
 			path = Brewwww;
 			sourceTree = "<group>";
@@ -130,10 +164,12 @@
 		63D9775FE895E2173FEF5163 /* BrewwwwTests */ = {
 			isa = PBXGroup;
 			children = (
-				CE300000CE300000CE300000 /* CaffeTogetherTests.swift */,
-				CD100000CD100000CD100000 /* ShopStampTests.swift */,
-				CC300000CC300000CC300000 /* CalendarPagingTests.swift */,
-				CB300000CB300000CB300000 /* ShopSearchTests.swift */,
+				B0A884DCDB5CE83A7BDA3A2D /* AppearanceTests.swift */,
+				EA1E7FF7053C5B26E00FEF78 /* CaffeTogetherTests.swift */,
+				E3FE9379752A8156845A4ECD /* CalendarPagingTests.swift */,
+				39F85C3472C7076A72ED5B51 /* MapJourneyTests.swift */,
+				32B7B4C7F588F9E7C2EEB690 /* ShopSearchTests.swift */,
+				E0A7E6C7A5134142527F8424 /* ShopStampTests.swift */,
 				EB3670C9DF76C3EA55E15D4D /* SubjectCutoutTests.swift */,
 				BFA8ECFE879BD1CD517B4396 /* Fixtures */,
 			);
@@ -148,6 +184,14 @@
 				B94FFE7AF76F4EB33074AA8C /* BrewwwwUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		88C4137BBBDE26F4FB766353 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				395462E85FDD08229D0DB03D /* coastline.geojson */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		BFA8ECFE879BD1CD517B4396 /* Fixtures */ = {
@@ -176,7 +220,7 @@
 			buildConfigurationList = D2AEDAED4DCD7269F6B09F50 /* Build configuration list for PBXNativeTarget "Brewwww" */;
 			buildPhases = (
 				257237947CA9BAEF9CE462BA /* Sources */,
-				CA10C030CA10C030CA10C030 /* Resources */,
+				0AA94B7BEE5F3499FA2D7914 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -270,6 +314,15 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0AA94B7BEE5F3499FA2D7914 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F822C608AEFEC39BAA36A6F5 /* Assets.xcassets in Resources */,
+				964D8BA1A7F6A24E436BB288 /* coastline.geojson in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6A33C4AAB26F3C3A2454151C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -278,7 +331,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA10C030CA10C030CA10C030 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (CA10C010CA10C010CA10C010 /* Assets.xcassets in Resources */,); runOnlyForDeploymentPostprocessing = 0; };
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -286,22 +338,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE200001CE200001CE200001 /* StampCatalogue.swift in Sources */,
-				CE200000CE200000CE200000 /* CaffeTogether.swift in Sources */,
-				CC200001CC200001CC200001 /* PhotoAlbumOverlay.swift in Sources */,
-				CC200000CC200000CC200000 /* CalendarPager.swift in Sources */,
-				CB200001CB200001CB200001 /* ShopPicker.swift in Sources */,
-				CB200000CB200000CB200000 /* ShopSearch.swift in Sources */,
 				53E76511D2E2F37CA9271586 /* AdaptiveLayout.swift in Sources */,
 				126177462368348CC4D4BD85 /* BrewwwwApp.swift in Sources */,
+				7E9DFB647ADF9F76A587E38D /* CafeMapPage.swift in Sources */,
+				59453A578A1B64D30ED46224 /* CaffeTogether.swift in Sources */,
+				985ABA68E03D111BA9E6041E /* CalendarPager.swift in Sources */,
+				A38E6EAE579D1139F9155126 /* CoffeeGlobe.swift in Sources */,
 				B5EDCFFCA9B33688619D437B /* ContentView.swift in Sources */,
 				B0DC56A3EA10B8685F79471C /* Design.swift in Sources */,
 				F9E875D13FC6154C638B33CB /* ExplorePages.swift in Sources */,
+				548D3E2D4B880F34F8640442 /* Haptics.swift in Sources */,
 				8514DE9AB24280A08F53D545 /* JournalPages.swift in Sources */,
+				6A0A9016E1C626E18E1B1F10 /* LiquidNavigation.swift in Sources */,
+				86D71BBA4EF2489B421ADAFC /* MapJourney.swift in Sources */,
 				DE519D35FD6B815F61DBC0C8 /* Model.swift in Sources */,
+				0A22C392E3FB5588CBB08B1E /* PhotoAlbumOverlay.swift in Sources */,
 				2BAAFA3F17ECA777AF18FB0B /* RecordEditor.swift in Sources */,
 				BE4AF1E58C954C819DA9044A /* SettingsPage.swift in Sources */,
+				E600E265704EB1F8458134F0 /* ShopPicker.swift in Sources */,
+				99D717658AB992656DB865F8 /* ShopSearch.swift in Sources */,
+				94B895A3E8ADD50232B27B69 /* StampCatalogue.swift in Sources */,
 				34882EB9938F9D1A01A56B4F /* SubjectCutoutService.swift in Sources */,
+				B55B8965F2DE78D9DF579D4A /* WishShopSearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,11 +367,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE400001CE400001CE400001 /* StampCatalogueTests.swift in Sources */,
-				CC400001CC400001CC400001 /* HomeMotionTests.swift in Sources */,
-				CB400001CB400001CB400001 /* ShopPickerTests.swift in Sources */,
+				85FACE48178BDF33BBEB9CFB /* AppearanceFlowTests.swift in Sources */,
 				FE872DEB404BE09429674175 /* CutoutFlowTests.swift in Sources */,
 				7554CC281AE226C03A9343A0 /* DuoLayoutTests.swift in Sources */,
+				7423EE9698DE12C00618B3DE /* HomeMotionTests.swift in Sources */,
+				B9467C002AD3251E59D8659E /* MapJourneyFlowTests.swift in Sources */,
+				BC7731DEA239A7408A2988E8 /* NativeNavigationTests.swift in Sources */,
+				BFD5050D9D236D07F6F8061E /* ShopPickerTests.swift in Sources */,
+				9CFF9CC6E908B6A5F1737A3D /* StampCatalogueTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,10 +382,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE400000CE400000CE400000 /* CaffeTogetherTests.swift in Sources */,
-				CD200000CD200000CD200000 /* ShopStampTests.swift in Sources */,
-				CC400000CC400000CC400000 /* CalendarPagingTests.swift in Sources */,
-				CB400000CB400000CB400000 /* ShopSearchTests.swift in Sources */,
+				AC51BC304B5C63FF669F3733 /* AppearanceTests.swift in Sources */,
+				C922B157B6E12C7E818F3B50 /* CaffeTogetherTests.swift in Sources */,
+				9252D8540B4103ED3D276190 /* CalendarPagingTests.swift in Sources */,
+				83D7F64C496DADA9B4AEB86E /* MapJourneyTests.swift in Sources */,
+				F2CA388A233EA1C32EC80863 /* ShopSearchTests.swift in Sources */,
+				12A7690BF3FA2A0073EB84A5 /* ShopStampTests.swift in Sources */,
 				7803FCAB7A01B1E0D05A3D0E /* SubjectCutoutTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +444,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -400,12 +464,13 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "用于拍摄饮品照片并添加记录。";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "用于查找附近店铺，并为饮品记录保存所选店铺的位置与城市。";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "用于查找附近咖啡店、在地图查看当前位置，并为所选店铺保存位置与城市。";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "用于选择饮品照片并添加记录。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -440,17 +505,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = Z6DL58DPTG;
 				INFOPLIST_FILE = Brewwww/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Brewwww!";
-				INFOPLIST_KEY_NSCameraUsageDescription = "用于拍摄饮品照片并添加记录。";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "用于查找附近店铺，并为饮品记录保存所选店铺的位置与城市。";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "用于选择饮品照片并添加记录。";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_CFBundleDisplayName = "Un Caffèee!";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -498,6 +554,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -511,12 +568,13 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "用于拍摄饮品照片并添加记录。";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "用于查找附近店铺，并为饮品记录保存所选店铺的位置与城市。";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "用于查找附近咖啡店、在地图查看当前位置，并为所选店铺保存位置与城市。";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "用于选择饮品照片并添加记录。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -566,17 +624,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = Z6DL58DPTG;
 				INFOPLIST_FILE = Brewwww/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Brewwww!";
-				INFOPLIST_KEY_NSCameraUsageDescription = "用于拍摄饮品照片并添加记录。";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "用于查找附近店铺，并为饮品记录保存所选店铺的位置与城市。";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "用于选择饮品照片并添加记录。";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_CFBundleDisplayName = "Un Caffèee!";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

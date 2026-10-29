@@ -1,5 +1,7 @@
 # App 图标来源
 
+2026-10-27 更新：当前 App 已更名为 **Un Caffèeee!**，图标使用保留原造型的改字版本，见 [改字说明及最终文件](Un-Caffeeee-图标改字.md)。以下记录是改字前的参考素材来源；原文件已留档于 `品牌素材/Original-Brewwww-AppIcon.png`。
+
 使用原应用在 Apple App Store 官方 CDN 提供的 1024×1024 图标，直接保存，不重新绘制、不裁切、不改变颜色。
 
 - 商店：[Brewwww!，id6761394593](https://apps.apple.com/cn/app/brewwww/id6761394593)

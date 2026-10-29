@@ -1,0 +1,266 @@
+{
+  "01-home": {
+    "addFrame": [
+      879,
+      581,
+      48,
+      48
+    ],
+    "barGuide": [
+      843,
+      124,
+      84,
+      511
+    ],
+    "book": false,
+    "height": 635,
+    "hinge": "partiallyOpen",
+    "keyboardInset": 0,
+    "landscape": true,
+    "pageFrame": [
+      0,
+      0,
+      867,
+      635
+    ],
+    "ready": true,
+    "reservations": [
+      [
+        867,
+        0,
+        84,
+        124
+      ]
+    ],
+    "tabletop": true,
+    "timestamp": 1793156791.154642,
+    "utilityRegion": [
+      843,
+      124,
+      84,
+      263
+    ],
+    "verticalNavigation": true,
+    "width": 951
+  },
+  "03-map": {
+    "addFrame": [
+      879,
+      581,
+      48,
+      48
+    ],
+    "barGuide": [
+      843,
+      124,
+      84,
+      511
+    ],
+    "book": false,
+    "height": 635,
+    "hinge": "partiallyOpen",
+    "keyboardInset": 0,
+    "landscape": true,
+    "pageFrame": [
+      0,
+      0,
+      867,
+      635
+    ],
+    "ready": true,
+    "reservations": [
+      [
+        867,
+        0,
+        84,
+        124
+      ]
+    ],
+    "tabletop": true,
+    "timestamp": 1793156817.612331,
+    "utilityRegion": [
+      843,
+      124,
+      84,
+      263
+    ],
+    "verticalNavigation": true,
+    "width": 951
+  },
+  "04-stamps": {
+    "addFrame": [
+      879,
+      581,
+      48,
+      48
+    ],
+    "barGuide": [
+      843,
+      124,
+      84,
+      511
+    ],
+    "book": false,
+    "height": 635,
+    "hinge": "partiallyOpen",
+    "keyboardInset": 0,
+    "landscape": true,
+    "pageFrame": [
+      0,
+      0,
+      867,
+      635
+    ],
+    "ready": true,
+    "reservations": [
+      [
+        867,
+        0,
+        84,
+        124
+      ]
+    ],
+    "tabletop": true,
+    "timestamp": 1793156870.348752,
+    "utilityRegion": [
+      843,
+      124,
+      84,
+      263
+    ],
+    "verticalNavigation": true,
+    "width": 951
+  },
+  "05-settings": {
+    "addFrame": [
+      879,
+      581,
+      48,
+      48
+    ],
+    "barGuide": [
+      843,
+      124,
+      84,
+      511
+    ],
+    "book": false,
+    "height": 635,
+    "hinge": "partiallyOpen",
+    "keyboardInset": 0,
+    "landscape": true,
+    "pageFrame": [
+      0,
+      0,
+      867,
+      635
+    ],
+    "ready": true,
+    "reservations": [
+      [
+        867,
+        0,
+        84,
+        124
+      ]
+    ],
+    "tabletop": true,
+    "timestamp": 1793156891.495651,
+    "utilityRegion": [
+      843,
+      124,
+      84,
+      263
+    ],
+    "verticalNavigation": true,
+    "width": 951
+  },
+  "06-source": {
+    "addFrame": [
+      879,
+      581,
+      48,
+      48
+    ],
+    "barGuide": [
+      843,
+      124,
+      84,
+      511
+    ],
+    "book": false,
+    "height": 635,
+    "hinge": "partiallyOpen",
+    "keyboardInset": 0,
+    "landscape": true,
+    "pageFrame": [
+      0,
+      0,
+      867,
+      635
+    ],
+    "ready": true,
+    "reservations": [
+      [
+        867,
+        0,
+        84,
+        124
+      ]
+    ],
+    "tabletop": true,
+    "timestamp": 1793156912.2740788,
+    "utilityRegion": [
+      843,
+      124,
+      84,
+      263
+    ],
+    "verticalNavigation": true,
+    "width": 951
+  },
+  "08-editor": {
+    "addFrame": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "barGuide": [
+      843,
+      124,
+      84,
+      511
+    ],
+    "book": false,
+    "height": 635,
+    "hinge": "partiallyOpen",
+    "keyboardInset": 0,
+    "landscape": true,
+    "pageFrame": [
+      0,
+      0,
+      867,
+      635
+    ],
+    "ready": true,
+    "reservations": [
+      [
+        867,
+        0,
+        84,
+        124
+      ]
+    ],
+    "tabletop": true,
+    "timestamp": 1793156933.829694,
+    "utilityRegion": [
+      843,
+      124,
+      84,
+      503
+    ],
+    "verticalNavigation": true,
+    "width": 951
+  }
+}

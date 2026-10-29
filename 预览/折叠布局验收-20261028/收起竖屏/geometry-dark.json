@@ -1,0 +1,52 @@
+{
+  "08-editor": {
+    "addFrame": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "barGuide": [
+      358,
+      174,
+      84,
+      470
+    ],
+    "book": false,
+    "height": 644,
+    "hinge": "closed",
+    "keyboardInset": 0,
+    "landscape": false,
+    "pageFrame": [
+      0,
+      0,
+      382,
+      644
+    ],
+    "ready": true,
+    "reservations": [
+      [
+        399.6666666666667,
+        29.333333333333332,
+        37,
+        37
+      ],
+      [
+        382,
+        0,
+        84,
+        174
+      ]
+    ],
+    "tabletop": false,
+    "timestamp": 1793159256.058793,
+    "utilityRegion": [
+      358,
+      174,
+      84,
+      462
+    ],
+    "verticalNavigation": true,
+    "width": 466
+  }
+}

@@ -8,6 +8,7 @@ final class CutoutFlowTests: XCTestCase {
 
     func testUnavailableInferenceCanStillSaveTheOriginal() {
         let app = launch("--preview-cutout-fixture")
+        XCTAssertTrue(app.buttons["editor.date"].waitForExistence(timeout: 10))
         let status = app.staticTexts["cutout.status"]
         XCTAssertTrue(status.waitForExistence(timeout: 20), "先运行 scripts/stage-cutout-fixtures.py 布置测试照片。")
         let finished = XCTNSPredicateExpectation(predicate: NSPredicate { _, _ in
@@ -23,6 +24,7 @@ final class CutoutFlowTests: XCTestCase {
         XCTAssertTrue(app.buttons["editor.save"].isEnabled)
         app.buttons["editor.save"].tap()
         XCTAssertTrue(app.buttons["nav.calendar"].waitForExistence(timeout: 5))
+        XCTAssertFalse(app.datePickers.firstMatch.exists, "保存直接完成，不再次弹出时间选择")
         app.buttons["home.summary"].tap()
         XCTAssertTrue(app.buttons["drink.Original Test"].waitForExistence(timeout: 5))
     }

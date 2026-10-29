@@ -1,5 +1,55 @@
 import SwiftUI
 import ImageIO
+import PhotosUI
+
+private struct EditorPhotoAnchorKey: PreferenceKey {
+    static var defaultValue: Anchor<CGRect>? { nil }
+    static func reduce(value: inout Anchor<CGRect>?, nextValue: () -> Anchor<CGRect>?) {
+        value = nextValue() ?? value
+    }
+}
+
+enum PhotoTimestamp {
+    /// Inspect the original bytes before UIImage decoding/re-encoding can strip
+    /// the photo's capture timestamp and its UTC offset.
+    static func captureDate(in data: Data) -> Date? {
+        guard let source = CGImageSourceCreateWithData(data as CFData, nil),
+              let properties = CGImageSourceCopyPropertiesAtIndex(source, 0, nil) as? [String: Any] else { return nil }
+        return captureDate(metadata: properties)
+    }
+
+    static func captureDate(metadata: [String: Any]) -> Date? {
+        let exif = metadata[kCGImagePropertyExifDictionary as String] as? [String: Any] ?? [:]
+        let candidates = [
+            (kCGImagePropertyExifDateTimeOriginal, kCGImagePropertyExifOffsetTimeOriginal),
+            (kCGImagePropertyExifDateTimeDigitized, kCGImagePropertyExifOffsetTimeDigitized)
+        ]
+        for (dateKey, offsetKey) in candidates {
+            if let value = exif[dateKey as String] as? String,
+               let date = parse(value, offset: exif[offsetKey as String] as? String) { return date }
+        }
+        let tiff = metadata[kCGImagePropertyTIFFDictionary as String] as? [String: Any]
+        if let value = tiff?[kCGImagePropertyTIFFDateTime as String] as? String {
+            return parse(value, offset: nil)
+        }
+        return nil
+    }
+
+    private static func parse(_ value: String, offset: String?) -> Date? {
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.calendar = Calendar(identifier: .gregorian)
+        formatter.timeZone = .current
+        formatter.isLenient = false
+        let cleaned = value.trimmingCharacters(in: .whitespacesAndNewlines.union(.controlCharacters))
+        if let offset, !offset.isEmpty {
+            formatter.dateFormat = "yyyy:MM:dd HH:mm:ssXXXXX"
+            return formatter.date(from: cleaned + offset)
+        }
+        formatter.dateFormat = "yyyy:MM:dd HH:mm:ss"
+        return formatter.date(from: cleaned)
+    }
+}
 
 struct RecordEditor: View {
     @EnvironmentObject private var store: BrewStore
@@ -15,6 +65,10 @@ struct RecordEditor: View {
     @State private var generatedStickerData: Data?
     @State private var useOriginalSticker = false
     @State private var showSaveError = false
+    @State private var showPhotoOptions = false
+    @State private var showPhotoPicker = false
+    @State private var showCamera = false
+    @State private var selectedPhoto: PhotosPickerItem?
     @FocusState private var focusedField: String?
     var onCancel: () -> Void
     var onSave: (DrinkRecord, UIImage?, Data?) throws -> Void
@@ -64,10 +118,42 @@ struct RecordEditor: View {
             }
         }
         .padding(.bottom, layout.keyboardInset)
+        .ignoresSafeArea(.container, edges: layout.keyboardInset > 0 ? [] : .bottom)
         .accessibilityElement(children: .contain)
         .accessibilityIdentifier("editor.layout")
         .accessibilityValue(layout.tabletop ? "tabletop" : layout.twoColumns ? "columns" : "stack")
+        .overlayPreferenceValue(EditorPhotoAnchorKey.self) { anchor in
+            GeometryReader { geometry in
+                if let anchor {
+                    photoOptions(anchor: geometry[anchor], in: geometry.size)
+                }
+            }
+        }
+        .task {
+            #if DEBUG
+            if ProcessInfo.processInfo.arguments.contains("--fold-audit"),
+               ProcessInfo.processInfo.arguments.contains("--audit-keyboard") {
+                try? await Task.sleep(for: .milliseconds(300))
+                focusedField = "cup.and.saucer"
+            }
+            #endif
+        }
         .task(id: cutoutAttempt) { await generateSticker() }
+        .photosPicker(isPresented: $showPhotoPicker, selection: $selectedPhoto, matching: .images,
+                      preferredItemEncoding: .current)
+        .task(id: selectedPhoto) {
+            guard let item = selectedPhoto,
+                  let data = try? await item.loadTransferable(type: Data.self), !Task.isCancelled,
+                  let image = UIImage(data: data) else { return }
+            replacePhoto(image, captureDate: PhotoTimestamp.captureDate(in: data))
+            selectedPhoto = nil
+        }
+        .fullScreenCover(isPresented: $showCamera) {
+            CameraPicker { image, captureDate in
+                showCamera = false
+                if let image { replacePhoto(image, captureDate: captureDate) }
+            }.ignoresSafeArea()
+        }
         .alert("保存失败", isPresented: $showSaveError) {
             Button("知道了", role: .cancel) {}
         } message: {
@@ -120,8 +206,11 @@ struct RecordEditor: View {
                     .padding(.top, 12)
                 }
                 .scrollDismissesKeyboard(.interactively)
+                .contentMargins(.bottom, 24, for: .scrollContent)
+                .accessibilityIdentifier("editor.scroll")
             }
-            .brewPagePadding()
+            .padding(.leading, layout.pageInsets.leading)
+            .padding(.trailing, layout.pageInsets.trailing)
             .frame(maxWidth: .infinity)
             if !layout.leftHanded { actions }
         }
@@ -140,6 +229,8 @@ struct RecordEditor: View {
                         }
                         .brewRow()
                     }
+                    .accessibilityIdentifier("editor.date")
+                    .accessibilityValue(String(draft.date.timeIntervalSince1970))
 
                     Button {
                         focusedField = nil
@@ -210,6 +301,7 @@ struct RecordEditor: View {
                             Label("删除这条记录", systemImage: "trash")
                                 .frame(maxWidth: .infinity).padding(.vertical, 17)
                         }
+                        .accessibilityIdentifier("editor.delete")
                     }
 
         }
@@ -217,19 +309,18 @@ struct RecordEditor: View {
     }
 
     private var actions: some View {
-        VStack(spacing: 12) {
-            Spacer(minLength: 0)
-            Button(action: onCancel) { RoundIcon(symbol: "xmark") }
-                .accessibilityLabel("取消编辑").accessibilityIdentifier("editor.cancel")
-            Button(action: saveRecord) {
-                RoundIcon(symbol: "checkmark", active: true)
+        GeometryReader { geometry in
+            let frame = geometry.frame(in: .named("brewRoot"))
+            let systemAxis = layout.sidebarAxis - frame.minX
+            VStack(spacing: 12) {
+                BrewGlassButton(symbol: "xmark", label: "取消编辑", identifier: "editor.cancel", action: onCancel)
+                BrewGlassButton(symbol: "checkmark", label: "保存记录", identifier: "editor.save", action: saveRecord)
+                    .disabled(!canSave).opacity(canSave ? 1 : 0.4)
             }
-            .accessibilityLabel("保存记录").accessibilityIdentifier("editor.save")
-            .disabled(!canSave)
-            .opacity(canSave ? 1 : 0.4)
-            Spacer(minLength: 0)
-        }
-        .frame(width: 66)
+            .frame(width: 46, height: 104)
+            .position(x: systemAxis >= 0 && systemAxis <= frame.width ? systemAxis : frame.width / 2,
+                      y: layout.utilityCenterY(preferred: frame.midY, height: 104, within: frame) - frame.minY)
+        }.frame(width: 66)
     }
 
     private enum CutoutState: Equatable {
@@ -242,7 +333,7 @@ struct RecordEditor: View {
     }
 
     private var displayedCutout: UIImage? {
-        useOriginalSticker ? nil : (generatedSticker ?? store.sticker(for: draft))
+        useOriginalSticker ? nil : (generatedSticker ?? (newPhoto == nil ? store.sticker(for: draft) : nil))
     }
 
     private func stickerPreview(size: CGFloat, compact: Bool = false) -> some View {
@@ -256,8 +347,74 @@ struct RecordEditor: View {
                 .accessibilityElement(children: .ignore)
                 .accessibilityLabel(displayedCutout == nil ? "原照片" : "主体贴纸")
                 .accessibilityIdentifier(displayedCutout == nil ? "sticker.original" : "sticker.cutout")
+                .overlay(alignment: .bottomTrailing) {
+                    Button {
+                        focusedField = nil
+                        showPhotoOptions.toggle()
+                    } label: {
+                        Image(systemName: "camera.fill").font(.system(size: compact ? 12 : 16))
+                            .foregroundStyle(BrewStyle.text).padding(compact ? 8 : 11)
+                            .background(.regularMaterial, in: Circle())
+                    }.accessibilityLabel("添加或更换饮品照片").accessibilityIdentifier("editor.photo")
+                    .anchorPreference(key: EditorPhotoAnchorKey.self, value: .bounds) { $0 }
+                }
             if !compact { cutoutControls }
         }
+    }
+
+    private func photoOptions(anchor: CGRect, in size: CGSize) -> some View {
+        let hasCamera = UIImagePickerController.isSourceTypeAvailable(.camera)
+        let width: CGFloat = 190
+        let height: CGFloat = hasCamera ? 100 : 50
+        let x = min(max(width / 2 + 12, anchor.midX), max(width / 2 + 12, size.width - width / 2 - 12))
+        let below = anchor.maxY + 8 + height / 2
+        let y = below + height / 2 <= size.height - 12 ? below : anchor.minY - 8 - height / 2
+        return ZStack(alignment: .topLeading) {
+            Color.clear.contentShape(Rectangle())
+                .onTapGesture { showPhotoOptions = false }
+                .accessibilityLabel("关闭照片选项")
+                .accessibilityIdentifier("editor.photo.dismiss")
+                .accessibilityAddTraits(.isButton)
+            VStack(spacing: 0) {
+                if hasCamera {
+                    photoOption("拍照", symbol: "camera", identifier: "editor.photo.camera") {
+                        showPhotoOptions = false
+                        showCamera = true
+                    }
+                    Divider()
+                }
+                photoOption("从相册选择", symbol: "photo", identifier: "editor.photo.library") {
+                    showPhotoOptions = false
+                    showPhotoPicker = true
+                }
+            }
+            .frame(width: width, height: height)
+            .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 18))
+            .shadow(color: .black.opacity(0.15), radius: 12, y: 4)
+            .position(x: x, y: y)
+        }
+        // Keep dismissal out of the modal presentation lifecycle. Hit testing
+        // changes with the state, so there is no closing animation/cooldown
+        // that can consume a subsequent tap on the photo button.
+        .opacity(showPhotoOptions ? 1 : 0)
+        .allowsHitTesting(showPhotoOptions)
+        .accessibilityHidden(!showPhotoOptions)
+        .transaction { $0.animation = nil }
+        .accessibilityAction(.escape) { showPhotoOptions = false }
+    }
+
+    private func photoOption(_ title: String, symbol: String, identifier: String,
+                             action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            Label(title, systemImage: symbol)
+                .font(.system(size: 16))
+                .foregroundStyle(BrewStyle.text)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+                .padding(.horizontal, 16)
+                .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .accessibilityIdentifier(identifier)
     }
 
     @ViewBuilder private var cutoutControls: some View {
@@ -335,7 +492,15 @@ struct RecordEditor: View {
         }
     }
 
+    private func replacePhoto(_ image: UIImage, captureDate: Date?) {
+        if onDelete == nil { draft.date = captureDate ?? Date() }
+        newPhoto = image; generatedSticker = nil; generatedStickerData = nil
+        useOriginalSticker = false; cutoutState = .idle; cutoutAttempt += 1
+    }
+
     private func saveRecord() {
+        guard canSave else { return }
+        focusedField = nil
         var saved = draft
         if useOriginalSticker || displayedCutout == nil { saved.stickerFile = nil }
         do {

@@ -30,6 +30,11 @@ final class BrewStore: ObservableObject {
     @Published var savedShopPlaces: [ShopPlace] = [] {
         didSet { save() }
     }
+    @Published private(set) var wishlistPlaces: [ShopPlace] = []
+
+    @Published var allStampsUnlocked = false {
+        didSet { save() }
+    }
 
     private let folder: URL
     private let dataFile: URL
@@ -40,6 +45,8 @@ final class BrewStore: ObservableObject {
         var records: [DrinkRecord]
         var customShops: [String: String]
         var savedShopPlaces: [ShopPlace]? = nil
+        var wishlistPlaces: [ShopPlace]? = nil
+        var allStampsUnlocked: Bool? = nil
     }
 
     init(directory: URL? = nil) {
@@ -58,15 +65,21 @@ final class BrewStore: ObservableObject {
         try? FileManager.default.createDirectory(at: folder, withIntermediateDirectories: true)
         if let data = try? Data(contentsOf: dataFile),
            let snapshot = try? JSONDecoder().decode(Snapshot.self, from: data) {
+            allStampsUnlocked = snapshot.allStampsUnlocked ?? false
             records = snapshot.records
             customShops = snapshot.customShops
             savedShopPlaces = snapshot.savedShopPlaces ?? []
+            wishlistPlaces = snapshot.wishlistPlaces ?? []
         }
         loading = false
         #if DEBUG
         if uiTesting {
+            allStampsUnlocked = false
+            wishlistPlaces = []
             UserDefaults.standard.set("right", forKey: "handedness")
-            UserDefaults.standard.set(false, forKey: "autoTheme")
+            let appearance = ProcessInfo.processInfo.arguments.first { $0.hasPrefix("--appearance=") }?
+                .split(separator: "=").last.map(String.init) ?? BrewAppearance.dark.rawValue
+            UserDefaults.standard.set(appearance, forKey: "appearanceMode")
             records = [DrinkRecord(shop: "MIND BALANCE", city: "上海市", name: "古罗马美式",
                                    latitude: 31.2304, longitude: 121.4737)]
         }
@@ -78,8 +91,10 @@ final class BrewStore: ObservableObject {
         try? persist(records)
     }
 
-    private func persist(_ updatedRecords: [DrinkRecord]) throws {
-        let snapshot = Snapshot(records: updatedRecords, customShops: customShops, savedShopPlaces: savedShopPlaces)
+    private func persist(_ updatedRecords: [DrinkRecord], wishes: [ShopPlace]? = nil) throws {
+        let snapshot = Snapshot(records: updatedRecords, customShops: customShops,
+                                savedShopPlaces: savedShopPlaces, wishlistPlaces: wishes ?? wishlistPlaces,
+                                allStampsUnlocked: allStampsUnlocked)
         try JSONEncoder().encode(snapshot).write(to: dataFile, options: .atomic)
     }
 
@@ -164,6 +179,24 @@ final class BrewStore: ObservableObject {
         records = []
         customShops = [:]
         savedShopPlaces = []
+        wishlistPlaces = []
+        save()
+    }
+
+    func addWish(_ place: ShopPlace) throws {
+        guard place.coordinate != nil, !place.name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else {
+            throw MapWishError.missingLocation
+        }
+        guard !wishlistPlaces.contains(where: { $0.isSameBranch(as: place) }) else { return }
+        let next = wishlistPlaces + [place]
+        try persist(records, wishes: next)
+        wishlistPlaces = next
+    }
+
+    func removeWish(_ place: ShopPlace) throws {
+        let next = wishlistPlaces.filter { !$0.isSameBranch(as: place) }
+        try persist(records, wishes: next)
+        wishlistPlaces = next
     }
 
     func image(for record: DrinkRecord) -> UIImage? {
@@ -213,7 +246,16 @@ final class BrewStore: ObservableObject {
     }
 
     var unlockedCaffeStamps: [CaffeTogetherStamp] {
-        CaffeTogetherStamp.unlocked(drinkCount: records.count)
+        CaffeStampSeries.allCases.flatMap { series in
+            CaffeTogetherStamp.unlocked(drinkCount: stampProgress(for: series), series: series)
+        }
+    }
+
+    var independentCoffeeCount: Int { records.filter(CoffeeChainPolicy.qualifies).count }
+
+    func stampProgress(for series: CaffeStampSeries) -> Int {
+        if allStampsUnlocked { return series.stamps.map(\.requiredCount).max() ?? 0 }
+        return series == .together ? records.count : independentCoffeeCount
     }
 
     var stampCount: Int { shops.count + unlockedCaffeStamps.count }

@@ -4,6 +4,69 @@ import ImageIO
 import UIKit
 @testable import Brewwww
 
+final class PhotoTimestampTests: XCTestCase {
+    func testOriginalCaptureTimeWinsAndHonorsItsOffset() throws {
+        let metadata: [String: Any] = [kCGImagePropertyExifDictionary as String: [
+            kCGImagePropertyExifDateTimeOriginal as String: "2020:01:02 08:04:05",
+            kCGImagePropertyExifOffsetTimeOriginal as String: "+08:00",
+            kCGImagePropertyExifDateTimeDigitized as String: "2025:02:03 10:00:00"
+        ]]
+        let expected = try XCTUnwrap(ISO8601DateFormatter().date(from: "2020-01-02T00:04:05Z"))
+        XCTAssertEqual(PhotoTimestamp.captureDate(metadata: metadata), expected)
+    }
+
+    func testCaptureTimeSurvivesReadingOriginalJPEGBytes() throws {
+        let image = UIGraphicsImageRenderer(size: CGSize(width: 8, height: 8)).image { context in
+            UIColor.brown.setFill(); context.fill(CGRect(x: 0, y: 0, width: 8, height: 8))
+        }
+        let data = NSMutableData()
+        let destination = try XCTUnwrap(CGImageDestinationCreateWithData(data, "public.jpeg" as CFString, 1, nil))
+        let properties: [String: Any] = [kCGImagePropertyExifDictionary as String: [
+            kCGImagePropertyExifDateTimeOriginal as String: "2020:01:02 08:04:05",
+            kCGImagePropertyExifOffsetTimeOriginal as String: "+08:00"
+        ]]
+        CGImageDestinationAddImage(destination, try XCTUnwrap(image.cgImage), properties as CFDictionary)
+        XCTAssertTrue(CGImageDestinationFinalize(destination))
+        let expected = try XCTUnwrap(ISO8601DateFormatter().date(from: "2020-01-02T00:04:05Z"))
+        XCTAssertEqual(PhotoTimestamp.captureDate(in: data as Data), expected)
+    }
+
+    func testMissingOrInvalidMetadataHasNoFabricatedDate() {
+        XCTAssertNil(PhotoTimestamp.captureDate(in: Data("not an image".utf8)))
+        XCTAssertNil(PhotoTimestamp.captureDate(metadata: [:]))
+        XCTAssertNil(PhotoTimestamp.captureDate(metadata: [kCGImagePropertyExifDictionary as String: [
+            kCGImagePropertyExifDateTimeOriginal as String: "0000:00:00 00:00:00"
+        ]]))
+    }
+
+    func testTimestampWithoutOffsetUsesLocalTimezone() throws {
+        let date = try XCTUnwrap(PhotoTimestamp.captureDate(metadata: [kCGImagePropertyExifDictionary as String: [
+            kCGImagePropertyExifDateTimeOriginal as String: "2020:01:02 08:04:05"
+        ]]))
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = .current
+        let components = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date)
+        XCTAssertEqual(components.year, 2020)
+        XCTAssertEqual(components.month, 1)
+        XCTAssertEqual(components.day, 2)
+        XCTAssertEqual(components.hour, 8)
+        XCTAssertEqual(components.minute, 4)
+        XCTAssertEqual(components.second, 5)
+    }
+
+    func testInvalidOriginalCanFallBackToDigitizedOrTIFFTime() {
+        let digitized: [String: Any] = [kCGImagePropertyExifDictionary as String: [
+            kCGImagePropertyExifDateTimeOriginal as String: "invalid",
+            kCGImagePropertyExifDateTimeDigitized as String: "2020:01:02 08:04:05"
+        ]]
+        let tiff: [String: Any] = [kCGImagePropertyTIFFDictionary as String: [
+            kCGImagePropertyTIFFDateTime as String: "2020:01:02 08:04:05"
+        ]]
+        XCTAssertNotNil(PhotoTimestamp.captureDate(metadata: digitized))
+        XCTAssertEqual(PhotoTimestamp.captureDate(metadata: digitized), PhotoTimestamp.captureDate(metadata: tiff))
+    }
+}
+
 final class SubjectCutoutTests: XCTestCase {
     func testOldRecordsStillDecodeWithoutSticker() throws {
         let json = """

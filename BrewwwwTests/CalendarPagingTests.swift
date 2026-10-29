@@ -2,6 +2,56 @@ import XCTest
 @testable import Brewwww
 
 final class CalendarPagingTests: XCTestCase {
+    func testDifferentHeightPagesKeepTheirPositionsWhenTheNewMonthCommits() {
+        let heights: [Int: CGFloat] = [-3: 520, -2: 350, -1: 420, 0: 350, 1: 520, 2: 350, 3: 420]
+        let originalHeight: (Int) -> CGFloat = { heights[$0]! }
+        for destination in [-1, 1] {
+            let movement = BrewCalendarPageMotion.centerOffset(to: destination, spacing: 34, height: originalHeight)
+            for offset in -1...1 {
+                let beforeCommit = BrewCalendarPageMotion.centerOffset(to: offset + destination, spacing: 34,
+                                                                       height: originalHeight) - movement
+                let afterCommit = BrewCalendarPageMotion.centerOffset(to: offset, spacing: 34) { heights[$0 + destination]! }
+                XCTAssertEqual(beforeCommit, afterCommit, accuracy: 0.001,
+                               "日历行数不同时，松手提交也不能改变页面的实际位置")
+            }
+        }
+    }
+
+    func testFrostedPreviewChangesContinuouslyAtTheCenterAndEdges() {
+        XCTAssertEqual(BrewCalendarPageMotion.edgeAmount(distance: 0, stride: 400), 0)
+        XCTAssertLessThan(BrewCalendarPageMotion.edgeAmount(distance: 0.01, stride: 400), 0.00001)
+        XCTAssertEqual(BrewCalendarPageMotion.edgeAmount(distance: 200, stride: 400), 0.5, accuracy: 0.001)
+        XCTAssertEqual(BrewCalendarPageMotion.edgeAmount(distance: -200, stride: 400), 0.5, accuracy: 0.001)
+        XCTAssertEqual(BrewCalendarPageMotion.edgeAmount(distance: 400, stride: 400), 1)
+        XCTAssertEqual(BrewCalendarPageMotion.edgeAmount(distance: 800, stride: 400), 1)
+    }
+
+    @MainActor func testNativeTabHostFollowsWindowSidebarRatherThanPreviousBarOrientation() {
+        guard #available(iOS 26.0, *) else { return }
+        let folded = CGRect(x: 0, y: 0, width: 466, height: 644)
+        let opened = CGRect(x: 0, y: 0, width: 951, height: 635)
+        // No frame from a previous display may crop a window with a system rail.
+        for bounds in [folded, opened, folded, opened, folded] {
+            for leftHanded in [false, true] {
+                XCTAssertEqual(NativeTabHostController.tabFrame(in: bounds, hasSystemSidebar: true, leftHanded: leftHanded), bounds)
+            }
+        }
+        let phone = CGRect(x: 0, y: 0, width: 402, height: 874)
+        XCTAssertEqual(NativeTabHostController.tabFrame(in: phone, hasSystemSidebar: false, leftHanded: false),
+                       CGRect(x: 0, y: 0, width: 330, height: 874))
+        XCTAssertEqual(NativeTabHostController.tabFrame(in: phone, hasSystemSidebar: false, leftHanded: true),
+                       CGRect(x: 72, y: 0, width: 330, height: 874))
+        XCTAssertEqual(NativeTabHostController.tabFrame(in: folded, hasSystemSidebar: true, leftHanded: false), folded)
+    }
+
+    func testOrientationPolicyUsesHingeAndShortEdgeRatherThanLandscapeWidth() {
+        XCTAssertFalse(BrewLayout(size: CGSize(width: 844, height: 390), hinge: .unavailable).allowsLandscape)
+        XCTAssertFalse(BrewLayout(size: CGSize(width: 800, height: 900), hinge: .closed).allowsLandscape)
+        XCTAssertTrue(BrewLayout(size: CGSize(width: 800, height: 900), hinge: .fullyOpen).allowsLandscape)
+        XCTAssertTrue(BrewLayout(size: CGSize(width: 800, height: 500), hinge: .partiallyOpen).allowsLandscape)
+        XCTAssertTrue(BrewLayout(size: CGSize(width: 1024, height: 768), hinge: .unavailable).allowsLandscape)
+    }
+
     private var calendar: Calendar {
         var calendar = Calendar(identifier: .gregorian)
         calendar.timeZone = TimeZone(secondsFromGMT: 0)!

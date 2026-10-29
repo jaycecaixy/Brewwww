@@ -1,0 +1,178 @@
+{
+  "01-home": {
+    "addFrame": [
+      604,
+      872,
+      54,
+      54
+    ],
+    "barGuide": [
+      0,
+      90,
+      669,
+      819
+    ],
+    "book": false,
+    "height": 917,
+    "hinge": "fullyOpen",
+    "keyboardInset": 0,
+    "landscape": false,
+    "pageFrame": [
+      0,
+      0,
+      669,
+      868
+    ],
+    "ready": true,
+    "reservations": [
+      [
+        525,
+        0,
+        144,
+        82
+      ]
+    ],
+    "tabletop": false,
+    "timestamp": 1793160067.228343,
+    "utilityRegion": [
+      0,
+      90,
+      669,
+      819
+    ],
+    "verticalNavigation": false,
+    "width": 669
+  },
+  "03-map": {
+    "addFrame": [
+      604,
+      872,
+      54,
+      54
+    ],
+    "barGuide": [
+      0,
+      90,
+      669,
+      819
+    ],
+    "book": false,
+    "height": 917,
+    "hinge": "fullyOpen",
+    "keyboardInset": 0,
+    "landscape": false,
+    "pageFrame": [
+      0,
+      0,
+      669,
+      868
+    ],
+    "ready": true,
+    "reservations": [
+      [
+        525,
+        0,
+        144,
+        82
+      ]
+    ],
+    "tabletop": false,
+    "timestamp": 1793160078.410073,
+    "utilityRegion": [
+      0,
+      90,
+      669,
+      819
+    ],
+    "verticalNavigation": false,
+    "width": 669
+  },
+  "05-settings": {
+    "addFrame": [
+      604,
+      872,
+      54,
+      54
+    ],
+    "barGuide": [
+      0,
+      90,
+      669,
+      819
+    ],
+    "book": false,
+    "height": 917,
+    "hinge": "fullyOpen",
+    "keyboardInset": 0,
+    "landscape": false,
+    "pageFrame": [
+      0,
+      0,
+      669,
+      868
+    ],
+    "ready": true,
+    "reservations": [
+      [
+        525,
+        0,
+        144,
+        82
+      ]
+    ],
+    "tabletop": false,
+    "timestamp": 1793160091.311768,
+    "utilityRegion": [
+      0,
+      90,
+      669,
+      819
+    ],
+    "verticalNavigation": false,
+    "width": 669
+  },
+  "08-editor": {
+    "addFrame": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "barGuide": [
+      0,
+      90,
+      669,
+      819
+    ],
+    "book": false,
+    "height": 917,
+    "hinge": "fullyOpen",
+    "keyboardInset": 0,
+    "landscape": false,
+    "pageFrame": [
+      0,
+      0,
+      669,
+      868
+    ],
+    "ready": true,
+    "reservations": [
+      [
+        525,
+        0,
+        144,
+        82
+      ]
+    ],
+    "tabletop": false,
+    "timestamp": 1793160102.843344,
+    "utilityRegion": [
+      0,
+      90,
+      669,
+      819
+    ],
+    "verticalNavigation": false,
+    "width": 669
+  }
+}

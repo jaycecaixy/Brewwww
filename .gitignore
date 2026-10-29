@@ -4,3 +4,9 @@
 xcuserdata/
 .DS_Store
 ScreenRecording_*.MP4
+
+# 本地验收截图与录屏
+预览/**/*.png
+预览/**/*.PNG
+预览-*.png
+*.[mM][pP]4

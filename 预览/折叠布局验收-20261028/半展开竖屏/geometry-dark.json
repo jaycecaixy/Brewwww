@@ -1,0 +1,90 @@
+{
+  "03-map": {
+    "addFrame": [
+      604,
+      872,
+      54,
+      54
+    ],
+    "barGuide": [
+      0,
+      90,
+      669,
+      819
+    ],
+    "book": true,
+    "height": 917,
+    "hinge": "partiallyOpen",
+    "keyboardInset": 0,
+    "landscape": false,
+    "pageFrame": [
+      0,
+      0,
+      669,
+      868
+    ],
+    "ready": true,
+    "reservations": [
+      [
+        525,
+        0,
+        144,
+        82
+      ]
+    ],
+    "tabletop": false,
+    "timestamp": 1793157696.553103,
+    "utilityRegion": [
+      0,
+      90,
+      669,
+      819
+    ],
+    "verticalNavigation": false,
+    "width": 669
+  },
+  "08-editor": {
+    "addFrame": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "barGuide": [
+      0,
+      90,
+      669,
+      819
+    ],
+    "book": true,
+    "height": 917,
+    "hinge": "partiallyOpen",
+    "keyboardInset": 0,
+    "landscape": false,
+    "pageFrame": [
+      0,
+      0,
+      669,
+      868
+    ],
+    "ready": true,
+    "reservations": [
+      [
+        525,
+        0,
+        144,
+        82
+      ]
+    ],
+    "tabletop": false,
+    "timestamp": 1793157708.394637,
+    "utilityRegion": [
+      0,
+      90,
+      669,
+      819
+    ],
+    "verticalNavigation": false,
+    "width": 669
+  }
+}

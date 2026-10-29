@@ -98,18 +98,18 @@ struct ShopPicker: View {
 
     private var header: some View {
         HStack {
-            Button { confirmationTask?.cancel(); dismiss() } label: { RoundIcon(symbol: "xmark", size: 42) }
-                .accessibilityLabel("取消选择店铺").accessibilityIdentifier("shops.cancel")
+            BrewGlassButton(symbol: "xmark", size: 42, label: "取消选择店铺", identifier: "shops.cancel") {
+                confirmationTask?.cancel(); dismiss()
+            }
             Spacer()
             Text("选择店铺").font(.system(size: 22, weight: .semibold))
             Spacer()
-            Button { confirm() } label: {
-                if confirming { ProgressView().frame(width: 42, height: 42) }
-                else { RoundIcon(symbol: "checkmark", active: selected != nil, size: 42) }
+            BrewGlassButton(symbol: "checkmark", size: 42, loading: confirming, prominent: selected != nil,
+                            label: "确认店铺", identifier: "shops.confirm") {
+                confirm()
             }
             .disabled(selected == nil || confirming)
             .opacity(selected == nil ? 0.45 : 1)
-            .accessibilityLabel("确认店铺").accessibilityIdentifier("shops.confirm")
         }
     }
 

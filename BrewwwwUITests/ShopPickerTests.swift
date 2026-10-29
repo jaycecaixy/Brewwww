@@ -41,7 +41,9 @@ final class ShopPickerTests: XCTestCase {
         XCTAssertEqual(city.value as? String, "杭州市")
         app.buttons["editor.save"].tap()
         app.buttons["home.summary"].tap()
-        app.buttons["drink.古罗马美式"].firstMatch.tap()
+        let savedDrink = app.buttons["drink.古罗马美式"].firstMatch
+        XCTAssertTrue(savedDrink.waitForExistence(timeout: 5))
+        savedDrink.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5)).tap()
         XCTAssertTrue(city.waitForExistence(timeout: 5))
         XCTAssertEqual(city.value as? String, "杭州市")
     }

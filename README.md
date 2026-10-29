@@ -31,4 +31,6 @@ xcodebuild \
 
 ## Current status
 
+v0.1: Duo 优化基本完成，覆盖折叠与展开布局、导航和交互动效，以及主题、地图与印章体验。下一版本将重点优化其他 iPhone 机型的布局适配与使用体验。详见 [版本记录](CHANGELOG.md)。
+
 Entries are stored locally; iCloud sync is not configured. The repository does not include sample personal data, so a fresh installation starts with an empty journal. Photo cutout uses Apple Vision, but its performance on a physical iPhone has not yet been measured. The project does not set a `DEVELOPMENT_TEAM`; device builds need local signing configuration.

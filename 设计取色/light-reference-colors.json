@@ -1,0 +1,132 @@
+[
+  {
+    "filter" : "background",
+    "matchedPixels" : 40800,
+    "name" : "paper",
+    "rect" : [
+      30,
+      1100,
+      240,
+      170
+    ],
+    "screenshot" : 1,
+    "sRGB" : "#F8F7F0"
+  },
+  {
+    "filter" : "dark",
+    "matchedPixels" : 1914,
+    "name" : "text",
+    "rect" : [
+      265,
+      110,
+      150,
+      36
+    ],
+    "screenshot" : 1,
+    "sRGB" : "#3C2723"
+  },
+  {
+    "filter" : "medium",
+    "matchedPixels" : 1866,
+    "name" : "muted",
+    "rect" : [
+      169,
+      211,
+      380,
+      25
+    ],
+    "screenshot" : 1,
+    "sRGB" : "#968E89"
+  },
+  {
+    "filter" : "background",
+    "matchedPixels" : 480,
+    "name" : "control",
+    "rect" : [
+      766,
+      389,
+      40,
+      12
+    ],
+    "screenshot" : 1,
+    "sRGB" : "#F1F0EC"
+  },
+  {
+    "filter" : "medium",
+    "matchedPixels" : 509,
+    "name" : "icon",
+    "rect" : [
+      769,
+      357,
+      39,
+      39
+    ],
+    "screenshot" : 1,
+    "sRGB" : "#897B79"
+  },
+  {
+    "filter" : "background",
+    "matchedPixels" : 560,
+    "name" : "selection",
+    "rect" : [
+      771,
+      865,
+      35,
+      16
+    ],
+    "screenshot" : 1,
+    "sRGB" : "#E4E1DE"
+  },
+  {
+    "filter" : "gold",
+    "matchedPixels" : 1409,
+    "name" : "gold",
+    "rect" : [
+      419,
+      266,
+      224,
+      28
+    ],
+    "screenshot" : 3,
+    "sRGB" : "#C5925E"
+  },
+  {
+    "filter" : "orange",
+    "matchedPixels" : 5392,
+    "name" : "orange",
+    "rect" : [
+      94,
+      304,
+      245,
+      242
+    ],
+    "screenshot" : 1,
+    "sRGB" : "#DC7F45"
+  },
+  {
+    "filter" : "background",
+    "matchedPixels" : 26000,
+    "name" : "sheet",
+    "rect" : [
+      40,
+      1220,
+      650,
+      40
+    ],
+    "screenshot" : 2,
+    "sRGB" : "#F1F0EC"
+  },
+  {
+    "filter" : "background",
+    "matchedPixels" : 6600,
+    "name" : "cataloguePanel",
+    "rect" : [
+      260,
+      346,
+      300,
+      22
+    ],
+    "screenshot" : 2,
+    "sRGB" : "#EEEBE9"
+  }
+]

@@ -16,7 +16,8 @@ struct ShopPlace: Identifiable, Codable, Equatable {
     }
     var coordinate: CLLocationCoordinate2D? {
         guard let latitude, let longitude else { return nil }
-        return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        let coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        return CLLocationCoordinate2DIsValid(coordinate) ? coordinate : nil
     }
     var subtitle: String {
         [address, city].filter { !$0.isEmpty }.reduce(into: [String]()) { parts, value in
@@ -26,6 +27,19 @@ struct ShopPlace: Identifiable, Codable, Equatable {
     func distance(from location: CLLocation?) -> CLLocationDistance? {
         guard let location, let coordinate else { return nil }
         return location.distance(from: CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude))
+    }
+    /// Names alone cannot identify branches. Located selections tolerate small POI corrections.
+    func isSameBranch(as other: ShopPlace) -> Bool {
+        func normalized(_ value: String) -> String {
+            value.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        }
+        guard normalized(name) == normalized(other.name), !name.isEmpty else { return false }
+        if !city.isEmpty && !other.city.isEmpty && normalized(city) != normalized(other.city) { return false }
+        if let a = coordinate, let b = other.coordinate {
+            return CLLocation(latitude: a.latitude, longitude: a.longitude)
+                .distance(from: CLLocation(latitude: b.latitude, longitude: b.longitude)) <= 60
+        }
+        return !address.isEmpty && normalized(address) == normalized(other.address) && !city.isEmpty
     }
     static func city(from placemark: CLPlacemark) -> String {
         placemark.locality ?? placemark.subAdministrativeArea ?? placemark.administrativeArea ?? ""
@@ -172,6 +186,10 @@ extension DrinkRecord {
     }
 
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        #if DEBUG
+        // Fixture locations are independent of the simulator's previous permission choice.
+        if Self.usesFixtures { return }
+        #endif
         guard started else { return }
         switch manager.authorizationStatus {
         case .authorizedAlways, .authorizedWhenInUse:

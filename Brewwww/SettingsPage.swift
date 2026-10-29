@@ -1,19 +1,49 @@
 import SwiftUI
 import UIKit
 
+enum SettingsDestination: Hashable { case root, profile, general, preferences, appearance, faq }
+
+@MainActor final class SettingsNavigation: ObservableObject {
+    @Published var path: [SettingsDestination] = []
+    var page: SettingsDestination { path.last ?? .root }
+    func push(_ destination: SettingsDestination) {
+        if destination == .root { path = [] }
+        else if path.last != destination { path.append(destination) }
+    }
+    @discardableResult func pop() -> Bool {
+        guard !path.isEmpty else { return false }
+        path.removeLast(); return true
+    }
+}
+
+extension AnyTransition {
+    static func viewportSlide(_ distance: CGFloat) -> AnyTransition {
+        // Let SwiftUI animate its built-in offset effect directly, rather than
+        // reevaluating a custom AnimatableModifier body on every slide frame.
+        .offset(x: distance)
+    }
+}
+
+extension BrewLayout {
+    var settingsAnimation: Animation? { reduceMotion ? nil : .easeOut(duration: 0.28) }
+}
+
 struct SettingsPage: View {
     @EnvironmentObject private var store: BrewStore
     @Environment(\.brewLayout) private var layout
     @AppStorage("profileName") private var profileName = ""
+    @AppStorage("showGlobeDistrictNames") private var showGlobeDistrictNames = true
     @AppStorage("mondayFirst") private var mondayFirst = false
     @AppStorage("haptics") private var haptics = true
+    @AppStorage(BrewHapticStrength.storageKey) private var hapticStrength = BrewHapticStrength.defaultValue
     @AppStorage("reduceMotion") private var reduceMotion = false
-    @AppStorage("autoTheme") private var autoTheme = true
+    @AppStorage("appearanceMode") private var appearanceMode = BrewAppearance.system.rawValue
     @AppStorage("stampStyle") private var stampStyle = 1
     @AppStorage("passportStyle") private var passportStyle = 0
     @AppStorage("handedness") private var handedness = "right"
     @AppStorage("joinedAt") private var joinedAt = Date().timeIntervalSince1970
-    @State private var page: Page = .root
+    @ObservedObject var navigation: SettingsNavigation
+    private var page: SettingsDestination { navigation.page }
     @State private var shopName = ""
     @State private var shopCity = ""
     @State private var showAddShop = false
@@ -21,37 +51,22 @@ struct SettingsPage: View {
     @State private var showCloudInfo = false
     @State private var unavailableFeature: String? = nil
 
-    private enum Page { case root, profile, general, preferences, appearance, faq }
+    private typealias Page = SettingsDestination
 
     var body: some View {
-        VStack(spacing: 12) {
-            Text(title).font(BrewFont.heading).padding(.top, layout.titleTop)
-            ScrollView {
-                VStack(spacing: 11) {
-                    switch page {
-                    case .root: rootContent
-                    case .profile: profileContent
-                    case .general: generalContent
-                    case .preferences: preferencesContent
-                    case .appearance: appearanceContent
-                    case .faq: faqContent
-                    }
-                }
-                .id(page)
-                .transition(.move(edge: .trailing).combined(with: .opacity))
-                .padding(.top, 32)
-                .padding(.bottom, 30)
-            }
-            if page == .root { Text("版本 1.0").font(.caption).foregroundStyle(BrewStyle.muted) }
-        }
-        .brewPagePadding()
-        .animation(layout.animation, value: page)
-        .overlay(alignment: .topTrailing) {
-            if page != .root {
-                Button { page = .root } label: { RoundIcon(symbol: "chevron.left") }
-                    .padding(.top, 70).padding(.trailing, 14)
+        ZStack {
+            settingsContent(.root)
+                .allowsHitTesting(navigation.path.isEmpty)
+                .accessibilityHidden(!navigation.path.isEmpty)
+            ForEach(Array(navigation.path.enumerated()), id: \.element) { index, destination in
+                settingsContent(destination)
+                    .allowsHitTesting(index == navigation.path.count - 1)
+                    .accessibilityHidden(index != navigation.path.count - 1)
+                    .transition(layout.reduceMotion ? .identity : .viewportSlide(max(layout.windowSize.width, layout.size.width) + 16))
+                    .zIndex(Double(index + 1))
             }
         }
+        .animation(layout.settingsAnimation, value: navigation.path)
         .alert("iCloud 同步尚未配置", isPresented: $showCloudInfo) {
             Button("知道了", role: .cancel) {}
         } message: {
@@ -81,7 +96,34 @@ struct SettingsPage: View {
         }
     }
 
-    private var title: String {
+    private func settingsContent(_ destination: Page) -> some View {
+        VStack(spacing: 12) {
+            Text(title(for: destination)).font(BrewFont.heading).padding(.top, layout.titleTop)
+            ScrollView {
+                VStack(spacing: 11) {
+                    switch destination {
+                    case .root: rootContent
+                    case .profile: profileContent
+                    case .general: generalContent
+                    case .preferences: preferencesContent
+                    case .appearance: appearanceContent
+                    case .faq: faqContent
+                    }
+                }
+                .padding(.top, 32).padding(.bottom, 30)
+            }
+            if destination == .root { Text("Un Caffèee! · 版本 1.0").font(.caption).foregroundStyle(BrewStyle.muted) }
+        }
+        .brewPagePadding()
+        .padding(layout.leftHanded ? .leading : .trailing,
+                 layout.nativeNavigation && layout.bottomNavigation ? 66 : 0)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background { BrewBackground() }
+        .accessibilityElement(children: .contain)
+        .accessibilityIdentifier("settings.page.\(destination)")
+    }
+
+    private func title(for page: Page) -> String {
         switch page {
         case .root: "设置"
         case .profile: "个人信息"
@@ -94,13 +136,13 @@ struct SettingsPage: View {
 
     private var rootContent: some View {
         Group {
-            row("个人信息", "person.crop.rectangle") { page = .profile }
-            row("通用", "wrench.adjustable") { page = .general }
-            row("外观", "paintpalette") { page = .appearance }
+            row("个人信息", "person.crop.rectangle") { navigation.push(.profile) }
+            row("通用", "wrench.adjustable") { navigation.push(.general) }
+            row("外观", "paintpalette") { navigation.push(.appearance) }
             row("请我们喝杯咖啡", "heart") {
                 unavailableFeature = "这项支持入口需要原应用的购买服务，复刻版没有接入支付。"
             }
-            row("常见问题", "questionmark.circle") { page = .faq }
+            row("常见问题", "questionmark.circle") { navigation.push(.faq) }
             row("联系我们", "hand.thumbsup") {
                 unavailableFeature = "还没有配置开发者的联系邮箱。"
             }
@@ -124,7 +166,7 @@ struct SettingsPage: View {
                             Text("ISSUED DATE").font(.system(size: 11, weight: .bold))
                             Text(Date(timeIntervalSince1970: joinedAt).formatted(.dateTime.month().day().year()))
                                 .font(.system(size: 11, weight: .bold))
-                            Text("BREWWWW!").font(.system(size: 11, weight: .bold))
+                            Text("Un Caffèee!").font(.system(size: 10, weight: .bold)).lineLimit(1).minimumScaleFactor(0.8)
                         }
                         .foregroundStyle(BrewStyle.gold)
                         .frame(width: 112, height: 112)
@@ -137,7 +179,7 @@ struct SettingsPage: View {
                         metric("店铺", store.shops.count)
                         metric("城市", store.cities.count)
                     }
-                    Text("BREWPORT<<<<<<<<<<<<<<<<<<<<<<<<<<")
+                    Text("UNCAFFEEE<<<<<<<<<<<<<<<<<<<<<<<<")
                         .font(.system(size: 9, design: .monospaced)).foregroundStyle(BrewStyle.muted)
                 }
                 .padding(20)
@@ -166,7 +208,9 @@ struct SettingsPage: View {
 
     private var generalContent: some View {
         Group {
-            row("偏好设置", "slider.horizontal.3") { page = .preferences }
+            row("偏好设置", "slider.horizontal.3") { navigation.push(.preferences) }
+            toggle("显示地球城市名称", $showGlobeDistrictNames)
+                .accessibilityIdentifier("settings.globeDistrictNames")
             row("添加自定义店铺", "storefront") { showAddShop = true }
             row("通知设置", "bell") {
                 if let url = URL(string: UIApplication.openSettingsURLString) { UIApplication.shared.open(url) }
@@ -187,8 +231,25 @@ struct SettingsPage: View {
         Group {
             toggle("每周从周一开始", $mondayFirst)
             toggle("触觉反馈", $haptics)
+            VStack(alignment: .leading, spacing: 12) {
+                Text("触觉反馈力度").font(.subheadline).foregroundStyle(BrewStyle.muted)
+                Picker("触觉反馈力度", selection: $hapticStrength) {
+                    ForEach(BrewHapticStrength.allCases) { strength in
+                        Text(strength.title).tag(strength)
+                    }
+                }
+                .pickerStyle(.segmented)
+                .accessibilityIdentifier("settings.hapticStrength")
+                .disabled(!haptics)
+                .onChange(of: hapticStrength) { _, strength in
+                    if haptics { BrewHaptics.shared.landing(strength: strength) }
+                }
+                Text("默认中档；大档带来强烈的落地震感。切换即可试震。")
+                    .font(BrewFont.caption).foregroundStyle(BrewStyle.muted)
+            }
+            .brewRow()
             toggle("减弱动态效果", $reduceMotion)
-            toggle("自动主题", $autoTheme)
+            row("主题 · \((BrewAppearance(rawValue: appearanceMode) ?? .system).title)", "circle.lefthalf.filled") { navigation.push(.appearance) }
             Picker("持握方式", selection: $handedness) {
                 Text("右手").tag("right")
                 Text("左手").tag("left")
@@ -202,6 +263,17 @@ struct SettingsPage: View {
 
     private var appearanceContent: some View {
         VStack(alignment: .leading, spacing: 15) {
+            Text("主题").font(.subheadline).foregroundStyle(BrewStyle.muted)
+            Picker("主题", selection: $appearanceMode) {
+                ForEach(BrewAppearance.allCases) { mode in
+                    Text(mode.title).tag(mode.rawValue)
+                }
+            }
+            .pickerStyle(.segmented)
+            .accessibilityIdentifier("settings.appearance")
+            Text("默认跟随系统，系统切换深浅色时，纸张、日历、按钮和照片夹会一起更新。")
+                .font(BrewFont.caption).foregroundStyle(BrewStyle.muted)
+                .padding(.bottom, 15)
             Text("5 种印章样式").font(.subheadline).foregroundStyle(BrewStyle.muted)
             HStack {
                 ForEach(0..<5) { index in

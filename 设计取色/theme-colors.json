@@ -1,0 +1,157 @@
+[
+  {
+    "name": "ink",
+    "light": "#F8F7F0",
+    "dark": "#2B2A23"
+  },
+  {
+    "name": "text",
+    "light": "#3C2723",
+    "dark": "#D3D0CB"
+  },
+  {
+    "name": "panel",
+    "light": "#F0EDE7",
+    "dark": "#463E36"
+  },
+  {
+    "name": "panelLight",
+    "light": "#E4DFD7",
+    "dark": "#655A54"
+  },
+  {
+    "name": "muted",
+    "light": "#968E89",
+    "dark": "#A19B96"
+  },
+  {
+    "name": "gold",
+    "light": "#C5925E",
+    "dark": "#DCAB70"
+  },
+  {
+    "name": "orange",
+    "light": "#DC7F45",
+    "dark": "#B84D07"
+  },
+  {
+    "name": "weekday",
+    "light": "#958D83",
+    "dark": "#867F77"
+  },
+  {
+    "name": "calendarNumber",
+    "light": "#63564C",
+    "dark": "#D3D0C9"
+  },
+  {
+    "name": "todayNumber",
+    "light": "#FAF9F4",
+    "dark": "#D3D0C9"
+  },
+  {
+    "name": "control",
+    "light": "#F1F0EC",
+    "dark": "#383734"
+  },
+  {
+    "name": "icon",
+    "light": "#897B79",
+    "dark": "#A39A96"
+  },
+  {
+    "name": "selection",
+    "light": "#E4E1DE",
+    "dark": "#666561"
+  },
+  {
+    "name": "border",
+    "light": "#FFFFFF",
+    "dark": "#635B53"
+  },
+  {
+    "name": "placeholder",
+    "light": "#A49B91",
+    "dark": "#776D67"
+  },
+  {
+    "name": "toggleOff",
+    "light": "#D8D4CE",
+    "dark": "#E7E5DE"
+  },
+  {
+    "name": "souvenirPanel",
+    "light": "#EAE5DC",
+    "dark": "#5B5249"
+  },
+  {
+    "name": "folderBack",
+    "light": "#D5CBB9",
+    "dark": "#443D36"
+  },
+  {
+    "name": "folderLeft",
+    "light": "#DBCAA9",
+    "dark": "#726550"
+  },
+  {
+    "name": "folderCenter",
+    "light": "#E2D1B1",
+    "dark": "#7A6C54"
+  },
+  {
+    "name": "folderRight",
+    "light": "#D6CBB9",
+    "dark": "#70685D"
+  },
+  {
+    "name": "folderBottom",
+    "light": "#CDBB9C",
+    "dark": "#6E6353"
+  },
+  {
+    "name": "folderTab",
+    "light": "#DDD0B8",
+    "dark": "#746A5A"
+  },
+  {
+    "name": "albumTop",
+    "light": "#F0EEEA",
+    "dark": "#3F3A39"
+  },
+  {
+    "name": "albumMiddle",
+    "light": "#E9E5DE",
+    "dark": "#47433F"
+  },
+  {
+    "name": "albumBottom",
+    "light": "#EFEBE5",
+    "dark": "#3F3B3A"
+  },
+  {
+    "name": "albumControl",
+    "light": "#F1EFEB",
+    "dark": "#403F3D"
+  },
+  {
+    "name": "mapPanel",
+    "light": "#F5F3EE",
+    "dark": "#32363D"
+  },
+  {
+    "name": "mapControl",
+    "light": "#F1F0ED",
+    "dark": "#32394A"
+  },
+  {
+    "name": "mapNavigation",
+    "light": "#F1F0ED",
+    "dark": "#363D46"
+  },
+  {
+    "name": "mapSelection",
+    "light": "#E4E1DD",
+    "dark": "#65686D"
+  }
+]
